@@ -370,117 +370,31 @@
         "padding-block-end": 12
       }
     },
-    "hero_R3rMkj": {
-      "type": "hero",
+    "kanbae_hero_zwGJrP": {
+      "type": "kanbae-hero",
       "blocks": {
-        "text_DeBbKW": {
-          "type": "text",
-          "name": "t:names.heading",
+        "slide_EhP4bA": {
+          "type": "slide",
           "settings": {
-            "text": "<h2>Every Part of Your Day<br/>Deserves Your Best.</h2>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_JxQXEy": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Work hard. Play hard. Sleep Easy.<br/>We make performance supplements for people who show up for all of it.<br/></p>",
-            "width": "fit-content",
-            "max_width": "narrow",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 32,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "button_AQz9Q7": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "CHOOSE YOUR SUPPORT →",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button-custom",
-            "custom_button_background": "{{ settings.color_palette.color1 }}",
-            "custom_button_text": "{{ settings.color_palette.foreground }}",
-            "custom_button_border": "{{ settings.color_palette.foreground }}",
-            "link_text_color": "",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
+            "slide_title": "",
+            "slide_subtitle": ""
+          }
         }
       },
       "block_order": [
-        "text_DeBbKW",
-        "text_JxQXEy",
-        "button_AQz9Q7"
+        "slide_EhP4bA"
       ],
-      "name": "t:names.hero",
+      "name": "Kanbae Hero",
       "settings": {
-        "media_type_1": "image",
-        "image_1": "shopify://shop_images/Sachet_with_Fruits_hero_-_horizontal.jpg",
-        "media_type_2": "image",
-        "stack_media_on_mobile": false,
-        "custom_mobile_media": true,
-        "media_type_1_mobile": "image",
-        "image_1_mobile": "shopify://shop_images/Sachet_with_Fruits_hero_-_vert.png",
-        "media_type_2_mobile": "image",
-        "link": "",
-        "open_in_new_tab": false,
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
-        "section_width": "page-width",
-        "section_height": "large",
-        "section_height_custom": 50,
-        "background_color": "{{ settings.color_palette.foreground }}",
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "gradient",
-        "gradient_direction": "to top",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "hero_height_desktop": 90,
+        "hero_height_mobile": 70,
+        "eyebrow_text": "Science-backed recovery",
+        "hero_title": "Recovery Science.",
+        "hero_subtitle": "Elevate your performance.",
+        "hero_button_primary_text": "Shop Now",
+        "hero_button_primary": "",
+        "hero_button_secondary_text": "Learn More",
+        "hero_button_secondary": ""
       }
     },
     "marquee_f6x9Yf": {
@@ -2901,7 +2815,7 @@
         "mobile_columns": "1",
         "section_width": "page-width",
         "columns_gap": 12,
-        "background_color": "{{ settings.color_palette.foreground }}",
+        "background_color": "{{ settings.color_palette.background }}",
         "icons_style": "arrow",
         "icons_shape": "none",
         "padding-block-start": 48,
@@ -4223,7 +4137,7 @@
   },
   "order": [
     "hero_jVaWmY",
-    "hero_R3rMkj",
+    "kanbae_hero_zwGJrP",
     "marquee_f6x9Yf",
     "section_wLWcLn",
     "collection_list_Y3hXhQ",
