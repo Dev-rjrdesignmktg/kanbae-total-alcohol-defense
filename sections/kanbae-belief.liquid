@@ -1,0 +1,201 @@
+{%- comment -%}
+  ------------------------------------------------------------------
+  Kanbae — Brand Belief (sections/kanbae-belief.liquid)
+  ------------------------------------------------------------------
+  Sección custom "split" (imagen + texto) para reemplazar el bloque
+  estándar "Image with text" en la Home. Reemplaza la sección actual
+  "OUR BELIEF — You Shouldn't Have to Choose".
+
+  - 100% controlable desde el Theme Editor (schema).
+  - Usa las CSS vars globales del proyecto: --green-forest, --green-lime,
+    --white-cream, --font-display (con fallback por si no están cargadas
+    aún en el <head> al momento de renderizar esta sección).
+  - Mobile-first: en mobile siempre imagen → texto; en >=750px se puede
+    invertir el layout con "Posición de imagen".
+  - Accesible: aria-labelledby dinámico, alt real en la imagen, foco
+    visible en el CTA, respeta prefers-reduced-motion.
+  - Performance: image_tag con loading="lazy" + srcset/sizes, sin JS
+    ni CSS externos (self-contained, drop-in).
+------------------------------------------------------------------ {%- endcomment -%}
+
+{{ "kanbae-belief.css" | asset_url | stylesheet_tag }}
+<script src="{{ "kanbae-belief.js" | asset_url }}" defer></script>
+
+{%- liquid
+  assign has_title = false
+  if section.settings.title != blank
+    assign has_title = true
+  endif
+
+  assign img_alt = section.settings.image.alt | default: section.settings.title | default: 'Kanbae brand belief'
+-%}
+
+<section
+  id="Belief-{{ section.id }}"
+  class="kanbae-belief kanbae-belief--{{ section.settings.background }}"
+  style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
+  {%- if has_title %}
+  aria-labelledby="BeliefHeading-{{ section.id }}"
+  {%- else %}
+  aria-label="{{ section.settings.eyebrow | default: 'Kanbae brand belief' }}"
+  {%- endif %}
+>
+  <div class="kanbae-belief__container">
+    <div class="kanbae-belief__grid kanbae-belief__grid--{{ section.settings.image_position }}">
+
+      <div class="kanbae-belief__media" data-kanbae-animate>
+        {%- if section.settings.image != blank -%}
+          {{
+            section.settings.image
+            | image_url: width: 1600
+            | image_tag:
+              loading: 'lazy',
+              widths: '375, 550, 750, 1000, 1400, 1600',
+              sizes: '(min-width: 990px) 50vw, 100vw',
+              alt: img_alt,
+              class: 'kanbae-belief__image'
+          }}
+        {%- else -%}
+          <div class="kanbae-belief__image kanbae-belief__image--placeholder" role="img" aria-label="{{ img_alt }}">
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'kanbae-belief__placeholder-svg' }}
+          </div>
+        {%- endif -%}
+      </div>
+
+      <div class="kanbae-belief__content" data-kanbae-animate>
+        {%- if section.settings.eyebrow != blank -%}
+          <p class="kanbae-belief__eyebrow">{{ section.settings.eyebrow }}</p>
+        {%- endif -%}
+
+        {%- if has_title -%}
+          <h2 id="BeliefHeading-{{ section.id }}" class="kanbae-belief__title">
+            {{ section.settings.title }}
+          </h2>
+        {%- endif -%}
+
+        {%- if section.settings.description != blank -%}
+          <div class="kanbae-belief__description">
+            {{ section.settings.description }}
+          </div>
+        {%- endif -%}
+
+        {%- if section.settings.button_label != blank -%}
+          <a
+            href="{{ section.settings.button_link | default: '#' }}"
+            class="button-cta button-cta--primary"
+            {%- if section.settings.button_link == blank %}
+            aria-disabled="true"
+            {%- endif %}
+          >
+            {{ section.settings.button_label }}
+            <span aria-hidden="true" class="kanbae-belief__button-arrow">→</span>
+          </a>
+        {%- endif -%}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Kanbae Belief",
+  "tag": "section",
+  "class": "section section-kanbae-belief",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "background",
+      "label": "Background",
+      "options": [
+        { "value": "cream", "label": "Cream" },
+        { "value": "forest", "label": "Green forest" }
+      ],
+      "default": "cream"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Imagen position(tablet/desktop)",
+      "info": "First image in mobiles",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 96
+    },
+    {
+      "type": "header",
+      "content": "Contenido"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Imagen"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Our belief"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Títle",
+      "default": "You Shouldn't Have to Choose"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Life asks everything from you at once. Kanbae Wellness was built so your body can meet that demand — without trade-offs.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Botón CTA"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button text",
+      "default": "Shop now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Url button"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kanbae Belief"
+    }
+  ]
+}
+{% endschema %}
