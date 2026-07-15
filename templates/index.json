@@ -376,13 +376,32 @@
         "slide_EhP4bA": {
           "type": "slide",
           "settings": {
+            "hero_image": "shopify://shop_images/hero_1.jpg",
+            "slide_title": "",
+            "slide_subtitle": ""
+          }
+        },
+        "slide_bgWHmp": {
+          "type": "slide",
+          "settings": {
+            "hero_image": "shopify://shop_images/hero_2.jpg",
+            "slide_title": "",
+            "slide_subtitle": ""
+          }
+        },
+        "slide_a4MCba": {
+          "type": "slide",
+          "settings": {
+            "hero_image": "shopify://shop_images/Sachet_with_Fruits_hero_-_horizontal.jpg",
             "slide_title": "",
             "slide_subtitle": ""
           }
         }
       },
       "block_order": [
-        "slide_EhP4bA"
+        "slide_EhP4bA",
+        "slide_bgWHmp",
+        "slide_a4MCba"
       ],
       "name": "Kanbae Hero",
       "settings": {
