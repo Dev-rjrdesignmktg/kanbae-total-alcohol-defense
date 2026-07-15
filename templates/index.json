@@ -1177,9 +1177,9 @@
         "benefit_Mpg868": {
           "type": "benefit",
           "settings": {
-            "title": "",
-            "description": "",
-            "proof_tag": ""
+            "title": "Stay Hidrated",
+            "description": "Help replenish and retain essential hydration.",
+            "proof_tag": "Electrolyte Complex"
           }
         },
         "benefit_q4DBdC": {
