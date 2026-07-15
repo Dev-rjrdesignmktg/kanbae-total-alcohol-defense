@@ -1,0 +1,120 @@
+
+{{ "kanbae-hero.css" | asset_url | stylesheet_tag }}
+<script src="{{ 'kanbae-hero.js' | asset_url }}" defer="defer"></script>
+
+<section 
+  id="kanbae-hero-section-{{ section.id }}"
+  class="kanbae-hero"
+  style="--hero-desktop: {{ section.settings.hero_height_desktop }}vh; --hero-mobile: {{ section.settings.hero_height_mobile }}vh;"
+>
+  <div class="kanbae-hero__wrapper">
+    <div class="kanbae-hero__content">
+      {%- if section.settings.eyebrow_text != blank -%}
+        <p class="kanbae-hero__eyebrow">{{ section.settings.eyebrow_text | escape }}</p>
+      {%- endif -%}
+      
+      {%- if section.settings.hero_title != blank -%}
+        <h1 class="kanbae-hero__title">{{ section.settings.hero_title | escape }}</h1>
+      {%- endif -%}
+      
+      {%- if section.settings.hero_subtitle != blank -%}
+        <p class="kanbae-hero__subtitle">{{ section.settings.hero_subtitle | escape }}</p>
+      {%- endif -%}
+
+      <div class="kanbae-hero__buttons">
+        {%- if section.settings.hero_button_primary != blank -%}
+          <a href="{{ section.settings.hero_button_primary }}" class="button-cta button-cta--primary">{{section.settings.hero_button_primary_text}}</a>
+        {%- endif -%}
+        {%- if section.settings.hero_button_secondary != blank -%}
+          <a href="{{ section.settings.hero_button_secondary }}" class="button-cta button-cta--secondary">{{ section.settings.hero_button_secondary_text }}</a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+
+  <div class="kanbae-hero__slider">
+    {%- for block in section.blocks -%}
+      <div class="kanbae-hero__track" data-slide-index="{{ foorloop.index0 }}">
+      {% assign image_alt = block.settings.hero_image.alt | default: 'Kanbae recovery product' %}
+         <div class="kanbae-hero__slide {% if forloop.first %}is-active{% endif %}" {{ block.shopify_attributes }}>
+            {%- if block.settings.hero_image != blank -%}
+              {{ block.settings.hero_image | image_url: width: 1500 | image_tag: 
+                loading: 'lazy', 
+                sizes: '100vw', 
+                widths: '375, 750, 1100, 1500',
+                class: 'kanbae-hero__image',
+                alt: image_alt
+              }}
+            {%- else -%}
+              {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+          </div>
+        </div>
+        {%- endfor -%}
+  </div>
+  <div class="kanbae-hero__controls">
+      <button
+        class="kanbae-hero__arrow kanbae-hero__arrow--prev"
+        type="button"
+        aria-label="Previous slide"
+      >
+        &#8592;
+      </button>
+
+      <div class="kanbae-hero__dots">
+
+        {% for block in section.blocks %}
+          <button
+            class="kanbae-hero__dot {% if forloop.first %}is-active{% endif %}"
+            type="button"
+            aria-label="Go to slide {{ forloop.index }}"
+            data-slide="{{ forloop.index0 }}"
+          ></button>
+        {% endfor %}
+
+      </div>
+
+      <button
+        class="kanbae-hero__arrow kanbae-hero__arrow--next"
+        type="button"
+        aria-label="Next slide"
+      >
+        &#8594;
+      </button>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kanbae Hero",
+  "settings": [
+    { "type": "range", "id": "hero_height_desktop", "min": 60, "max": 100, "step": 5, "unit": "vh", "label": "Desktop Height", "default": 90 },
+    { "type": "range", "id": "hero_height_mobile", "min": 50, "max": 95, "step": 5, "unit": "vh", "label": "Mobile Height", "default": 70 },
+    { "type": "text", "id": "eyebrow_text", "label": "Eyebrow Text", "default": "Science-backed recovery" },
+    { "type": "text", "id": "hero_title", "label": "Hero Title", "default": "Recovery Science." },
+    { "type": "textarea", "id": "hero_subtitle", "label": "Subtitle", "default": "Elevate your performance." },
+    {"type": "text", "id": "hero_button_primary_text", "label": "Primary button text", "default": "Shop Now"},
+    { "type": "url", "id": "hero_button_primary", "label": "Primary URL" },
+    {"type": "text", "id": "hero_button_secondary_text", "label": "Secondary button text", "default": "Learn More"},
+    { "type": "url", "id": "hero_button_secondary", "label": "Secondary URL" }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Hero slide",
+      "limit": 3,
+      "settings": [
+        { "type": "image_picker", "id": "hero_image", "label": "Image" },
+        { "type": "text", "id": "slide_title", "label": "Título del Slide" },
+        { "type": "textarea", "id": "slide_subtitle", "label": "Subtítulo del Slide" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kanbae Hero",
+      "blocks": [{ "type": "slide" }]
+    }
+  ]
+}
+{% endschema %}
