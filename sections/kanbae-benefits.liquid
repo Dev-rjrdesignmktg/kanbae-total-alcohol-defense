@@ -1,0 +1,73 @@
+{{ "kanbae-benefits.css"  | asset_url | stylesheet_tag}}
+<script src="{{ "kanbae-benefits.js"  | asset_url }}" defer></script>
+
+<section class="stack" aria-label="Kanbae benefit stack">
+  <div class="stack-inner">
+    <div class="stack-product">
+      {%- if section.settings.product_image != blank -%}
+        {{ section.settings.product_image | image_url: width: 900 | image_tag: 
+          loading: 'lazy', 
+          class: 'stack-product__pack',
+          alt: section.settings.product_image.alt | default: 'Kanbae Product'
+        }}
+      {%- else -%}
+        <div class="stack-product__pack" role="img" aria-label="Kanbae placeholder"></div>
+      {%- endif -%}
+      <p class="stack-product__credibility">
+        <span class="dot"></span>{{ section.settings.credibility_text }}
+      </p>
+    </div>
+
+    <div class="stack-content">
+      <p class="stack-eyebrow">{{ section.settings.eyebrow }}</p>
+      <h2 class="stack-headline">{{ section.settings.headline }}</h2>
+
+      <div class="accordion js-benefit-accordion">
+        {% for block in section.blocks %}
+          <div class="accordion-item {% if forloop.first %}is-open{% endif %}" data-item {{ block.shopify_attributes }}>
+            <button class="accordion-trigger" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}">
+              {{ block.settings.title }}
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">
+                <p class="accordion-text">{{ block.settings.description }}</p>
+                {%- if block.settings.proof_tag != blank -%}
+                  <span class="accordion-proof"><span class="dot"></span>{{ block.settings.proof_tag }}</span>
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <a href="{{ section.settings.cta_url }}" class="button-cta button-cta--primary">{{ section.settings.cta_text }}</a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Benefit Stack",
+  "settings": [
+    { "type": "image_picker", "id": "product_image", "label": "Product Image" },
+    { "type": "text", "id": "credibility_text", "label": "Credibility Text", "default": "Third-party tested · Made in the USA" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Why It Works" },
+    { "type": "text", "id": "headline", "label": "Headline", "default": "Built for Better Mornings" },
+    { "type": "text", "id": "cta_text", "label": "CTA Text", "default": "Shop Now" },
+    { "type": "url", "id": "cta_url", "label": "CTA Link" }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Benefit Title" },
+        { "type": "textarea", "id": "description", "label": "Description" },
+        { "type": "text", "id": "proof_tag", "label": "Proof Tag" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Benefit Stack" }]
+}
+{% endschema %}
