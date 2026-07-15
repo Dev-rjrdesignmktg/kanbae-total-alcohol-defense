@@ -1505,7 +1505,7 @@
                   "settings": {
                     "content_direction": "row",
                     "vertical_on_mobile": false,
-                    "horizontal_alignment": "flex-start",
+                    "horizontal_alignment": "center",
                     "vertical_alignment": "center",
                     "align_baseline": false,
                     "horizontal_alignment_flex_direction_column": "center",
@@ -1580,7 +1580,7 @@
                           "settings": {
                             "width": "100%",
                             "max_width": "normal",
-                            "alignment": "left",
+                            "alignment": "center",
                             "type_preset": "paragraph",
                             "font": "var(--font-body--family)",
                             "font_size": "1rem",
@@ -1608,7 +1608,7 @@
                             "show_tax_info": false,
                             "type_preset": "h6",
                             "width": "100%",
-                            "alignment": "left",
+                            "alignment": "center",
                             "font": "var(--font-body--family)",
                             "font_size": "1rem",
                             "line_height": "normal",
@@ -3217,6 +3217,23 @@
     "ss_video_grid_socials_3_T9gaPA": {
       "type": "ss-video-grid-socials-3",
       "blocks": {
+        "text_iwQkyV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tell your story</p>",
+            "text_custom": false,
+            "text_font": "josefin_sans_n4",
+            "text_size": 18,
+            "text_size_mobile": 16,
+            "text_advanced": false,
+            "text_height": 150,
+            "text_mt": 18,
+            "text_mt_mobile": 16,
+            "text_max_width": 60,
+            "text_max_width_mobile": 100,
+            "text_color": "#121212"
+          }
+        },
         "heading_qiC8cN": {
           "type": "heading",
           "settings": {
@@ -3333,6 +3350,7 @@
         }
       },
       "block_order": [
+        "text_iwQkyV",
         "heading_qiC8cN",
         "text_L9cFqm",
         "video_rT89cK",
