@@ -1269,12 +1269,38 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 0,
+            "padding-block-start": 44,
             "padding-block-end": 16,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {
+            "text_neBFff": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p><strong>—  More people trust in kanbae</strong></p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.875rem",
+                "line_height": "loose",
+                "letter_spacing": "loose",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "text_fWGcif": {
               "type": "text",
               "name": "t:names.header",
@@ -1294,7 +1320,7 @@
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
-                "padding-block-start": 0,
+                "padding-block-start": 21,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
@@ -1329,6 +1355,7 @@
             }
           },
           "block_order": [
+            "text_neBFff",
             "text_fWGcif",
             "text_CAiQ7f"
           ]
@@ -2423,11 +2450,11 @@
         "mobile_columns": "1",
         "section_width": "page-width",
         "columns_gap": 12,
-        "background_color": "{{ settings.color_palette.background }}",
+        "background_color": "#F7F6F2",
         "icons_style": "arrow",
         "icons_shape": "none",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 100,
+        "padding-block-end": 100
       }
     },
     "section_diBL79": {
