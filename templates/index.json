@@ -1185,17 +1185,17 @@
         "benefit_q4DBdC": {
           "type": "benefit",
           "settings": {
-            "title": "",
-            "description": "",
-            "proof_tag": ""
+            "title": "Wake Sharper",
+            "description": "Reduce brain fog and support next-day clarity.",
+            "proof_tag": "N-Acetyl Cysteine"
           }
         },
         "benefit_XBdYWM": {
           "type": "benefit",
           "settings": {
-            "title": "",
-            "description": "",
-            "proof_tag": ""
+            "title": "Feel Ready Again",
+            "description": "Designed for social nights without sacrificing your next day.",
+            "proof_tag": "Clinically studied dose"
           }
         }
       },
