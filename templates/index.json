@@ -388,13 +388,13 @@
       "settings": {
         "hero_height_desktop": 90,
         "hero_height_mobile": 70,
-        "eyebrow_text": "Science-backed recovery",
-        "hero_title": "Recovery Science.",
-        "hero_subtitle": "Elevate your performance.",
+        "eyebrow_text": "— Science-backed recovery",
+        "hero_title": "ALCOHOL RECOVERY SCIENCE",
+        "hero_subtitle": "Work hard. Play hard. Sleep Easy. We make performance supplements for people who show up for all of it.Elevate your performance.",
         "hero_button_primary_text": "Shop Now",
-        "hero_button_primary": "",
+        "hero_button_primary": "shopify://products/complete-alcohol-defense",
         "hero_button_secondary_text": "Learn More",
-        "hero_button_secondary": ""
+        "hero_button_secondary": "shopify://blogs/news"
       }
     },
     "marquee_f6x9Yf": {
