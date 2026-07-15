@@ -1165,10 +1165,50 @@
     },
     "kanbae_benefits_D3fLUm": {
       "type": "kanbae-benefits",
+      "blocks": {
+        "benefit_X3KmDf": {
+          "type": "benefit",
+          "settings": {
+            "title": "Recover Faster",
+            "description": "Support your body's natural alcohol metabolism.",
+            "proof_tag": "DHM · Dihydromyricetin"
+          }
+        },
+        "benefit_Mpg868": {
+          "type": "benefit",
+          "settings": {
+            "title": "",
+            "description": "",
+            "proof_tag": ""
+          }
+        },
+        "benefit_q4DBdC": {
+          "type": "benefit",
+          "settings": {
+            "title": "",
+            "description": "",
+            "proof_tag": ""
+          }
+        },
+        "benefit_XBdYWM": {
+          "type": "benefit",
+          "settings": {
+            "title": "",
+            "description": "",
+            "proof_tag": ""
+          }
+        }
+      },
+      "block_order": [
+        "benefit_X3KmDf",
+        "benefit_Mpg868",
+        "benefit_q4DBdC",
+        "benefit_XBdYWM"
+      ],
       "name": "Benefit Stack",
       "settings": {
         "product_image": "shopify://shop_images/Dosage.png",
-        "credibility_text": "Third-party tested · Made in the USA",
+        "credibility_text": "Third-party tested · FDA Registered",
         "eyebrow": "Why It Works",
         "headline": "Built for Better Mornings",
         "cta_text": "Shop Now",
