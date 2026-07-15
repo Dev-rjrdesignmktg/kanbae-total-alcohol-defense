@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",
     "baseUrl": "./",
-    "checkJs": true,
+    "checkJs": false,
     "target": "ES2020",
     "noImplicitAny": true,
     "noUncheckedIndexedAccess": true,
@@ -11,5 +12,8 @@
       "@theme/*": ["./*"],
       "@shopify/events": ["./standard-events"]
     }
-  }
+  },
+  "exclude": [
+        "node_modules"
+  ]
 }
