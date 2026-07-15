@@ -2302,7 +2302,7 @@
                     "align_baseline": false,
                     "horizontal_alignment_flex_direction_column": "center",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 17,
+                    "gap": 12,
                     "width": "fill",
                     "custom_width": 100,
                     "width_mobile": "fill",
@@ -3220,18 +3220,18 @@
         "text_iwQkyV": {
           "type": "text",
           "settings": {
-            "text": "<p>Tell your story</p>",
-            "text_custom": false,
-            "text_font": "josefin_sans_n4",
-            "text_size": 18,
-            "text_size_mobile": 16,
-            "text_advanced": false,
+            "text": "<p><strong>— WHAT PEOPLE THINK ABOUT KANBAE<br/></strong></p>",
+            "text_custom": true,
+            "text_font": "inter_n4",
+            "text_size": 14,
+            "text_size_mobile": 14,
+            "text_advanced": true,
             "text_height": 150,
             "text_mt": 18,
             "text_mt_mobile": 16,
             "text_max_width": 60,
             "text_max_width_mobile": 100,
-            "text_color": "#121212"
+            "text_color": "{{ settings.color_palette.foreground }}"
           }
         },
         "heading_qiC8cN": {
@@ -3244,7 +3244,7 @@
             "heading_size_mobile": 40,
             "heading_advanced": true,
             "heading_height": 100,
-            "heading_mt": 0,
+            "heading_mt": 22,
             "heading_mt_mobile": 0,
             "heading_color": "#082310",
             "heading_accent_color": "#afafaf"
@@ -3413,7 +3413,7 @@
         "action_border_color": "#ffffff",
         "action_border_hover_color": "#ffffff",
         "background_style": "solid",
-        "background_color": "{{ settings.color_palette.background }}",
+        "background_color": "#F7F6F2",
         "background_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)",
         "border_color": "#121212",
         "margin_top": 0,
