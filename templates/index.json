@@ -2464,7 +2464,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><strong>Shop now</strong></p>",
+            "text": "<p>— <strong>Shop now</strong></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -2543,7 +2543,7 @@
         "border_opacity": 100,
         "border_color": "",
         "border_radius": 0,
-        "padding-block-start": 15,
+        "padding-block-start": 100,
         "padding-block-end": 0
       }
     },
@@ -3030,7 +3030,7 @@
         "gap": 48,
         "background_color": "{{ settings.color_palette.background }}",
         "padding-block-start": 40,
-        "padding-block-end": 40
+        "padding-block-end": 100
       }
     },
     "section_n8g3DW": {
