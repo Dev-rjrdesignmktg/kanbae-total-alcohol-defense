@@ -323,22 +323,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "footer_copyright_gAV4Pr": {
-              "type": "footer-copyright",
-              "settings": {
-                "show_powered_by": true,
-                "text_color": "",
-                "font_size": "0.75rem",
-                "case": "none"
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "payment_icons_G4KtKz",
-            "follow_on_shop_znbyFj",
-            "footer_copyright_gAV4Pr"
+            "follow_on_shop_znbyFj"
           ]
         },
         "group_JwiGzB": {
@@ -398,9 +387,39 @@
         "padding-block-start": 30,
         "padding-block-end": 30
       }
+    },
+    "footer_utilities_jLGE8U": {
+      "type": "footer-utilities",
+      "blocks": {
+        "footer_copyright_MzFJLr": {
+          "type": "footer-copyright",
+          "name": "t:names.copyright",
+          "settings": {
+            "show_powered_by": true,
+            "text_color": "",
+            "font_size": "0.75rem",
+            "case": "none"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "footer_copyright_MzFJLr"
+      ],
+      "name": "t:names.utilities",
+      "settings": {
+        "section_width": "page-width",
+        "gap": 12,
+        "background_color": "{{ settings.color_palette.background }}",
+        "divider_thickness": 0,
+        "divider_color": "",
+        "padding-block-start": 20,
+        "padding-block-end": 48
+      }
     }
   },
   "order": [
-    "footer_m9NzUG"
+    "footer_m9NzUG",
+    "footer_utilities_jLGE8U"
   ]
 }
