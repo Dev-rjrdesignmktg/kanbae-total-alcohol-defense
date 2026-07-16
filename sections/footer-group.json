@@ -239,7 +239,7 @@
               "name": "t:names.menu",
               "settings": {
                 "menu": "main-menu-footer",
-                "heading": "",
+                "heading": "Learn",
                 "menu_spacing": 12,
                 "show_as_accordion": false,
                 "accordion_icon": "caret",
@@ -299,7 +299,32 @@
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
-          "blocks": {}
+          "blocks": {
+            "menu_M94VDe": {
+              "type": "menu",
+              "name": "t:names.menu",
+              "settings": {
+                "menu": "main-menu",
+                "heading": "Support",
+                "menu_spacing": 12,
+                "show_as_accordion": false,
+                "accordion_icon": "caret",
+                "accordion_dividers": false,
+                "background_color": "",
+                "text_color": "",
+                "heading_preset": "h3",
+                "link_preset": "paragraph",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "menu_M94VDe"
+          ]
         },
         "group_Vn6LpX": {
           "type": "group",
