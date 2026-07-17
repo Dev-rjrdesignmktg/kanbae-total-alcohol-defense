@@ -432,13 +432,178 @@
         "padding-block-end": 0
       }
     },
-    "marquee_tnVhUE": {
+    "marquee_7rmRTe": {
       "type": "marquee",
       "blocks": {
-        "text_zLmgUb": {
+        "icon_fJTdK6": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/GMP_Certified.png",
+            "width": 60,
+            "link": "",
+            "open_in_new_tab": false,
+            "icon_color": ""
+          },
+          "blocks": {}
+        },
+        "text_iHKFPh": {
           "type": "text",
           "settings": {
-            "text": "<p>We make things that work better and last longer.</p>",
+            "text": "<p><strong>GMP CERTIFIED</strong></p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "nowrap",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "icon_WeVGiL": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/FDA_Registered.png",
+            "width": 60,
+            "link": "",
+            "open_in_new_tab": false,
+            "icon_color": ""
+          },
+          "blocks": {}
+        },
+        "text_ahKwmM": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>FDA REGISTERED</strong></p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "nowrap",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "icon_VeaYVw": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Third_Party_Tested_Green.png",
+            "width": 60,
+            "link": "",
+            "open_in_new_tab": false,
+            "icon_color": ""
+          },
+          "blocks": {}
+        },
+        "text_dQDEfy": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>THIRD PARTY TESTED</strong></p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "nowrap",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "icon_khYB9R": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Vegan_Friendly_Green.png",
+            "width": 60,
+            "link": "",
+            "open_in_new_tab": false,
+            "icon_color": ""
+          },
+          "blocks": {}
+        },
+        "text_BYTDqR": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>VEGAN FRIENDLY</strong></p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "nowrap",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "icon_JVfipc": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Non-GMO.png",
+            "width": 60,
+            "link": "",
+            "open_in_new_tab": false,
+            "icon_color": ""
+          },
+          "blocks": {}
+        },
+        "text_i6jDUj": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>NON-GMO</strong></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -462,15 +627,24 @@
         }
       },
       "block_order": [
-        "text_zLmgUb"
+        "icon_fJTdK6",
+        "text_iHKFPh",
+        "icon_WeVGiL",
+        "text_ahKwmM",
+        "icon_VeaYVw",
+        "text_dQDEfy",
+        "icon_khYB9R",
+        "text_BYTDqR",
+        "icon_JVfipc",
+        "text_i6jDUj"
       ],
-      "name": "t:names.marquee_section",
+      "name": "Quality Standards",
       "settings": {
         "movement_direction": "normal",
         "background_color": "{{ settings.color_palette.foreground }}",
-        "padding-block-start": 35,
-        "padding-block-end": 35,
-        "gap_between_elements": 35
+        "padding-block-start": 12,
+        "padding-block-end": 12,
+        "gap_between_elements": 24
       }
     },
     "main": {
@@ -3328,7 +3502,7 @@
   },
   "order": [
     "layered_slideshow_HdyPew",
-    "marquee_tnVhUE",
+    "marquee_7rmRTe",
     "main",
     "section_dE4DHR",
     "ss_video_grid_socials_3_mRcfmm",
