@@ -1,0 +1,312 @@
+.kanbae-table-section {
+    --kt-forest: var(--green-forest, #1B4332);
+    --kt-lime: var(--green-lime, #B7D96A);
+    --kt-cream: var(--white-cream, #FAF7F0);
+    --kt-font-display: var(--font-display, inherit);
+    --kt-font-body: var(--font-body, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif);
+    --kt-line: rgba(27, 67, 50, 0.10);
+    --kt-muted: #8A8F87;
+
+    background: var(--white-cream);
+    padding-top: var(--kt-padding-top, 72px);
+    padding-bottom: var(--kt-padding-bottom, 72px);
+    font-family: var(--kt-font-body);
+    color: var(--kt-forest);
+  }
+
+  .kanbae-table__container {
+    max-width: 910px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ---------- Header ---------- */
+  .kanbae-table__header {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 48px;
+  }
+
+  .kanbae-table__eyebrow {
+    font-family: var(--kt-font-body);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--green-forest);
+    opacity: 0.65;
+    margin: 0 0 12px;
+  }
+
+  .kanbae-table__heading {
+    font-family: var(--kt-font-display);
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.15;
+    font-weight: 500;
+    margin: 0 0 14px;
+    color: var(--kt-forest);
+  }
+
+  .kanbae-table__subheading {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--green-forest);
+    opacity: 0.72;
+    margin: 0;
+  }
+
+  /* ---------- Table shell ---------- */
+  .kanbae-table__scroll {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .kanbae-table__table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+
+  .kanbae-table__cell {
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 16px;
+    font-weight: 400;
+  }
+
+  .kanbae-table__cell--benefit {
+    width: 26%;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--green-forest);
+  }
+
+  .kanbae-table__cell--kanbae,
+  .kanbae-table__cell--typical,
+  .kanbae-table__cell--traditional {
+    width: 22%;
+  }
+
+  /* clean look: no vertical borders, hairline horizontal rules only */
+  tbody .kanbae-table__row {
+    border-bottom: 1px solid var(--kt-line);
+  }
+
+  tbody .kanbae-table__row:last-child {
+    border-bottom: none;
+  }
+
+  /* Kanbae column highlight */
+  .kanbae-table__cell--kanbae {
+    background: rgba(183, 217, 106, 0.16); /* --green-lime, subtle */
+    position: relative;
+  }
+
+  thead .kanbae-table__cell--kanbae {
+    border-radius: 14px 14px 0 0;
+  }
+
+  tbody tr:last-child .kanbae-table__cell--kanbae {
+    border-radius: 0 0 14px 14px;
+  }
+
+  .kanbae-table__col-title {
+    font-family: var(--kt-font-display);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--green-forest);
+    display: block;
+  }
+
+  thead .kanbae-table__cell--typical .kanbae-table__col-title,
+  thead .kanbae-table__cell--traditional .kanbae-table__col-title {
+    color: var(--green-forest);
+    opacity: 0.6;
+    font-weight: 400;
+  }
+
+  thead .kanbae-table__cell {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  thead .kanbae-table__row--head {
+    border-bottom: 1px solid var(--kt-line);
+  }
+
+  .kanbae-table__badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--white-cream);
+    background: var(--green-forest);
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 8px;
+  }
+
+  /* ---------- Status / icons ---------- */
+  .kanbae-table__status {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .icon-check {
+    color: var(--green-forest);
+  }
+
+  .icon-cross {
+    color: var(--kt-muted);
+  }
+
+  .kanbae-table__cell--kanbae .icon-check {
+    color: var(--green-forest);
+  }
+
+  .kanbae-table__note {
+    font-size: 12px;
+    line-height: 1.3;
+    color: var(--green-forest);
+    opacity: 0.65;
+    max-width: 120px;
+  }
+
+  .kanbae-table__cell--kanbae .kanbae-table__note {
+    opacity: 0.85;
+    font-weight: 500;
+  }
+
+  .kanbae-table__empty {
+    text-align: center;
+    padding: 48px 24px;
+    border: 1px dashed var(--green-line);
+    border-radius: 12px;
+    opacity: 0.7;
+    font-size: 14px;
+  }
+
+  /* ---------- Scroll-in animation ---------- */
+  .kanbae-table-section[data-animate="true"] tbody .kanbae-table__row {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition-delay: calc(var(--kt-row-index, 0) * 70ms);
+  }
+
+  .kanbae-table-section[data-animate="true"] tbody .kanbae-table__row.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .kanbae-table-section[data-animate="true"] tbody .kanbae-table__row {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+
+  .visually-hidden {
+    position: absolute !important;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* ---------- Responsive: stacked cards ---------- */
+  @media screen and (max-width: 749px) {
+    .kanbae-table__container {
+      padding: 0 16px;
+    }
+
+    .kanbae-table__scroll {
+      overflow: visible;
+    }
+
+    .kanbae-table__table,
+    .kanbae-table__table thead,
+    .kanbae-table__table tbody,
+    .kanbae-table__table tr,
+    .kanbae-table__table th,
+    .kanbae-table__table td {
+      display: block;
+      width: 100%;
+    }
+
+    .kanbae-table__table thead {
+      /* hide header row, labels are shown per-cell instead */
+      position: absolute;
+      width: 1px; height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+    }
+
+    tbody .kanbae-table__row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0;
+      padding: 16px 12px;
+      border-bottom: 1px solid var(--green-line);
+      border-radius: 14px;
+      background: transparent;
+    }
+
+    .kanbae-table__cell--benefit {
+      grid-column: 1 / -1;
+      width: auto;
+      padding: 0 4px 12px;
+      font-size: 15px;
+    }
+
+    .kanbae-table__cell--kanbae,
+    .kanbae-table__cell--typical,
+    .kanbae-table__cell--traditional {
+      width: auto;
+      padding: 8px 4px;
+      border-radius: 10px;
+    }
+
+    .kanbae-table__cell--kanbae {
+      background: rgba(183, 217, 106, 0.22);
+    }
+
+    .kanbae-table__cell::before {
+      content: attr(data-label);
+      display: block;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--green-forest);
+      opacity: 0.55;
+      margin-bottom: 6px;
+    }
+
+    .kanbae-table__cell--benefit::before {
+      content: none;
+    }
+
+    /* Traditional Remedies simplifies: icon only, note hidden to save space */
+    .kanbae-table__cell--traditional .kanbae-table__note {
+      display: none;
+    }
+
+    .kanbae-table__cell--traditional {
+      opacity: 0.75;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .kanbae-table__cell--traditional::before {
+      content: "Trad.";
+    }
+  }

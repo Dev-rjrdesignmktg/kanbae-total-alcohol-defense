@@ -1,0 +1,34 @@
+{{ "kanbae-table.css" | asset_url | stylesheet_tag }}
+
+{%- comment -%}
+  snippet: icon-check.liquid
+  Optimized inline SVG "check" icon used in kanbae-table.liquid to signal
+  a benefit that IS present.
+
+  Usage:
+    {% render 'icon-check' %}
+    {% render 'icon-check', size: 22, class: 'kanbae-table__icon' %}
+
+  Params:
+    size  - number, icon width/height in px (default 18)
+    class - string, extra class(es) to append
+{%- endcomment -%}
+{%- liquid
+  assign icon_size = size | default: 18
+  assign icon_class = class | default: ''
+-%}
+
+<svg
+  class="icon icon-check{% if icon_class != '' %} {{ icon_class }}{% endif %}"
+  width="{{ icon_size }}"
+  height="{{ icon_size }}"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-hidden="true"
+  focusable="false"
+  role="presentation"
+>
+  <circle cx="12" cy="12" r="11" fill="currentColor" fill-opacity="0.12"/>
+  <path d="M7.5 12.4L10.4 15.3L16.6 9" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

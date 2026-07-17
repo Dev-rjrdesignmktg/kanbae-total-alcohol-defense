@@ -1,0 +1,36 @@
+{{ "kanbae-table.css" | asset_url | stylesheet_tag }}
+
+{%- comment -%}
+  snippet: icon-cross.liquid
+  Optimized inline SVG "cross" icon used in kanbae-table.liquid to signal
+  a benefit that is NOT present. Uses a neutral tone (not alarming red) to
+  keep the comparison table minimal and premium.
+
+  Usage:
+    {% render 'icon-cross' %}
+    {% render 'icon-cross', size: 22, class: 'kanbae-table__icon' %}
+
+  Params:
+    size  - number, icon width/height in px (default 18)
+    class - string, extra class(es) to append
+{%- endcomment -%}
+ 
+{%- liquid
+  assign icon_size = size | default: 18
+  assign icon_class = class | default: ''
+-%}
+
+<svg
+  class="icon icon-cross{% if icon_class != '' %} {{ icon_class }}{% endif %}"
+  width="{{ icon_size }}"
+  height="{{ icon_size }}"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-hidden="true"
+  focusable="false"
+  role="presentation"
+>
+  <circle cx="12" cy="12" r="11" fill="currentColor" fill-opacity="0.08"/>
+  <path d="M8.5 8.5L15.5 15.5M15.5 8.5L8.5 15.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
