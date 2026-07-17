@@ -1304,7 +1304,7 @@
       ],
       "name": "Kanbae Comparison Table",
       "settings": {
-        "eyebrow": "Why Kanbae",
+        "eyebrow": "— Why Kanbae",
         "heading": "The clear choice for your wellness",
         "subheading": "See how Kanbae compares to typical supplements and traditional remedies.",
         "kanbae_label": "Kanbae",
@@ -2535,7 +2535,7 @@
         "mobile_columns": "1",
         "section_width": "page-width",
         "columns_gap": 12,
-        "background_color": "#f7f6f2",
+        "background_color": "{{ settings.color_palette.background }}",
         "icons_style": "arrow",
         "icons_shape": "none",
         "padding-block-start": 100,
