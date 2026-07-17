@@ -62,7 +62,6 @@ h1, h2{
     letter-spacing: .01em;
     padding: 17px 34px;
     border-radius: 999px;
-    margin-top: 32px;
     align-self: flex-start;
     transition: transform .35s var(--ease), box-shadow .35s var(--ease);
     margin-top: 1.2rem;
@@ -81,7 +80,6 @@ h1, h2{
     overflow: hidden;
     cursor: pointer;
     border: none;
-    padding: .8rem 1.7rem;
     border-radius: 1.2rem;
     font-size: .95rem;
 }
