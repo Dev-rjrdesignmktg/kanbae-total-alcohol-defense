@@ -2531,7 +2531,7 @@
       },
       "name": "Testimonials",
       "settings": {
-        "columns": 3,
+        "columns": 2,
         "mobile_columns": "1",
         "section_width": "page-width",
         "columns_gap": 12,
