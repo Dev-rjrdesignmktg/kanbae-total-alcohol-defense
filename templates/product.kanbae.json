@@ -468,8 +468,8 @@
       "settings": {
         "movement_direction": "normal",
         "background_color": "{{ settings.color_palette.foreground }}",
-        "padding-block-start": 30,
-        "padding-block-end": 30,
+        "padding-block-start": 35,
+        "padding-block-end": 35,
         "gap_between_elements": 35
       }
     },
