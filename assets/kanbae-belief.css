@@ -86,9 +86,9 @@
   .kanbae-belief__title {
     margin: 0;
     font-family: var(--font-display);
-    font-weight: 600;
+    font-weight: 900;
     line-height: 1.15;
-    font-size: clamp(28px, 6vw, 44px);
+    font-size: clamp(30px, 4vw, 48px);
     color: var(--white-cream);
   }
 
