@@ -3335,6 +3335,25 @@
         "padding-block-end": 100
       }
     },
+    "kanbae_newsletter_rHq76z": {
+      "type": "kanbae-newsletter",
+      "name": "Kanbae Newsletter",
+      "settings": {
+        "eyebrow": "— Join the Ritual",
+        "headline": "Better nights start here.",
+        "subheadline": "Get recovery tips, exclusive drops, and subscriber-only offers.",
+        "social_proof": "Join 25,000+ people building better mornings.",
+        "input_label": "Email address",
+        "input_placeholder": "Your email address",
+        "button_label": "Join Us",
+        "success_message": "You're in. Welcome to the ritual.",
+        "background_color": "#F7F4EE",
+        "text_color": "#23291F",
+        "accent_color": "#2F4A3D",
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
     "section_9qWLME": {
       "type": "section",
       "blocks": {
@@ -3716,25 +3735,6 @@
         "border_radius": 0,
         "padding-block-start": 53,
         "padding-block-end": 53
-      }
-    },
-    "kanbae_newsletter_rHq76z": {
-      "type": "kanbae-newsletter",
-      "name": "Kanbae Newsletter",
-      "settings": {
-        "eyebrow": "Join the Ritual",
-        "headline": "Better nights start here.",
-        "subheadline": "Get recovery tips, exclusive drops, and subscriber-only offers.",
-        "social_proof": "Join 25,000+ people building better mornings.",
-        "input_label": "Email address",
-        "input_placeholder": "Your email address",
-        "button_label": "Join Us",
-        "success_message": "You're in. Welcome to the ritual.",
-        "background_color": "#F7F4EE",
-        "text_color": "#23291F",
-        "accent_color": "#2F4A3D",
-        "padding_top": 96,
-        "padding_bottom": 96
       }
     }
   },
