@@ -1231,6 +1231,91 @@
         "button_link": ""
       }
     },
+    "kanbae_table_FECM46": {
+      "type": "kanbae-table",
+      "blocks": {
+        "feature_98dKYY": {
+          "type": "feature",
+          "settings": {
+            "benefit": "Bioavailability",
+            "kanbae_status": "check",
+            "kanbae_note": "Optimized absorption",
+            "typical_status": "cross",
+            "typical_note": "Inconsistent",
+            "traditional_status": "cross",
+            "traditional_note": "Inconsistent"
+          }
+        },
+        "feature_EJGh3b": {
+          "type": "feature",
+          "settings": {
+            "benefit": "Hero Ingredients",
+            "kanbae_status": "check",
+            "kanbae_note": "DHM. Acetyl Glutathione, Pyroglutamic Acid, Succinic Acid",
+            "typical_status": "cross",
+            "typical_note": "DHM",
+            "traditional_status": "cross",
+            "traditional_note": "Partial or none"
+          }
+        },
+        "feature_zm89PU": {
+          "type": "feature",
+          "settings": {
+            "benefit": "Clinically Dosed",
+            "kanbae_status": "check",
+            "kanbae_note": "1160mg",
+            "typical_status": "check",
+            "typical_note": "1000-1200mg",
+            "traditional_status": "cross",
+            "traditional_note": "Inconsistent or no dose"
+          }
+        },
+        "feature_wNynAK": {
+          "type": "feature",
+          "settings": {
+            "benefit": "No Fillers or Additives",
+            "kanbae_status": "check",
+            "kanbae_note": " No synthetics, 100% Natural",
+            "typical_status": "cross",
+            "typical_note": "Often contains synthetics",
+            "traditional_status": "check",
+            "traditional_note": "Natural"
+          }
+        },
+        "feature_WiW44r": {
+          "type": "feature",
+          "settings": {
+            "benefit": "Clinically Tested Formula",
+            "kanbae_status": "check",
+            "kanbae_note": "Supported by various studies",
+            "typical_status": "cross",
+            "typical_note": "Just marketing claims",
+            "traditional_status": "cross",
+            "traditional_note": "Inconsistent"
+          }
+        }
+      },
+      "block_order": [
+        "feature_98dKYY",
+        "feature_EJGh3b",
+        "feature_zm89PU",
+        "feature_wNynAK",
+        "feature_WiW44r"
+      ],
+      "name": "Kanbae Comparison Table",
+      "settings": {
+        "eyebrow": "Why Kanbae",
+        "heading": "The clear choice for your wellness",
+        "subheading": "See how Kanbae compares to typical supplements and traditional remedies.",
+        "kanbae_label": "Kanbae",
+        "kanbae_badge_text": "Best Choice",
+        "typical_label": "Typical Supplements",
+        "traditional_label": "Traditional Remedies",
+        "enable_animation": true,
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
     "carousel_dGtdba": {
       "type": "carousel",
       "blocks": {
@@ -3802,7 +3887,7 @@
         "video_position": "cover",
         "background_image_position": "cover",
         "toggle_overlay": true,
-        "overlay_color": "#9BFF1A69",
+        "overlay_color": "#9bff1a69",
         "overlay_style": "gradient",
         "gradient_direction": "to top",
         "border": "none",
@@ -3822,6 +3907,7 @@
     "section_wLWcLn",
     "kanbae_benefits_D3fLUm",
     "kanbae_belief_eeqJCz",
+    "kanbae_table_FECM46",
     "carousel_dGtdba",
     "section_diBL79",
     "featured_product_information_wqCtfc",
