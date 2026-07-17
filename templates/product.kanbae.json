@@ -1001,8 +1001,8 @@
         "gap": 48,
         "enable_sticky_add_to_cart": true,
         "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-start": 100,
+        "padding-block-end": 100
       }
     },
     "section_dE4DHR": {
@@ -1238,8 +1238,8 @@
         "border_opacity": 100,
         "border_color": "",
         "border_radius": 0,
-        "padding-block-start": 15,
-        "padding-block-end": 15
+        "padding-block-start": 100,
+        "padding-block-end": 100
       }
     },
     "ss_video_grid_socials_3_mRcfmm": {
