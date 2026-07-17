@@ -12,6 +12,15 @@ body {
   font-variation-settings: 'slnt' 0;
 }
 
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./Satoshi-Variable.woff2') format('woff2-variations'),
+       url('./Satoshi-Variable.woff2') format('woff2');
+  font-weight: 100 900; /* Esto le dice al navegador que este archivo soporta del peso 100 al 900 */
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --hover-lift-amount: 4px;
   --hover-scale-amount: 1.03;
