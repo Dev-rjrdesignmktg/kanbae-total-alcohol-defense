@@ -231,6 +231,43 @@
               "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
               "settings": {}
             },
+            "checklist_subscription_benefits": {
+              "type": "checklist",
+              "settings": {
+                "background_color": "rgba(163, 255, 22, 1)",
+                "text_color": "rgba(8, 35, 16, 1)",
+                "blur_background": false,
+                "padding-block-start": 12,
+                "padding-block-end": 12,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "item-1": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "Better pricing"
+                  }
+                },
+                "item-2": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "Never run out"
+                  }
+                },
+                "item-3": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "Flexible cancel anytime"
+                  }
+                }
+              },
+              "block_order": [
+                "item-1",
+                "item-2",
+                "item-3"
+              ]
+            },
             "buy_buttons_eYQEYi": {
               "type": "buy-buttons",
               "settings": {
@@ -290,6 +327,43 @@
                 }
               },
               "block_order": []
+            },
+            "checklist_trust_indicators": {
+              "type": "checklist",
+              "settings": {
+                "background_color": "rgba(247, 246, 242, 0.35)",
+                "text_color": "rgba(10, 25, 21, 1)",
+                "blur_background": true,
+                "padding-block-start": 8,
+                "padding-block-end": 8,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "item-1": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "45-day guarantee"
+                  }
+                },
+                "item-2": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "Third-party tested"
+                  }
+                },
+                "item-3": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "Ships in 24h"
+                  }
+                }
+              },
+              "block_order": [
+                "item-1",
+                "item-2",
+                "item-3"
+              ]
             },
             "accordion_yPaBCz": {
               "type": "accordion",
@@ -524,7 +598,9 @@
             "divider_VJhene",
             "variant_picker_R3rGDr",
             "loop_subscriptions_loop_widget_8AyWL8",
+            "checklist_subscription_benefits",
             "buy_buttons_eYQEYi",
+            "checklist_trust_indicators",
             "accordion_yPaBCz"
           ]
         }

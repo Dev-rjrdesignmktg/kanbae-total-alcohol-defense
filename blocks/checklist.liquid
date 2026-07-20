@@ -1,0 +1,159 @@
+
+
+{% assign block_settings = block.settings %}
+
+<ul
+  class="checklist spacing-style{% if block_settings.blur_background %} checklist--glass{% endif %}"
+  style="
+    {% render 'spacing-style', settings: block_settings %}
+    --checklist-bg: {{ block_settings.background_color }};
+    --checklist-text: {{ block_settings.text_color }};
+  "
+  {{ block.shopify_attributes }}
+>
+  {% content_for 'blocks' %}
+</ul>
+
+{% stylesheet %}
+  .checklist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-2xs);
+    list-style: none;
+  }
+
+  .checklist-item {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-3xs);
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: var(--checklist-bg);
+    color: var(--checklist-text);
+    font-size: var(--font-paragraph-small--size);
+    line-height: var(--font-paragraph--line-height);
+    font-weight: var(--font-weight-semibold);
+    white-space: nowrap;
+  }
+
+  .checklist--glass .checklist-item {
+    backdrop-filter: blur(12px) saturate(180%) brightness(1.05);
+    -webkit-backdrop-filter: blur(12px) saturate(180%) brightness(1.05);
+    border: 1px solid color-mix(in srgb, var(--checklist-text) 16%, transparent);
+  }
+
+  .checklist-item__icon {
+    flex-shrink: 0;
+    color: var(--checklist-text);
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Checklist",
+  "tag": null,
+  "class": "checklist-block",
+  "blocks": [
+    {
+      "type": "_checklist-item"
+    }
+  ],
+  "settings": [
+    {
+      "type": "header",
+      "content": "Badge colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#A3FF16",
+      "alpha": true
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#082310",
+      "alpha": true
+    },
+    {
+      "type": "checkbox",
+      "id": "blur_background",
+      "label": "Glass / blur effect",
+      "default": false,
+      "info": "Use a translucent background color for a frosted-glass look."
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-start",
+      "label": "Left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-end",
+      "label": "Right",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Checklist",
+      "blocks": {
+        "item-1": {
+          "type": "_checklist-item",
+          "settings": {
+            "text": "Benefit one"
+          }
+        },
+        "item-2": {
+          "type": "_checklist-item",
+          "settings": {
+            "text": "Benefit two"
+          }
+        },
+        "item-3": {
+          "type": "_checklist-item",
+          "settings": {
+            "text": "Benefit three"
+          }
+        }
+      },
+      "block_order": ["item-1", "item-2", "item-3"]
+    }
+  ]
+}
+{% endschema %}

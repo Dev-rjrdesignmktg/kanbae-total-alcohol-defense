@@ -1,0 +1,23 @@
+
+
+<li class="checklist-item" {{ block.shopify_attributes }}>
+  <span class="svg-wrapper svg-wrapper--small checklist-item__icon">
+    {{- 'icon-checkmark.svg' | inline_asset_content -}}
+  </span>
+  <span class="checklist-item__text">{{ block.settings.text }}</span>
+</li>
+
+{% schema %}
+{
+  "name": "Checklist item",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text",
+      "default": "Benefit"
+    }
+  ]
+}
+{% endschema %}
