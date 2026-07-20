@@ -77,18 +77,18 @@
           "name": "t:names.icon",
           "settings": {
             "icon": "price_tag",
-            "image_upload": "shopify://shop_images/GMP_Certified.png",
-            "width": 60,
+            "image_upload": "shopify://shop_images/pildora.png",
+            "width": 62,
             "link": "",
             "open_in_new_tab": false,
-            "icon_color": ""
+            "icon_color": "{{ settings.color_palette.color1 }}"
           },
           "blocks": {}
         },
         "text_iHKFPh": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>GMP CERTIFIED</strong></p>",
+            "text": "<p><strong>2M+ DOSES SOLD</strong></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -115,7 +115,7 @@
           "name": "t:names.icon",
           "settings": {
             "icon": "price_tag",
-            "image_upload": "shopify://shop_images/FDA_Registered.png",
+            "image_upload": "shopify://shop_images/experiencia-del-usuario.png",
             "width": 60,
             "link": "",
             "open_in_new_tab": false,
@@ -126,7 +126,7 @@
         "text_ahKwmM": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>FDA REGISTERED</strong></p>",
+            "text": "<p><strong>40K+ HAPPY CUSTOMERS</strong></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -229,7 +229,7 @@
           "name": "t:names.icon",
           "settings": {
             "icon": "price_tag",
-            "image_upload": "shopify://shop_images/Non-GMO.png",
+            "image_upload": "shopify://shop_images/perfil-del-usuario.png",
             "width": 60,
             "link": "",
             "open_in_new_tab": false,
@@ -240,7 +240,7 @@
         "text_i6jDUj": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>NON-GMO</strong></p>",
+            "text": "<p><strong>10K+ FIVE-STARTS REVIEWS</strong></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -278,7 +278,7 @@
       "name": "Quality Standards",
       "settings": {
         "movement_direction": "normal",
-        "background_color": "{{ settings.color_palette.foreground }}",
+        "background_color": "{{ settings.color_palette.color1 }}",
         "padding-block-start": 12,
         "padding-block-end": 12,
         "gap_between_elements": 24
