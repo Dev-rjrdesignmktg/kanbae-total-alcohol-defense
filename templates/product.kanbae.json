@@ -9,427 +9,58 @@
  */
 {
   "sections": {
-    "layered_slideshow_HdyPew": {
-      "type": "layered-slideshow",
+    "kanbae_gallery_qnj4Dk": {
+      "type": "kanbae-gallery",
       "blocks": {
-        "layered_slide_eh6Fkn": {
-          "type": "_layered-slide",
+        "media_jrtfPz": {
+          "type": "media",
           "settings": {
-            "media_type_1": "image",
-            "image_1": "shopify://shop_images/hero_1.jpg",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "flex-end",
-            "gap": 21,
-            "background_color": "{{ settings.color_palette.background }}",
-            "toggle_overlay": true,
-            "overlay_color": "#00000080",
-            "overlay_style": "gradient",
-            "gradient_direction": "to top",
-            "padding-block-start": 32,
-            "padding-block-end": 32,
-            "padding-inline-start": 32,
-            "padding-inline-end": 32
-          },
-          "blocks": {
-            "text_A7Gt84": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<p>Science-Backed Recovery</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h2",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "{{ settings.color_palette.background }}",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_dxATnL": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Introducing our latest products, made especially for the season. Shop your favorites before they're gone!</p>",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "{{ settings.color_palette.background }}",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "button_jAmJxh": {
-              "type": "button",
-              "settings": {
-                "label": "Shop now",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "custom_button_background": "{{ settings.color_palette.foreground }}",
-                "custom_button_text": "{{ settings.color_palette.background }}",
-                "custom_button_border": "{{ settings.color_palette.background }}",
-                "link_text_color": "",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_A7Gt84",
-            "text_dxATnL",
-            "button_jAmJxh"
-          ]
+            "media_type": "product"
+          }
         },
-        "layered_slide_CxzAdC": {
-          "type": "_layered-slide",
+        "media_e3hiLX": {
+          "type": "media",
           "settings": {
-            "media_type_1": "image",
-            "image_1": "shopify://shop_images/Kanbae_customs_hero.png",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "flex-end",
-            "gap": 21,
-            "background_color": "",
-            "toggle_overlay": true,
-            "overlay_color": "#000000b3",
-            "overlay_style": "gradient",
-            "gradient_direction": "to top",
-            "padding-block-start": 32,
-            "padding-block-end": 32,
-            "padding-inline-start": 32,
-            "padding-inline-end": 32
-          },
-          "blocks": {
-            "text_pEcCN4": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h3>Bestsellers</h3>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h2",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "{{ settings.color_palette.background }}",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_UTtL6z": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Discover the bestsellers that have captured the hearts of our customers with their perfect blend of functionality and style.</p>",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "{{ settings.color_palette.background }}",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "button_NJP3Pw": {
-              "type": "button",
-              "settings": {
-                "label": "Shop now",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "custom_button_background": "{{ settings.color_palette.foreground }}",
-                "custom_button_text": "{{ settings.color_palette.background }}",
-                "custom_button_border": "{{ settings.color_palette.background }}",
-                "link_text_color": "",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_pEcCN4",
-            "text_UTtL6z",
-            "button_NJP3Pw"
-          ]
+            "media_type": "lifestyle"
+          }
         },
-        "layered_slide_d4pB8d": {
-          "type": "_layered-slide",
+        "media_LnQqAi": {
+          "type": "media",
           "settings": {
-            "media_type_1": "image",
-            "image_1": "shopify://shop_images/Kanbae_Ingredients.png",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "flex-end",
-            "gap": 21,
-            "background_color": "",
-            "toggle_overlay": true,
-            "overlay_color": "#000000b3",
-            "overlay_style": "gradient",
-            "gradient_direction": "to top",
-            "padding-block-start": 32,
-            "padding-block-end": 32,
-            "padding-inline-start": 32,
-            "padding-inline-end": 32
-          },
-          "blocks": {
-            "text_kERjif": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h3>Featured collection</h3>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h2",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "{{ settings.color_palette.background }}",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_8DyNNG": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Discover our curated collection featuring hand-picked favorites that blend style and quality.</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "{{ settings.color_palette.background }}",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "button_7xUbHm": {
-              "type": "button",
-              "settings": {
-                "label": "Shop now",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "custom_button_background": "{{ settings.color_palette.foreground }}",
-                "custom_button_text": "{{ settings.color_palette.background }}",
-                "custom_button_border": "{{ settings.color_palette.background }}",
-                "link_text_color": "",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_kERjif",
-            "text_8DyNNG",
-            "button_7xUbHm"
-          ]
+            "media_type": "ingredients"
+          }
         },
-        "layered_slide_QzHchX": {
-          "type": "_layered-slide",
-          "name": "t:names.slide",
+        "media_FBmjBH": {
+          "type": "media",
           "settings": {
-            "media_type_1": "image",
-            "image_1": "shopify://shop_images/Dosage.png",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "flex-end",
-            "gap": 21,
-            "background_color": "",
-            "toggle_overlay": true,
-            "overlay_color": "#000000b3",
-            "overlay_style": "gradient",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 32,
-            "padding-inline-start": 32,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_gDnCp8": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h2>New arrivals</h2>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h2",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "{{ settings.color_palette.background }}",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_kmEQjB": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Introducing our latest products, made especially for the season. Shop your favorites before they're gone!</p>",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "{{ settings.color_palette.background }}",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "button_dxWarA": {
-              "type": "button",
-              "settings": {
-                "label": "Shop now",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "custom_button_background": "{{ settings.color_palette.foreground }}",
-                "custom_button_text": "{{ settings.color_palette.background }}",
-                "custom_button_border": "{{ settings.color_palette.background }}",
-                "link_text_color": "",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_gDnCp8",
-            "text_kmEQjB",
-            "button_dxWarA"
-          ]
+            "media_type": "how_to"
+          }
+        },
+        "media_GmnNJT": {
+          "type": "media",
+          "settings": {
+            "media_type": "ugc"
+          }
+        },
+        "media_arhGaD": {
+          "type": "media",
+          "settings": {
+            "media_type": "review"
+          }
         }
       },
       "block_order": [
-        "layered_slide_eh6Fkn",
-        "layered_slide_CxzAdC",
-        "layered_slide_d4pB8d",
-        "layered_slide_QzHchX"
+        "media_jrtfPz",
+        "media_e3hiLX",
+        "media_LnQqAi",
+        "media_FBmjBH",
+        "media_GmnNJT",
+        "media_arhGaD"
       ],
-      "name": "t:names.layered_slideshow",
+      "name": "Gallery Carousel",
       "settings": {
-        "section_width": "full-width",
-        "height": "large",
-        "corner_radius": 0,
-        "border_width": 1,
-        "drop_shadow": true,
-        "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "eyebrow": "",
+        "headline": "See Kanbae in Action"
       }
     },
     "marquee_7rmRTe": {
@@ -869,43 +500,6 @@
               "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
               "settings": {}
             },
-            "checklist_subscription_benefits": {
-              "type": "checklist",
-              "settings": {
-                "background_color": "rgba(163, 255, 22, 1)",
-                "text_color": "rgba(8, 35, 16, 1)",
-                "blur_background": false,
-                "padding-block-start": 12,
-                "padding-block-end": 12,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "item-1": {
-                  "type": "_checklist-item",
-                  "settings": {
-                    "text": "Better pricing"
-                  }
-                },
-                "item-2": {
-                  "type": "_checklist-item",
-                  "settings": {
-                    "text": "Never run out"
-                  }
-                },
-                "item-3": {
-                  "type": "_checklist-item",
-                  "settings": {
-                    "text": "Flexible cancel anytime"
-                  }
-                }
-              },
-              "block_order": [
-                "item-1",
-                "item-2",
-                "item-3"
-              ]
-            },
             "buy_buttons_eYQEYi": {
               "type": "buy-buttons",
               "settings": {
@@ -965,43 +559,6 @@
                 }
               },
               "block_order": []
-            },
-            "checklist_trust_indicators": {
-              "type": "checklist",
-              "settings": {
-                "background_color": "rgba(247, 246, 242, 0.35)",
-                "text_color": "rgba(10, 25, 21, 1)",
-                "blur_background": true,
-                "padding-block-start": 8,
-                "padding-block-end": 8,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "item-1": {
-                  "type": "_checklist-item",
-                  "settings": {
-                    "text": "45-day guarantee"
-                  }
-                },
-                "item-2": {
-                  "type": "_checklist-item",
-                  "settings": {
-                    "text": "Third-party tested"
-                  }
-                },
-                "item-3": {
-                  "type": "_checklist-item",
-                  "settings": {
-                    "text": "Ships in 24h"
-                  }
-                }
-              },
-              "block_order": [
-                "item-1",
-                "item-2",
-                "item-3"
-              ]
             },
             "accordion_yPaBCz": {
               "type": "accordion",
@@ -1236,9 +793,7 @@
             "divider_VJhene",
             "variant_picker_R3rGDr",
             "loop_subscriptions_loop_widget_8AyWL8",
-            "checklist_subscription_benefits",
             "buy_buttons_eYQEYi",
-            "checklist_trust_indicators",
             "accordion_yPaBCz"
           ]
         }
@@ -3577,7 +3132,7 @@
     }
   },
   "order": [
-    "layered_slideshow_HdyPew",
+    "kanbae_gallery_qnj4Dk",
     "marquee_7rmRTe",
     "main",
     "section_dE4DHR",
