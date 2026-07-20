@@ -3064,6 +3064,47 @@
               },
               "blocks": {}
             },
+            "checklist_tKMarb": {
+              "type": "checklist",
+              "name": "Checklist",
+              "settings": {
+                "background_color": "#A3FF16",
+                "text_color": "#082310",
+                "blur_background": false,
+                "padding-block-start": 8,
+                "padding-block-end": 8,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "checklist_item_jwjzVV": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "Benefit one"
+                  },
+                  "blocks": {}
+                },
+                "checklist_item_L8Xwti": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "Benefit two"
+                  },
+                  "blocks": {}
+                },
+                "checklist_item_D6Rd9t": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "Benefit three"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "checklist_item_jwjzVV",
+                "checklist_item_L8Xwti",
+                "checklist_item_D6Rd9t"
+              ]
+            },
             "buy_buttons_Fkd8Lx": {
               "type": "buy-buttons",
               "name": "t:names.product_buy_buttons",
@@ -3317,6 +3358,7 @@
             "review_8VTeV8",
             "product_description_tjgaBa",
             "variant_picker_QiqzxH",
+            "checklist_tKMarb",
             "buy_buttons_Fkd8Lx",
             "accordion_MrVgc4"
           ]
@@ -3347,9 +3389,9 @@
         "input_placeholder": "Your email address",
         "button_label": "Join Us",
         "success_message": "You're in. Welcome to the ritual.",
-        "background_color": "#F7F4EE",
-        "text_color": "#23291F",
-        "accent_color": "#2F4A3D",
+        "background_color": "#f7f4ee",
+        "text_color": "#23291f",
+        "accent_color": "#2f4a3d",
         "padding_top": 96,
         "padding_bottom": 96
       }
