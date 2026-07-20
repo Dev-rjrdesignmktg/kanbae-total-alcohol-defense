@@ -15,36 +15,42 @@
         "media_jrtfPz": {
           "type": "media",
           "settings": {
-            "media_type": "product"
+            "image": "shopify://shop_images/hero_1.jpg",
+            "media_type": "lifestyle"
           }
         },
         "media_e3hiLX": {
           "type": "media",
           "settings": {
-            "media_type": "lifestyle"
+            "image": "shopify://shop_images/Kanbae_customs_hero.png",
+            "media_type": "product"
           }
         },
         "media_LnQqAi": {
           "type": "media",
           "settings": {
+            "image": "shopify://shop_images/Kanbae_Ingredients.png",
             "media_type": "ingredients"
           }
         },
         "media_FBmjBH": {
           "type": "media",
           "settings": {
+            "image": "shopify://shop_images/Dosage.png",
             "media_type": "how_to"
           }
         },
         "media_GmnNJT": {
           "type": "media",
           "settings": {
+            "image": "shopify://shop_images/Hosting_drinks.jpg",
             "media_type": "ugc"
           }
         },
         "media_arhGaD": {
           "type": "media",
           "settings": {
+            "image": "shopify://shop_images/Introducing_Singapore_s_1_pre-drinking_supplement.png",
             "media_type": "review"
           }
         }
