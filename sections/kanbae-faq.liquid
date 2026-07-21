@@ -1,0 +1,72 @@
+{{ 'kanbae-faq.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'kanbae-faq.js' | asset_url }}" defer="defer"></script>
+
+<section class="kanbae-faq" id="kanbae-faq-{{ section.id }}" aria-label="{{ section.settings.headline | escape }}">
+  <div class="kanbae-faq__inner">
+
+    {%- if section.settings.eyebrow != blank or section.settings.headline != blank -%}
+      <div class="kanbae-faq__header">
+        {%- if section.settings.eyebrow != blank -%}
+          <p class="kanbae-faq__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+        {%- endif -%}
+        {%- if section.settings.headline != blank -%}
+          <h2 class="kanbae-faq__headline">{{ section.settings.headline | escape }}</h2>
+        {%- endif -%}
+        {%- if section.settings.subheading != blank -%}
+          <p class="kanbae-faq__subheading">{{ section.settings.subheading }}</p>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    <div class="kanbae-faq__list js-faq-accordion">
+      {%- for block in section.blocks -%}
+        <details class="kanbae-faq__item" {% if forloop.first %}open{% endif %} {{ block.shopify_attributes }}>
+          <summary class="kanbae-faq__summary">
+            <span class="kanbae-faq__question">{{ block.settings.question }}</span>
+            <span class="kanbae-faq__chevron" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </span>
+          </summary>
+          <div class="kanbae-faq__content">
+            <div class="kanbae-faq__answer">{{ block.settings.answer }}</div>
+          </div>
+        </details>
+      {%- endfor -%}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kanbae FAQ",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Got Questions?" },
+    { "type": "text", "id": "headline", "label": "Headline", "default": "Frequently Asked Questions" },
+    { "type": "textarea", "id": "subheading", "label": "Subheading", "default": "Everything you need to know before your next round." }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "Question",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question", "default": "How does Kanbae work?" },
+        { "type": "richtext", "id": "answer", "label": "Answer", "default": "<p>Take one dose before your first drink to give your liver a head start breaking down toxins.</p>" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kanbae FAQ",
+      "blocks": [
+        { "type": "faq", "settings": { "question": "How does Kanbae work?", "answer": "<p>Kanbae combines liver-support botanicals and electrolytes in one dose, taken before you drink, to help your body process alcohol more efficiently and wake up feeling normal.</p>" } },
+        { "type": "faq", "settings": { "question": "When should I take it?", "answer": "<p>Drink one bottle 30–60 minutes before your first alcoholic beverage for best results.</p>" } },
+        { "type": "faq", "settings": { "question": "Is Kanbae safe to take daily?", "answer": "<p>Yes. Every ingredient is dosed within daily safe limits and free from artificial stimulants.</p>" } },
+        { "type": "faq", "settings": { "question": "Does it work with any type of alcohol?", "answer": "<p>Kanbae supports your liver regardless of what you're drinking — beer, wine, or spirits.</p>" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
