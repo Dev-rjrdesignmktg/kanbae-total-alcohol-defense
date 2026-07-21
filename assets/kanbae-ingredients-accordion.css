@@ -216,9 +216,15 @@
 .kanbae-ing__desc p:last-child { margin-bottom: 0; }
 .kanbae-ing__desc strong { color: var(--black-carbon); }
 
+.kanbae-ing__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 4px 22px 46px;
+}
+
 .kanbae-ing__badge {
   display: inline-block;
-  margin: 0 4px 22px 46px;
   padding: 6px 14px;
   border-radius: 999px;
   font-size: 11px;
