@@ -69,55 +69,6 @@
         "headline": "See Kanbae in Action"
       }
     },
-    "kanbae_key_benefits_9zfcn6": {
-      "type": "kanbae-key-benefits",
-      "blocks": {
-        "benefit_M9xUch": {
-          "type": "benefit",
-          "settings": {
-            "icon_png": "shopify://shop_images/icons8-bienestar-48.png",
-            "color_icon": "#000000",
-            "title": "CLEAR",
-            "description": "Flushes toxins before they take hold."
-          }
-        },
-        "benefit_fzbPPT": {
-          "type": "benefit",
-          "settings": {
-            "icon_png": "shopify://shop_images/icons8-escudo-48.png",
-            "color_icon": "#000000",
-            "title": "PROTECT",
-            "description": "Shields your liver from oxidative stress."
-          }
-        },
-        "benefit_7cdPp8": {
-          "type": "benefit",
-          "settings": {
-            "icon_png": "shopify://shop_images/icons8-bateria-cargando-48.png",
-            "color_icon": "#000000",
-            "title": "RESTORE",
-            "description": "Replenishes what alcohol depletes."
-          }
-        },
-        "benefit_atW7Mf": {
-          "type": "benefit",
-          "settings": {
-            "icon_png": "shopify://shop_images/icons8-cara-feliz-48.png",
-            "color_icon": "#000000",
-            "title": "SHOW UP",
-            "description": "Wake up clear, energized, ready."
-          }
-        }
-      },
-      "block_order": [
-        "benefit_M9xUch",
-        "benefit_fzbPPT",
-        "benefit_7cdPp8",
-        "benefit_atW7Mf"
-      ],
-      "name": "Kanbae Key Benefits",
-      "settings": {}
-    },
     "marquee_7rmRTe": {
       "type": "marquee",
       "blocks": {
@@ -332,6 +283,55 @@
         "padding-block-end": 12,
         "gap_between_elements": 24
       }
+    },
+    "kanbae_key_benefits_9zfcn6": {
+      "type": "kanbae-key-benefits",
+      "blocks": {
+        "benefit_M9xUch": {
+          "type": "benefit",
+          "settings": {
+            "icon_png": "shopify://shop_images/icons8-bienestar-48.png",
+            "color_icon": "#000000",
+            "title": "CLEAR",
+            "description": "Flushes toxins before they take hold."
+          }
+        },
+        "benefit_fzbPPT": {
+          "type": "benefit",
+          "settings": {
+            "icon_png": "shopify://shop_images/icons8-escudo-48.png",
+            "color_icon": "#000000",
+            "title": "PROTECT",
+            "description": "Shields your liver from oxidative stress."
+          }
+        },
+        "benefit_7cdPp8": {
+          "type": "benefit",
+          "settings": {
+            "icon_png": "shopify://shop_images/icons8-bateria-cargando-48.png",
+            "color_icon": "#000000",
+            "title": "RESTORE",
+            "description": "Replenishes what alcohol depletes."
+          }
+        },
+        "benefit_atW7Mf": {
+          "type": "benefit",
+          "settings": {
+            "icon_png": "shopify://shop_images/icons8-cara-feliz-48.png",
+            "color_icon": "#000000",
+            "title": "SHOW UP",
+            "description": "Wake up clear, energized, ready."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_M9xUch",
+        "benefit_fzbPPT",
+        "benefit_7cdPp8",
+        "benefit_atW7Mf"
+      ],
+      "name": "Kanbae Key Benefits",
+      "settings": {}
     },
     "kanbae_proof_784YRw": {
       "type": "kanbae-proof",
@@ -3076,8 +3076,8 @@
   },
   "order": [
     "kanbae_gallery_qnj4Dk",
-    "kanbae_key_benefits_9zfcn6",
     "marquee_7rmRTe",
+    "kanbae_key_benefits_9zfcn6",
     "kanbae_proof_784YRw",
     "ss_video_grid_socials_3_mRcfmm",
     "section_F6zx3f",
