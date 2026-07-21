@@ -2464,197 +2464,99 @@
         "padding-block-end": 15
       }
     },
-    "ss_product_ingredients_3_jxYQCn": {
-      "type": "ss-product-ingredients-3",
+    "kanbae_ingredients_accordion_xb3YrH": {
+      "type": "kanbae-ingredients-accordion",
       "blocks": {
-        "ingredient_qf7d8K": {
+        "ingredient_xahkQa": {
           "type": "ingredient",
           "settings": {
-            "title": "Japanese Raisin Tree (99% DHM)",
-            "text": "<p>Boosts the liver enzyme that breaks down acetaldehyde, while supporting liver repair and cognitive clarity.</p>",
-            "tags": "Clear Acetaldehyde,Protect Liver,Brain & Mood"
+            "name": "Japanese Raisin Tree (99% DHM)",
+            "description": "<p>Boosts the liver enzyme that breaks down acetaldehyde, while supporting liver repair and cognitive clarity.</p>",
+            "badge_text": "Clear Acetaldehyde, Protect Liver, Brain & Mood"
           }
         },
-        "ingredient_qj3G7N": {
+        "ingredient_NAJXgK": {
           "type": "ingredient",
           "settings": {
-            "title": "Pyroglutamic Acid",
-            "text": "<p>Supplies the raw material your liver needs to keep regenerating glutathione throughout the night.</p>",
-            "tags": "Protect Liver,Antioxidants & Nutrients"
+            "name": "Pyroglutamic Acid",
+            "description": "<p>Supplies the raw material your liver needs to keep regenerating glutathione throughout the night.</p>",
+            "badge_text": "Protect Liver, Antioxidants & Nutrients"
           }
         },
-        "ingredient_Gyfeca": {
+        "ingredient_yk7Ac3": {
           "type": "ingredient",
           "settings": {
-            "title": "S-Acetyl Glutathione",
-            "text": "<p>Highly bioavailable (and expensive) form of your body's master antioxidant, directly neutralizes acetaldehyde via a second pathway.</p>",
-            "tags": "Clear Acetaldehyde,Protect Liver,Antioxidants & Nutrients"
+            "name": "S-Acetyl Glutathione",
+            "description": "<p>Highly bioavailable (and expensive) form of your body's master antioxidant, directly neutralizes acetaldehyde via a second pathway.</p>",
+            "badge_text": "Clear Acetaldehyde, Protect Liver, Antioxidants & Nutrients"
           }
         },
-        "ingredient_j4BwNh": {
+        "ingredient_mGFtKc": {
           "type": "ingredient",
           "settings": {
-            "title": "Succinic Acid",
-            "text": "<p>Keeps liver cells energized during detox by bypassing the metabolic blockage alcohol creates in mitochondria.</p>",
-            "tags": "Clear Acetaldehyde,Protect Liver"
+            "name": "Succinic Acid",
+            "description": "<p>Keeps liver cells energized during detox by bypassing the metabolic blockage alcohol creates in mitochondria.</p>",
+            "badge_text": "Clear Acetaldehyde, Protect Liver"
           }
         },
-        "ingredient_wdkeXB": {
+        "ingredient_Pad9Ha": {
           "type": "ingredient",
           "settings": {
-            "title": "Ginger Extract",
-            "text": "<p>Minimizes nausea while reducing neuroinflammation for faster cognitive recovery.</p>",
-            "tags": "Digestive Support,Brain & Mood"
+            "name": "Ginger Extract",
+            "description": "<p>Minimizes nausea while reducing neuroinflammation for faster cognitive recovery.</p>",
+            "badge_text": "Digestive Support, Brain & Mood"
           }
         },
-        "ingredient_chdWfc": {
+        "ingredient_zEanHq": {
           "type": "ingredient",
           "settings": {
-            "title": "Vitamin B1 (Thiamine)",
-            "text": "<p>Restores the mitochondrial cofactor alcohol depletes - critical for your liver's ability to fully process its byproducts.</p>",
-            "tags": "Clear Acetaldehyde,Protect Liver,Antioxidants & Nutrients"
+            "name": "Vitamin B1 (Thiamine)",
+            "description": "<p>Restores the mitochondrial cofactor alcohol depletes - critical for your liver's ability to fully process its byproducts.</p>",
+            "badge_text": "Clear Acetaldehyde, Protect Liver, Antioxidants & Nutrients"
           }
         },
-        "ingredient_EbTYCJ": {
+        "ingredient_MbQV9D": {
           "type": "ingredient",
           "settings": {
-            "title": "Vitamin B6 (Pyridoxal-5'-Phosphate)",
-            "text": "<p>Replenishes B6, which is degraded by acetaldehyde. Responsible for serotonin, GABA, and dopamine production - the biochemical drivers of sleep and next-day mood.</p>",
-            "tags": "Antioxidants & Nutrients,Brain & Mood,Digestive Support"
+            "name": "Vitamin B6 (Pyridoxal-5'-Phospate)",
+            "description": "<p>Replenishes B6, which is degraded by acetaldehyde. Responsible for serotonin, GABA, and dopamine production - the biochemical drivers of sleep and next-day mood.</p>",
+            "badge_text": "Antioxidants & Nutrients, Brain & Mood, Digestive Support"
           }
         },
-        "ingredient_WTipFe": {
+        "ingredient_mYrM78": {
           "type": "ingredient",
           "settings": {
-            "title": "Vitamin C (Ascorbic Acid)",
-            "text": "<p>Directly reacts with acetaldehyde and regenerates spent glutathione - replenishing what alcohol burns through fastest.</p>",
-            "tags": "Clear Acetaldehyde,Protect Liver,Antioxidants & Nutrients"
+            "name": "Vitamin C (Ascorbic Acid)",
+            "description": "<p>Directly reacts with acetaldehyde and regenerates spent glutathione - replenishing what alcohol burns through fastest.</p>",
+            "badge_text": "Clear Acetaldehyde, Protect Liver, Antioxidants & Nutrients"
           }
         },
-        "ingredient_weaUr6": {
+        "ingredient_W8WXkL": {
           "type": "ingredient",
           "settings": {
-            "title": "Black Pepper Extract (Piperine)",
-            "text": "<p>Blocks gut enzymes that degrade other ingredients before they absorb - amplifying the whole formula's bioavailability.</p>",
-            "tags": "Absorption Enabler"
+            "name": "Black Pepper Extract (Piperine)",
+            "description": "<p>Blocks gut enzymes that degrade other ingredients before they absorb - amplifying the whole formula's bioavailability.</p>",
+            "badge_text": "Absorption Enabler"
           }
         }
       },
       "block_order": [
-        "ingredient_qf7d8K",
-        "ingredient_qj3G7N",
-        "ingredient_Gyfeca",
-        "ingredient_j4BwNh",
-        "ingredient_wdkeXB",
-        "ingredient_chdWfc",
-        "ingredient_EbTYCJ",
-        "ingredient_WTipFe",
-        "ingredient_weaUr6"
+        "ingredient_xahkQa",
+        "ingredient_NAJXgK",
+        "ingredient_yk7Ac3",
+        "ingredient_mGFtKc",
+        "ingredient_Pad9Ha",
+        "ingredient_zEanHq",
+        "ingredient_MbQV9D",
+        "ingredient_mYrM78",
+        "ingredient_W8WXkL"
       ],
-      "name": "SS - Product ingredients #3",
+      "name": "Kanbae Ingredients",
       "settings": {
-        "heading": "<p>Our ingredient benefits</p>",
-        "heading_custom": true,
-        "heading_font": "inter_n8",
-        "heading_size": 48,
-        "heading_size_mobile": 40,
-        "heading_height": 100,
-        "heading_align": "center",
-        "heading_align_mobile": "center",
-        "tags_max_width": 70,
-        "tags_gap": 10,
-        "tags_gap_mobile": 10,
-        "tags_mt": 48,
-        "tags_mt_mobile": 24,
-        "tags_align": "center",
-        "tags_align_mobile": "center",
-        "tag_custom": false,
-        "tag_font": "inter_n4",
-        "tag_size": 12,
-        "tag_size_mobile": 12,
-        "tag_height": 100,
-        "tag_padding_vertical": 8,
-        "tag_padding_vertical_mobile": 8,
-        "tag_padding_horizontal": 14,
-        "tag_padding_horizontal_mobile": 14,
-        "tag_radius": 100,
-        "tag_border_thickness": 2,
-        "cards_per_view": 3,
-        "cards_per_view_mobile": "2",
-        "cards_gap": 24,
-        "cards_gap_mobile": 12,
-        "cards_mt": 44,
-        "cards_mt_mobile": 20,
-        "card_padding_horizontal": 22,
-        "card_padding_horizontal_mobile": 12,
-        "card_padding_vertical": 22,
-        "card_padding_vertical_mobile": 12,
-        "card_radius": 6,
-        "card_border_thickness": 1,
-        "card_tag_placement": "bottom",
-        "card_tag_placement_mobile": "bottom",
-        "card_align": "left",
-        "card_align_mobile": "left",
-        "title_custom": false,
-        "title_font": "josefin_sans_n4",
-        "title_size": 14,
-        "title_size_mobile": 14,
-        "title_height": 130,
-        "text_custom": false,
-        "text_font": "josefin_sans_n4",
-        "text_size": 12,
-        "text_size_mobile": 12,
-        "text_height": 150,
-        "text_mt": 16,
-        "text_mt_mobile": 16,
-        "card_tags_per_view_mobile": "1",
-        "card_tags_gap": 10,
-        "card_tags_gap_mobile": 4,
-        "card_tags_mt": 12,
-        "card_tags_mt_mobile": 12,
-        "card_tag_custom": false,
-        "card_tag_font": "josefin_sans_n4",
-        "card_tag_size": 11,
-        "card_tag_size_mobile": 11,
-        "card_tag_height": 100,
-        "card_tag_padding_vertical": 4,
-        "card_tag_padding_vertical_mobile": 4,
-        "card_tag_padding_horizontal": 10,
-        "card_tag_padding_horizontal_mobile": 10,
-        "card_tag_radius": 100,
-        "card_tag_border_thickness": 1,
-        "tag_color": "#ffffff",
-        "tag_hover_color": "#082310",
-        "tag_active_color": "#ffffff",
-        "tag_bg_color": "#082310",
-        "tag_bg_hover_color": "#ccffda",
-        "tag_bg_active_color": "#043f34",
-        "tag_border_color": "#ccffda",
-        "tag_border_hover_color": "#99cca6",
-        "tag_border_active_color": "#9bff1a",
-        "title_color": "#ffffff",
-        "text_color": "#ffffff",
-        "card_bg_color": "",
-        "card_border_color": "#9bff1a",
-        "card_tag_color": "#ffffff",
-        "card_tag_bg_color": "#043f34",
-        "card_tag_border_color": "#9bff1a",
-        "heading_color": "#ffffff",
-        "background_color": "#082310",
-        "background_gradient": "linear-gradient(280deg, rgba(8, 35, 16, 1) 100%, rgba(8, 35, 16, 1) 100%)",
-        "border_color": "#000000",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 1.5,
-        "full_width": false,
-        "content_width": 1200,
-        "border_thickness": 0,
-        "section_radius": 0
+        "eyebrow": "Inside Every Dose",
+        "headline": "Backed by Science, Rooted in Nature",
+        "subheading": "Every ingredient in Kanbae is dosed for a reason. Tap to see how each one works.",
+        "image": "shopify://shop_images/2.png"
       }
     },
     "section_gCwKt7": {
@@ -3170,59 +3072,6 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
-    },
-    "kanbae_ingredients_accordion_HnGRtd": {
-      "type": "kanbae-ingredients-accordion",
-      "blocks": {
-        "ingredient_K7XVXF": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Japanese Raisin Tree (DHM)",
-            "description": "<p><strong>Speeds toxin breakdown.</strong> Dihydromyricetin (DHM) helps the liver metabolize acetaldehyde faster, the byproduct responsible for next-day fatigue.</p>"
-          }
-        },
-        "ingredient_GFE9D6": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Milk Thistle Extract",
-            "description": "<p><strong>Protects liver cells.</strong> Silymarin supports cellular repair and shields the liver from oxidative stress caused by alcohol.</p>"
-          }
-        },
-        "ingredient_H84Yag": {
-          "type": "ingredient",
-          "settings": {
-            "name": "N-Acetyl Cysteine (NAC)",
-            "description": "<p><strong>Replenishes glutathione.</strong> NAC fuels the body's master antioxidant, helping clear toxins before they cause damage.</p>"
-          }
-        },
-        "ingredient_GANzmN": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Prickly Pear Extract",
-            "description": "<p><strong>Reduces inflammation.</strong> Rich in betalains, it helps lower the inflammatory markers linked to hangover symptoms.</p>"
-          }
-        },
-        "ingredient_GETp6T": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Electrolyte Blend",
-            "description": "<p><strong>Restores hydration.</strong> Sodium and potassium replace what's lost to alcohol's diuretic effect, easing headaches and fatigue.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "ingredient_K7XVXF",
-        "ingredient_GFE9D6",
-        "ingredient_H84Yag",
-        "ingredient_GANzmN",
-        "ingredient_GETp6T"
-      ],
-      "name": "Kanbae Ingredients",
-      "settings": {
-        "eyebrow": "Inside Every Dose",
-        "headline": "Backed by Science, Rooted in Nature",
-        "subheading": "Every ingredient in Kanbae is dosed for a reason. Tap to see how each one works."
-      }
     }
   },
   "order": [
@@ -3236,8 +3085,7 @@
     "section_F6zx3f",
     "main",
     "section_MjxCcE",
-    "ss_product_ingredients_3_jxYQCn",
-    "kanbae_ingredients_accordion_HnGRtd",
+    "kanbae_ingredients_accordion_xb3YrH",
     "section_gCwKt7",
     "section_JMfd7J",
     "product_recommendations_qggXJq",
