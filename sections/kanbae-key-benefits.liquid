@@ -1,0 +1,69 @@
+{{ 'kanbae-key-benefits.css' | asset_url | stylesheet_tag }}
+
+{% comment %} Capturamos los valores seleccionados en el editor {% endcomment %}
+
+
+<section class="kb-strip" aria-label="Kanbae key benefits">
+  <div class="kb-strip__inner">
+    <ul class="kb-strip__list" role="list">
+      {%- for block in section.blocks -%}
+        {% assign icon_color = block.settings.color_icon %}
+        <li class="kb-strip__item" {{ block.shopify_attributes }}>
+          <div class="kb-strip__icon"  style="--icon-color: {{ icon_color }};">
+            {%- if block.settings.icon_png != blank -%}
+              {{ block.settings.icon_png | image_url: width: 160 | image_tag:
+                loading: 'lazy',
+                widths: '80, 120, 160',
+                sizes: '64px',
+                alt: block.settings.icon_png.alt | default: block.settings.title,
+                class: 'kb-strip__icon-img'
+              }}
+            {%- else -%}
+              {{ 'icon' | placeholder_svg_tag: 'kb-strip__icon-placeholder' }}
+            {%- endif -%}
+          </div>
+          <h3 class="kb-strip__title">{{ block.settings.title }}</h3>
+          {%- if block.settings.description != blank -%}
+            <p class="kb-strip__description">{{ block.settings.description }}</p>
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kanbae Key Benefits",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit",
+      "limit": 4,
+      "settings": [
+        { "type": "image_picker", "id": "icon_png", "label": "Icon" },
+        {
+          "type": "color",
+          "id": "color_icon",
+          "label": "Icon color",
+          "default": "#000000"
+        },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "description", "label": "Description" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kanbae Key Benefits",
+      "blocks": [
+        { "type": "benefit", "settings": { "title": "CLEAR", "description": "Flushes toxins before they take hold." } },
+        { "type": "benefit", "settings": { "title": "PROTECT", "description": "Shields your liver from oxidative stress." } },
+        { "type": "benefit", "settings": { "title": "RESTORE", "description": "Replenishes what alcohol depletes." } },
+        { "type": "benefit", "settings": { "title": "SHOW UP", "description": "Wake up clear, energized, ready." } }
+      ]
+    }
+  ]
+}
+{% endschema %}
