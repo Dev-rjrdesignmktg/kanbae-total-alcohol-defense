@@ -2464,6 +2464,101 @@
         "padding-block-end": 15
       }
     },
+    "kanbae_ingredients_accordion_xb3YrH": {
+      "type": "kanbae-ingredients-accordion",
+      "blocks": {
+        "ingredient_xahkQa": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Japanese Raisin Tree (99% DHM)",
+            "description": "<p>Boosts the liver enzyme that breaks down acetaldehyde, while supporting liver repair and cognitive clarity.</p>",
+            "badge_text": "Clear Acetaldehyde, Protect Liver, Brain & Mood"
+          }
+        },
+        "ingredient_NAJXgK": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Pyroglutamic Acid",
+            "description": "<p>Supplies the raw material your liver needs to keep regenerating glutathione throughout the night.</p>",
+            "badge_text": "Protect Liver, Antioxidants & Nutrients"
+          }
+        },
+        "ingredient_yk7Ac3": {
+          "type": "ingredient",
+          "settings": {
+            "name": "S-Acetyl Glutathione",
+            "description": "<p>Highly bioavailable (and expensive) form of your body's master antioxidant, directly neutralizes acetaldehyde via a second pathway.</p>",
+            "badge_text": "Clear Acetaldehyde, Protect Liver, Antioxidants & Nutrients"
+          }
+        },
+        "ingredient_mGFtKc": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Succinic Acid",
+            "description": "<p>Keeps liver cells energized during detox by bypassing the metabolic blockage alcohol creates in mitochondria.</p>",
+            "badge_text": "Clear Acetaldehyde, Protect Liver"
+          }
+        },
+        "ingredient_Pad9Ha": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Ginger Extract",
+            "description": "<p>Minimizes nausea while reducing neuroinflammation for faster cognitive recovery.</p>",
+            "badge_text": "Digestive Support, Brain & Mood"
+          }
+        },
+        "ingredient_zEanHq": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Vitamin B1 (Thiamine)",
+            "description": "<p>Restores the mitochondrial cofactor alcohol depletes - critical for your liver's ability to fully process its byproducts.</p>",
+            "badge_text": "Clear Acetaldehyde, Protect Liver, Antioxidants & Nutrients"
+          }
+        },
+        "ingredient_MbQV9D": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Vitamin B6 (Pyridoxal-5'-Phospate)",
+            "description": "<p>Replenishes B6, which is degraded by acetaldehyde. Responsible for serotonin, GABA, and dopamine production - the biochemical drivers of sleep and next-day mood.</p>",
+            "badge_text": "Antioxidants & Nutrients, Brain & Mood, Digestive Support"
+          }
+        },
+        "ingredient_mYrM78": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Vitamin C (Ascorbic Acid)",
+            "description": "<p>Directly reacts with acetaldehyde and regenerates spent glutathione - replenishing what alcohol burns through fastest.</p>",
+            "badge_text": "Clear Acetaldehyde, Protect Liver, Antioxidants & Nutrients"
+          }
+        },
+        "ingredient_W8WXkL": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Black Pepper Extract (Piperine)",
+            "description": "<p>Blocks gut enzymes that degrade other ingredients before they absorb - amplifying the whole formula's bioavailability.</p>",
+            "badge_text": "Absorption Enabler"
+          }
+        }
+      },
+      "block_order": [
+        "ingredient_xahkQa",
+        "ingredient_NAJXgK",
+        "ingredient_yk7Ac3",
+        "ingredient_mGFtKc",
+        "ingredient_Pad9Ha",
+        "ingredient_zEanHq",
+        "ingredient_MbQV9D",
+        "ingredient_mYrM78",
+        "ingredient_W8WXkL"
+      ],
+      "name": "Kanbae Ingredients",
+      "settings": {
+        "eyebrow": "Inside Every Dose",
+        "headline": "Backed by Science, Rooted in Nature",
+        "subheading": "Every ingredient in Kanbae is dosed for a reason. Tap to see how each one works.",
+        "image": "shopify://shop_images/2.png"
+      }
+    },
     "ss_product_ingredients_3_jxYQCn": {
       "type": "ss-product-ingredients-3",
       "blocks": {
@@ -2655,6 +2750,64 @@
         "content_width": 1200,
         "border_thickness": 0,
         "section_radius": 0
+      }
+    },
+    "kanbae_ingredients_accordion_HnGRtd": {
+      "type": "kanbae-ingredients-accordion",
+      "blocks": {
+        "ingredient_K7XVXF": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Japanese Raisin Tree (DHM)",
+            "description": "<p><strong>Speeds toxin breakdown.</strong> Dihydromyricetin (DHM) helps the liver metabolize acetaldehyde faster, the byproduct responsible for next-day fatigue.</p>",
+            "badge_text": ""
+          }
+        },
+        "ingredient_GFE9D6": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Milk Thistle Extract",
+            "description": "<p><strong>Protects liver cells.</strong> Silymarin supports cellular repair and shields the liver from oxidative stress caused by alcohol.</p>",
+            "badge_text": ""
+          }
+        },
+        "ingredient_H84Yag": {
+          "type": "ingredient",
+          "settings": {
+            "name": "N-Acetyl Cysteine (NAC)",
+            "description": "<p><strong>Replenishes glutathione.</strong> NAC fuels the body's master antioxidant, helping clear toxins before they cause damage.</p>",
+            "badge_text": ""
+          }
+        },
+        "ingredient_GANzmN": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Prickly Pear Extract",
+            "description": "<p><strong>Reduces inflammation.</strong> Rich in betalains, it helps lower the inflammatory markers linked to hangover symptoms.</p>",
+            "badge_text": ""
+          }
+        },
+        "ingredient_GETp6T": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Electrolyte Blend",
+            "description": "<p><strong>Restores hydration.</strong> Sodium and potassium replace what's lost to alcohol's diuretic effect, easing headaches and fatigue.</p>",
+            "badge_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "ingredient_K7XVXF",
+        "ingredient_GFE9D6",
+        "ingredient_H84Yag",
+        "ingredient_GANzmN",
+        "ingredient_GETp6T"
+      ],
+      "name": "Kanbae Ingredients",
+      "settings": {
+        "eyebrow": "Inside Every Dose",
+        "headline": "Backed by Science, Rooted in Nature",
+        "subheading": "Every ingredient in Kanbae is dosed for a reason. Tap to see how each one works."
       }
     },
     "section_gCwKt7": {
@@ -3170,59 +3323,6 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
-    },
-    "kanbae_ingredients_accordion_HnGRtd": {
-      "type": "kanbae-ingredients-accordion",
-      "blocks": {
-        "ingredient_K7XVXF": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Japanese Raisin Tree (DHM)",
-            "description": "<p><strong>Speeds toxin breakdown.</strong> Dihydromyricetin (DHM) helps the liver metabolize acetaldehyde faster, the byproduct responsible for next-day fatigue.</p>"
-          }
-        },
-        "ingredient_GFE9D6": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Milk Thistle Extract",
-            "description": "<p><strong>Protects liver cells.</strong> Silymarin supports cellular repair and shields the liver from oxidative stress caused by alcohol.</p>"
-          }
-        },
-        "ingredient_H84Yag": {
-          "type": "ingredient",
-          "settings": {
-            "name": "N-Acetyl Cysteine (NAC)",
-            "description": "<p><strong>Replenishes glutathione.</strong> NAC fuels the body's master antioxidant, helping clear toxins before they cause damage.</p>"
-          }
-        },
-        "ingredient_GANzmN": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Prickly Pear Extract",
-            "description": "<p><strong>Reduces inflammation.</strong> Rich in betalains, it helps lower the inflammatory markers linked to hangover symptoms.</p>"
-          }
-        },
-        "ingredient_GETp6T": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Electrolyte Blend",
-            "description": "<p><strong>Restores hydration.</strong> Sodium and potassium replace what's lost to alcohol's diuretic effect, easing headaches and fatigue.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "ingredient_K7XVXF",
-        "ingredient_GFE9D6",
-        "ingredient_H84Yag",
-        "ingredient_GANzmN",
-        "ingredient_GETp6T"
-      ],
-      "name": "Kanbae Ingredients",
-      "settings": {
-        "eyebrow": "Inside Every Dose",
-        "headline": "Backed by Science, Rooted in Nature",
-        "subheading": "Every ingredient in Kanbae is dosed for a reason. Tap to see how each one works."
-      }
     }
   },
   "order": [
@@ -3236,6 +3336,7 @@
     "section_F6zx3f",
     "main",
     "section_MjxCcE",
+    "kanbae_ingredients_accordion_xb3YrH",
     "ss_product_ingredients_3_jxYQCn",
     "kanbae_ingredients_accordion_HnGRtd",
     "section_gCwKt7",
