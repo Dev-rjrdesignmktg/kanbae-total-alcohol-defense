@@ -2545,17 +2545,6 @@
     "kanbae_testimonials_cards_kpJng7": {
       "type": "kanbae-testimonials-cards",
       "blocks": {
-        "testimonial_rtjdbE": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "title": "great really works!",
-            "body": "Multiple repurchase!! I always take one right before bed after heavy drinking and I always wake up way more refreshed with no pounding headache the next day. Can't be without this now. I always have back ups.",
-            "author": "Camila R.",
-            "date": "Hace 3 semanas",
-            "product": "Kanbae Total Alcohol Defense"
-          }
-        },
         "testimonial_X78XEn": {
           "type": "testimonial",
           "settings": {
@@ -2578,6 +2567,17 @@
             "product": "Kanbae Total Alcohol Defense"
           }
         },
+        "testimonial_rtjdbE": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "title": "great really works!",
+            "body": "Multiple repurchase!! I always take one right before bed after heavy drinking and I always wake up way more refreshed with no pounding headache the next day. Can't be without this now. I always have back ups.",
+            "author": "I*****r",
+            "date": "22 Mar 2023",
+            "product": "Kanbae Total Alcohol Defense"
+          }
+        },
         "testimonial_VHPzPT": {
           "type": "testimonial",
           "settings": {
@@ -2591,9 +2591,9 @@
         }
       },
       "block_order": [
-        "testimonial_rtjdbE",
         "testimonial_X78XEn",
         "testimonial_9pHwnq",
+        "testimonial_rtjdbE",
         "testimonial_VHPzPT"
       ],
       "name": "Kanbae Testimonials Cards",
