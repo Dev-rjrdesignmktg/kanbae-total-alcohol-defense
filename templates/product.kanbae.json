@@ -378,6 +378,24 @@
     "ss_video_grid_socials_3_mRcfmm": {
       "type": "ss-video-grid-socials-3",
       "blocks": {
+        "text_gBmU9W": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>— WHAT PEOPLE THINK ABOUT KANBAE</strong></p>",
+            "text_custom": false,
+            "text_font": "josefin_sans_n4",
+            "text_size": 18,
+            "text_size_mobile": 16,
+            "text_advanced": false,
+            "text_height": 150,
+            "text_mt": 18,
+            "text_mt_mobile": 16,
+            "text_max_width": 60,
+            "text_max_width_mobile": 100,
+            "text_color": "#121212"
+          }
+        },
         "heading_YV9Lkw": {
           "type": "heading",
           "settings": {
@@ -392,24 +410,6 @@
             "heading_mt_mobile": 0,
             "heading_color": "#082310",
             "heading_accent_color": "#afafaf"
-          }
-        },
-        "text_gBmU9W": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Tell your story</p>",
-            "text_custom": false,
-            "text_font": "josefin_sans_n4",
-            "text_size": 18,
-            "text_size_mobile": 16,
-            "text_advanced": false,
-            "text_height": 150,
-            "text_mt": 18,
-            "text_mt_mobile": 16,
-            "text_max_width": 60,
-            "text_max_width_mobile": 100,
-            "text_color": "#121212"
           }
         },
         "video_jEYYBR": {
@@ -454,8 +454,8 @@
         }
       },
       "block_order": [
-        "heading_YV9Lkw",
         "text_gBmU9W",
+        "heading_YV9Lkw",
         "video_jEYYBR",
         "video_N6rNYF",
         "video_fed9Wa",
