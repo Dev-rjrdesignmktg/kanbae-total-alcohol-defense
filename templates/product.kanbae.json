@@ -69,6 +69,55 @@
         "headline": "See Kanbae in Action"
       }
     },
+    "kanbae_key_benefits_9zfcn6": {
+      "type": "kanbae-key-benefits",
+      "blocks": {
+        "benefit_M9xUch": {
+          "type": "benefit",
+          "settings": {
+            "icon_png": "shopify://shop_images/icons8-bienestar-48.png",
+            "color_icon": "#000000",
+            "title": "CLEAR",
+            "description": "Flushes toxins before they take hold."
+          }
+        },
+        "benefit_fzbPPT": {
+          "type": "benefit",
+          "settings": {
+            "icon_png": "shopify://shop_images/icons8-escudo-48.png",
+            "color_icon": "#000000",
+            "title": "PROTECT",
+            "description": "Shields your liver from oxidative stress."
+          }
+        },
+        "benefit_7cdPp8": {
+          "type": "benefit",
+          "settings": {
+            "icon_png": "shopify://shop_images/icons8-bateria-cargando-48.png",
+            "color_icon": "#000000",
+            "title": "RESTORE",
+            "description": "Replenishes what alcohol depletes."
+          }
+        },
+        "benefit_atW7Mf": {
+          "type": "benefit",
+          "settings": {
+            "icon_png": "shopify://shop_images/icons8-cara-feliz-48.png",
+            "color_icon": "#000000",
+            "title": "SHOW UP",
+            "description": "Wake up clear, energized, ready."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_M9xUch",
+        "benefit_fzbPPT",
+        "benefit_7cdPp8",
+        "benefit_atW7Mf"
+      ],
+      "name": "Kanbae Key Benefits",
+      "settings": {}
+    },
     "marquee_7rmRTe": {
       "type": "marquee",
       "blocks": {
@@ -329,6 +378,23 @@
     "ss_video_grid_socials_3_mRcfmm": {
       "type": "ss-video-grid-socials-3",
       "blocks": {
+        "text_gBmU9W": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>— WHAT PEOPLE THINK ABOUT KANBAE</strong></p>",
+            "text_custom": false,
+            "text_font": "josefin_sans_n4",
+            "text_size": 14,
+            "text_size_mobile": 14,
+            "text_advanced": false,
+            "text_height": 150,
+            "text_mt": 18,
+            "text_mt_mobile": 16,
+            "text_max_width": 60,
+            "text_max_width_mobile": 100,
+            "text_color": "{{ settings.color_palette.foreground }}"
+          }
+        },
         "heading_YV9Lkw": {
           "type": "heading",
           "settings": {
@@ -339,28 +405,10 @@
             "heading_size_mobile": 40,
             "heading_advanced": true,
             "heading_height": 100,
-            "heading_mt": 0,
+            "heading_mt": 26,
             "heading_mt_mobile": 0,
             "heading_color": "#082310",
             "heading_accent_color": "#afafaf"
-          }
-        },
-        "text_gBmU9W": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Tell your story</p>",
-            "text_custom": false,
-            "text_font": "josefin_sans_n4",
-            "text_size": 18,
-            "text_size_mobile": 16,
-            "text_advanced": false,
-            "text_height": 150,
-            "text_mt": 18,
-            "text_mt_mobile": 16,
-            "text_max_width": 60,
-            "text_max_width_mobile": 100,
-            "text_color": "#121212"
           }
         },
         "video_jEYYBR": {
@@ -405,8 +453,8 @@
         }
       },
       "block_order": [
-        "heading_YV9Lkw",
         "text_gBmU9W",
+        "heading_YV9Lkw",
         "video_jEYYBR",
         "video_N6rNYF",
         "video_fed9Wa",
@@ -423,7 +471,7 @@
         "slider_gap_mobile": 20,
         "slider_mt": 24,
         "slider_mt_mobile": 36,
-        "card_radius": 10,
+        "card_radius": 22,
         "card_border_thickness": 0,
         "video_ratio": "portrait",
         "video_ratio_mobile": "portrait",
@@ -432,7 +480,7 @@
         "info_size": 15,
         "info_size_mobile": 18,
         "info_height": 150,
-        "info_align": "left",
+        "info_align": "center",
         "info_align_mobile": "left",
         "arrow_show_desktop": true,
         "arrow_show_mobile": false,
@@ -466,8 +514,8 @@
         "background_color": "#ffffff",
         "background_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)",
         "border_color": "#121212",
-        "margin_top": 0,
-        "margin_bottom": 0,
+        "margin_top": 100,
+        "margin_bottom": 100,
         "margin_horizontal": 0,
         "margin_horizontal_mobile": 0,
         "padding_top": 36,
@@ -3028,6 +3076,7 @@
   },
   "order": [
     "kanbae_gallery_qnj4Dk",
+    "kanbae_key_benefits_9zfcn6",
     "marquee_7rmRTe",
     "kanbae_proof_784YRw",
     "ss_video_grid_socials_3_mRcfmm",
