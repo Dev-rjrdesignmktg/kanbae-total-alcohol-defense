@@ -2559,297 +2559,57 @@
         "image": "shopify://shop_images/2.png"
       }
     },
-    "section_gCwKt7": {
-      "type": "section",
+    "kanbae_faq_KGqpDj": {
+      "type": "kanbae-faq",
       "blocks": {
-        "text_PyDapn": {
-          "type": "text",
-          "name": "t:names.heading",
+        "faq_hThgWe": {
+          "type": "faq",
           "settings": {
-            "text": "<h2>Frequently asked questions</h2>",
-            "width": "fit-content",
-            "max_width": "narrow",
-            "alignment": "left",
-            "type_preset": "h3",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "question": "How do I take Kanbae?",
+            "answer": "<p>We recommend taking 2 capsules (1 sachet) 15-30 minutes before you drink.</p><p>Optional: Take 2 more capsules after your last drink if you've had a heavy session.</p>"
+          }
         },
-        "accordion_X39Rxf": {
-          "type": "accordion",
-          "name": "t:names.accordion",
+        "faq_MmHyMU": {
+          "type": "faq",
           "settings": {
-            "icon": "caret",
-            "dividers": true,
-            "divider_color": "",
-            "type_preset": "h5",
-            "background_color": "",
-            "text_color": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "accordion_row_dN3wEC": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "How do I take Kanbae?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_ck6j3B": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>We recommend taking 2 capsules (1 sachet) 15-30 minutes before you drink.</p><p>Optional: Take 2 more capsules after your last drink if you've had a heavy session.</p><p></p>",
-                    "width": "100%",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": true,
-                    "background_color": "#043f34",
-                    "corner_radius": 10,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_ck6j3B"
-              ]
-            },
-            "accordion_row_ganNFn": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "What makes Kanbae different from brands?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_ArWiK8": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>DrinkAid tackles acetaldehyde, the root cause of alcohol's side effects, through<strong> multiple pathways</strong>, instead of overrelying on DHM. This includes:</p><ol><li>Enhancing ALDH2 activity and accelerating acetaldehyde break down.</li><li>Directly boosting glutathione levels. This <a href=\"https://pubmed.ncbi.nlm.nih.gov/22615054/\" target=\"_blank\" title=\"https://pubmed.ncbi.nlm.nih.gov/22615054/\">binds directly to acetaldehyde</a> to facilitate its removal and supports its <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11479010/#:~:text=However%2C%20there%20was%20no%20significant,the%20relief%20of%20hangover%20symptoms.\" target=\"_blank\" title=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11479010/#:~:text=However%2C%20there%20was%20no%20significant,the%20relief%20of%20hangover%20symptoms.\">enzymatic breakdown</a>. Most brands only include cheaper glutathione precursors (e.g. L-Cysteine).</li><li>Supporting mitochondrial energy production in liver cells, keeping them metabolically active so the detox process doesn't slow down when it matters most.</li></ol><p>Due to how Kanbae stacks these synergistic mechanisms, Kanbae users report feeling less intoxicated, retaining more cognitive faculties and sobering up quickly after drinking.</p>",
-                    "width": "100%",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": true,
-                    "background_color": "#043f34",
-                    "corner_radius": 10,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_ArWiK8"
-              ]
-            },
-            "accordion_row_Mw7XRH": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "Isn't more DHM better?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_q7TMBe": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>This is one of the biggest scientific myths used for marketing purposes. The bioavailability of DHM is only 4.02%, so occupying more capsule space with it actually leads to exponentially decreasing effectiveness relative to what could otherwise be achieved (with good formulation work)! Our R&D team has personally tested all possible doses of DHM and noticed a point of significantly diminishing returns. This is why we have dosed DHM in the perfect sweet spot, making space for more ingredients to work together in unison.</p>",
-                    "width": "100%",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": true,
-                    "background_color": "#043f34",
-                    "corner_radius": 10,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_q7TMBe"
-              ]
-            },
-            "accordion_row_JJBpDz": {
-              "type": "_accordion-row",
-              "name": "t:names.accordion_row",
-              "settings": {
-                "heading": "What if it doesn't work for me?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_zPe48f": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>We’re confident that Kanbae is one of the most effective products in the market, but we also recognise that everyone’s body is different. If Kanbae isn’t right for you, we’ve got you covered.<br/><br/>Simply email hello@kanbae.com within 45 days of purchase, and we’ll help arrange a refund. If you’re not satisfied for any reason, we’ll refund your first order, covering up to one unit of each product, regardless of the number of doses per unit.</p>",
-                    "width": "100%",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": true,
-                    "background_color": "#043f34",
-                    "corner_radius": 10,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_zPe48f"
-              ]
-            },
-            "accordion_row_e8YcH6": {
-              "type": "_accordion-row",
-              "name": "t:names.accordion_row",
-              "settings": {
-                "heading": "Can I purchase outside of the US?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_HtRfmn": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Yes! You can purchase on our main international website www.drinkaid.co.</p>",
-                    "width": "100%",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": true,
-                    "background_color": "#043f34",
-                    "corner_radius": 10,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_HtRfmn"
-              ]
-            }
-          },
-          "block_order": [
-            "accordion_row_dN3wEC",
-            "accordion_row_ganNFn",
-            "accordion_row_Mw7XRH",
-            "accordion_row_JJBpDz",
-            "accordion_row_e8YcH6"
-          ]
+            "question": "What makes Kanbae different from brands?",
+            "answer": "<p>DrinkAid tackles acetaldehyde, the root cause of alcohol's side effects, through<strong> multiple pathways</strong>, instead of overrelying on DHM. This includes:</p><ol><li>Enhancing ALDH2 activity and accelerating acetaldehyde break down.</li><li>Directly boosting glutathione levels. This <a href=\"https://pubmed.ncbi.nlm.nih.gov/22615054/\" target=\"_blank\" title=\"https://pubmed.ncbi.nlm.nih.gov/22615054/\">binds directly to acetaldehyde</a> to facilitate its removal and supports its <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11479010/#:~:text=However%2C%20there%20was%20no%20significant,the%20relief%20of%20hangover%20symptoms.\" target=\"_blank\" title=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11479010/#:~:text=However%2C%20there%20was%20no%20significant,the%20relief%20of%20hangover%20symptoms.\">enzymatic breakdown</a>. Most brands only include cheaper glutathione precursors (e.g. L-Cysteine).</li><li>Supporting mitochondrial energy production in liver cells, keeping them metabolically active so the detox process doesn't slow down when it matters most.</li></ol><p>Due to how Kanbae stacks these synergistic mechanisms, Kanbae users report feeling less intoxicated, retaining more cognitive faculties and sobering up quickly after drinking.</p>"
+          }
+        },
+        "faq_Jtx6ae": {
+          "type": "faq",
+          "settings": {
+            "question": "Isn't more DHM better?",
+            "answer": "<p>This is one of the biggest scientific myths used for marketing purposes. The bioavailability of DHM is only 4.02%, so occupying more capsule space with it actually leads to exponentially decreasing effectiveness relative to what could otherwise be achieved (with good formulation work)! Our R&D team has personally tested all possible doses of DHM and noticed a point of significantly diminishing returns. This is why we have dosed DHM in the perfect sweet spot, making space for more ingredients to work together in unison.</p>"
+          }
+        },
+        "faq_UQxYtc": {
+          "type": "faq",
+          "settings": {
+            "question": "What if it doesn't work for me?",
+            "answer": "<p>We’re confident that Kanbae is one of the most effective products in the market, but we also recognise that everyone’s body is different. If Kanbae isn’t right for you, we’ve got you covered.<br/><br/>Simply email hello@kanbae.com within 45 days of purchase, and we’ll help arrange a refund. If you’re not satisfied for any reason, we’ll refund your first order, covering up to one unit of each product, regardless of the number of doses per unit.</p>"
+          }
+        },
+        "faq_WTjfnq": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I purchase outside of the US?",
+            "answer": "<p>Yes! You can purchase on our main international website www.drinkaid.co</p>"
+          }
         }
       },
       "block_order": [
-        "text_PyDapn",
-        "accordion_X39Rxf"
+        "faq_hThgWe",
+        "faq_MmHyMU",
+        "faq_Jtx6ae",
+        "faq_UQxYtc",
+        "faq_WTjfnq"
       ],
-      "name": "t:names.faq_section",
+      "name": "Kanbae FAQ",
       "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "background_media": "none",
-        "background_color": "{{ settings.color_palette.foreground }}",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_color": "",
-        "border_radius": 0,
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "eyebrow": "Got Questions?",
+        "headline": "Frequently Asked Questions",
+        "subheading": "Everything you need to know before your next round."
       }
     },
     "section_JMfd7J": {
@@ -3086,7 +2846,7 @@
     "main",
     "section_MjxCcE",
     "kanbae_ingredients_accordion_xb3YrH",
-    "section_gCwKt7",
+    "kanbae_faq_KGqpDj",
     "section_JMfd7J",
     "product_recommendations_qggXJq",
     "1776242421824df32b"
