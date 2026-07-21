@@ -1,0 +1,138 @@
+{{ 'kanbae-testimonials-cards.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'kanbae-testimonials-cards.js' | asset_url }}" defer="defer"></script>
+
+<section
+  class="kanbae-testimonials"
+  id="kanbae-testimonials-{{ section.id }}"
+  aria-label="{{ section.settings.headline | escape }}"
+  data-kanbae-testimonials
+  {% if section.settings.enable_animation %}data-animate="true"{% endif %}
+>
+  <div class="kanbae-testimonials__inner">
+
+    {%- if section.settings.eyebrow != blank or section.settings.headline != blank or section.settings.subheading != blank -%}
+      <div class="kanbae-testimonials__header">
+        {%- if section.settings.eyebrow != blank -%}
+          <p class="kanbae-testimonials__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+        {%- endif -%}
+        {%- if section.settings.headline != blank -%}
+          <h2 class="kanbae-testimonials__headline">{{ section.settings.headline | escape }}</h2>
+        {%- endif -%}
+        {%- if section.settings.subheading != blank -%}
+          <p class="kanbae-testimonials__subheading">{{ section.settings.subheading }}</p>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="kanbae-testimonials__grid">
+        {%- for block in section.blocks -%}
+          {%- assign kt_rating = block.settings.rating -%}
+          <article class="kanbae-testimonials__card" style="--ktc-card-index: {{ forloop.index0 }};" {{ block.shopify_attributes }}>
+
+            <div class="kanbae-testimonials__stars" role="img" aria-label="{{ kt_rating }} de 5 estrellas">
+              {%- for i in (1..5) -%}
+                <svg class="kanbae-testimonials__star{% if i <= kt_rating %} is-filled{% endif %}" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              {%- endfor -%}
+            </div>
+
+            {%- if block.settings.title != blank -%}
+              <h3 class="kanbae-testimonials__title">{{ block.settings.title | escape }}</h3>
+            {%- endif -%}
+
+            {%- if block.settings.body != blank -%}
+              <p class="kanbae-testimonials__body">{{ block.settings.body | escape | newline_to_br }}</p>
+            {%- endif -%}
+
+            {%- if block.settings.author != blank or block.settings.date != blank or block.settings.product != blank -%}
+              <footer class="kanbae-testimonials__footer">
+                <div class="kanbae-testimonials__meta">
+                  {%- if block.settings.author != blank -%}
+                    <span class="kanbae-testimonials__author">{{ block.settings.author | escape }}</span>
+                  {%- endif -%}
+                  {%- if block.settings.date != blank -%}
+                    <span class="kanbae-testimonials__date">{{ block.settings.date | escape }}</span>
+                  {%- endif -%}
+                </div>
+                {%- if block.settings.product != blank -%}
+                  <span class="kanbae-testimonials__product">{{ block.settings.product | escape }}</span>
+                {%- endif -%}
+              </footer>
+            {%- endif -%}
+
+          </article>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kanbae Testimonials Cards",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Lo que dicen" },
+    { "type": "text", "id": "headline", "label": "Heading", "default": "Join 40,000+ Kanbaes Living Their Best Lives" },
+    { "type": "textarea", "id": "subheading", "label": "Subtítle", "default": "and follow us on our socials @usekanbae!" },
+    { "type": "checkbox", "id": "enable_animation", "label": "Enable animation to do scroll", "default": true }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Reseña",
+      "settings": [
+        { "type": "range", "id": "rating", "label": "Rating (stars)", "min": 1, "max": 5, "step": 1, "default": 5 },
+        { "type": "text", "id": "title", "label": "Title of review", "default": "Ya no sufro la resaca" },
+        { "type": "textarea", "id": "body", "label": "Comment of user", "default": "Kanbae se ha vuelto parte de mi rutina antes de salir. Al día siguiente me siento con energía." },
+        { "type": "text", "id": "author", "label": "Name of user", "default": "Camila R." },
+        { "type": "text", "id": "date", "label": "Date", "default": "Hace 3 semanas" },
+        { "type": "text", "id": "product", "label": "Purchase verified", "default": "Kanbae Total Alcohol Defense" }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Kanbae Testimonials Cards",
+      "blocks": [
+        {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "title": "Ya no sufro la resaca",
+            "body": "Kanbae se ha vuelto parte de mi rutina antes de salir. Al día siguiente me siento con energía.",
+            "author": "Camila R.",
+            "date": "Hace 3 semanas",
+            "product": "Kanbae Total Alcohol Defense"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "title": "Mi liver ahora me lo agradece",
+            "body": "Lo tomo antes de la primera copa y la diferencia al día siguiente es enorme. Sin resaca, sin culpa.",
+            "author": "Diego M.",
+            "date": "Hace 1 mes",
+            "product": "Kanbae Total Alcohol Defense"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "rating": 4,
+            "title": "Funciona de verdad",
+            "body": "Era escéptica, pero después de un fin de semana de bodas sin resaca me convertí en fan.",
+            "author": "Valentina S.",
+            "date": "Hace 2 meses",
+            "product": "Kanbae Total Alcohol Defense"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
