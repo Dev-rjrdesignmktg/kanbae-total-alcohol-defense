@@ -1,0 +1,128 @@
+{{ 'kanbae-timeline-showcase.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'kanbae-timeline-showcase.js' | asset_url }}" defer="defer"></script>
+
+<section class="kanbae-timeline" id="kanbae-timeline-{{ section.id }}" aria-label="{{ section.settings.headline | escape }}">
+  <div class="kanbae-timeline__inner">
+
+    {%- if section.settings.eyebrow != blank or section.settings.headline != blank -%}
+      <div class="kanbae-timeline__header">
+        {%- if section.settings.eyebrow != blank -%}
+          <p class="kanbae-timeline__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+        {%- endif -%}
+        {%- if section.settings.headline != blank -%}
+          <h2 class="kanbae-timeline__headline">{{ section.settings.headline | escape }}</h2>
+        {%- endif -%}
+        {%- if section.settings.subheading != blank -%}
+          <p class="kanbae-timeline__subheading">{{ section.settings.subheading }}</p>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    <div class="kanbae-timeline__grid">
+
+      <div class="kanbae-timeline__stage">
+        {%- for block in section.blocks -%}
+          {%- assign image_alt = block.settings.image.alt | default: block.settings.title -%}
+          <div class="kanbae-timeline__slide {% if forloop.first %}is-active{% endif %}" data-timeline-slide data-index="{{ forloop.index0 }}">
+            {%- if block.settings.image != blank -%}
+              {{ block.settings.image | image_url: width: 1600 | image_tag:
+                loading: 'lazy',
+                widths: '480, 720, 960, 1200, 1600',
+                sizes: '(min-width: 990px) 52vw, 100vw',
+                class: 'kanbae-timeline__image',
+                alt: image_alt
+              }}
+            {%- else -%}
+              {{ 'lifestyle-1' | placeholder_svg_tag: 'kanbae-timeline__image' }}
+            {%- endif -%}
+
+            {%- if block.settings.label_text != blank or block.settings.title != blank -%}
+              <span class="kanbae-timeline__badge">{{ block.settings.label_text | default: block.settings.title | escape }}</span>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
+
+      <ol class="kanbae-timeline__list" role="list">
+        {%- for block in section.blocks -%}
+          {%- assign thumb_alt = block.settings.thumbnail.alt | default: block.settings.title -%}
+          <li class="kanbae-timeline__item" {{ block.shopify_attributes }}>
+            <button
+              type="button"
+              class="kanbae-timeline__card {% if forloop.first %}is-active{% endif %}"
+              data-timeline-card
+              data-index="{{ forloop.index0 }}"
+              aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}"
+            >
+              <span class="kanbae-timeline__dot" aria-hidden="true"></span>
+
+              <span class="kanbae-timeline__thumb">
+                {%- if block.settings.thumbnail != blank -%}
+                  {{ block.settings.thumbnail | image_url: width: 160 | image_tag:
+                    loading: 'lazy',
+                    widths: '80, 120, 160',
+                    sizes: '64px',
+                    class: 'kanbae-timeline__thumb-img',
+                    alt: thumb_alt
+                  }}
+                {%- else -%}
+                  {{ 'lifestyle-1' | placeholder_svg_tag: 'kanbae-timeline__thumb-img' }}
+                {%- endif -%}
+              </span>
+
+              <span class="kanbae-timeline__copy">
+                {%- if block.settings.label_text != blank -%}
+                  <span class="kanbae-timeline__label">{{ block.settings.label_text | escape }}</span>
+                {%- endif -%}
+                {%- if block.settings.title != blank -%}
+                  <span class="kanbae-timeline__title">{{ block.settings.title | escape }}</span>
+                {%- endif -%}
+                {%- if block.settings.description != blank -%}
+                  <span class="kanbae-timeline__desc-wrap">
+                    <span class="kanbae-timeline__desc">{{ block.settings.description }}</span>
+                  </span>
+                {%- endif -%}
+              </span>
+            </button>
+          </li>
+        {%- endfor -%}
+      </ol>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kanbae Timeline Showcase",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Your Recovery Timeline" },
+    { "type": "text", "id": "headline", "label": "Headline", "default": "One formula, every moment." },
+    { "type": "textarea", "id": "subheading", "label": "Subheading", "default": "Hover a moment to see how Kanbae supports it." }
+  ],
+  "blocks": [
+    {
+      "type": "moment",
+      "name": "Timeline moment",
+      "limit": 6,
+      "settings": [
+        { "type": "text", "id": "label_text", "label": "Time / tag label", "info": "e.g. \"BEFORE DRINKING\"" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "description", "label": "Short description" },
+        { "type": "image_picker", "id": "image", "label": "Main image" },
+        { "type": "image_picker", "id": "thumbnail", "label": "Thumbnail / badge image" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kanbae Timeline Showcase",
+      "blocks": [
+        { "type": "moment", "settings": { "label_text": "STEP 01 · BEFORE DRINKING", "title": "Prime your defenses", "description": "Take Kanbae before your first drink to help your liver stay ahead of the impact." } },
+        { "type": "moment", "settings": { "label_text": "STEP 02 · AFTER HEAVY DRINKING", "title": "Accelerate recovery", "description": "A second dose supports faster breakdown of toxins overnight." } },
+        { "type": "moment", "settings": { "label_text": "STEP 03 · OPTIONAL EXTRA SUPPORT", "title": "Top up anytime", "description": "Feeling it the next morning? Kanbae can help you bounce back." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

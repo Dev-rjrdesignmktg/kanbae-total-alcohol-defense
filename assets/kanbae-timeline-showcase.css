@@ -1,0 +1,294 @@
+.kanbae-timeline {
+  --kts-forest: var(--green-forest, #1B4332);
+  --kts-lime: var(--green-lime, #A3FF16);
+  --kts-cream: var(--white-cream, #F7F6F2);
+  --kts-carbon: var(--black-carbon, #0A1915);
+  --kts-font-display: var(--font-display, inherit);
+  --kts-font-body: var(--font-body, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif);
+  --kts-ease: var(--ease, cubic-bezier(.22, .61, .36, 1));
+  --kts-line: rgba(247, 246, 242, 0.14);
+
+  background: var(--kts-carbon);
+  color: var(--kts-cream);
+  font-family: var(--kts-font-body);
+  padding: 88px 24px;
+}
+
+.kanbae-timeline__inner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* ---------- Header ---------- */
+.kanbae-timeline__header {
+  max-width: 620px;
+  margin: 0 0 56px;
+}
+
+.kanbae-timeline__eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--kts-lime);
+  margin: 0 0 12px;
+}
+
+.kanbae-timeline__headline {
+  font-family: var(--kts-font-display);
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.15;
+  font-weight: 900;
+  margin: 0 0 14px;
+  color: var(--kts-cream);
+}
+
+.kanbae-timeline__subheading {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--kts-cream);
+  opacity: 0.7;
+  margin: 0;
+}
+
+/* ---------- Layout ---------- */
+.kanbae-timeline__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 990px) {
+  .kanbae-timeline__grid {
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: stretch;
+    gap: 48px;
+  }
+}
+
+/* ---------- Stage (right column / image) ---------- */
+.kanbae-timeline__stage {
+  position: relative;
+  order: -1;
+  aspect-ratio: 4 / 5;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--kts-forest);
+  isolation: isolate;
+}
+
+@media (min-width: 990px) {
+  .kanbae-timeline__stage {
+    order: 2;
+    aspect-ratio: auto;
+    height: 100%;
+    min-height: 560px;
+  }
+}
+
+.kanbae-timeline__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.08);
+  transition: opacity 0.7s var(--kts-ease), transform 0.9s var(--kts-ease);
+  pointer-events: none;
+}
+
+.kanbae-timeline__slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.kanbae-timeline__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.kanbae-timeline__badge {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  z-index: 2;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--kts-cream);
+  background: rgba(10, 25, 21, 0.38);
+  border: 1px solid rgba(247, 246, 242, 0.22);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* ---------- Timeline list (left column) ---------- */
+.kanbae-timeline__list {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 28px;
+}
+
+@media (min-width: 990px) {
+  .kanbae-timeline__list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .kanbae-timeline__item + .kanbae-timeline__item {
+    margin-top: 0;
+  }
+}
+
+.kanbae-timeline__list::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  bottom: 14px;
+  left: 5px;
+  width: 1px;
+  background: var(--kts-line);
+}
+
+.kanbae-timeline__item {
+  position: relative;
+}
+
+.kanbae-timeline__item + .kanbae-timeline__item {
+  margin-top: 8px;
+}
+
+.kanbae-timeline__card {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 0.35s var(--kts-ease), border-color 0.35s var(--kts-ease);
+}
+
+.kanbae-timeline__card:hover,
+.kanbae-timeline__card:focus-visible,
+.kanbae-timeline__card.is-active {
+  background: rgba(247, 246, 242, 0.06);
+  border-color: rgba(163, 255, 22, 0.25);
+}
+
+.kanbae-timeline__card:focus-visible {
+  outline: 2px solid var(--kts-lime);
+  outline-offset: 2px;
+}
+
+.kanbae-timeline__dot {
+  position: absolute;
+  top: 24px;
+  left: -28px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--kts-carbon);
+  border: 1px solid var(--kts-line);
+  transition: background-color 0.35s var(--kts-ease), border-color 0.35s var(--kts-ease), box-shadow 0.35s var(--kts-ease);
+}
+
+.kanbae-timeline__card.is-active .kanbae-timeline__dot {
+  background: var(--kts-lime);
+  border-color: var(--kts-lime);
+  box-shadow: 0 0 0 4px rgba(163, 255, 22, 0.16);
+}
+
+.kanbae-timeline__thumb {
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.kanbae-timeline__thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(1);
+  transform: scale(1);
+  transition: filter 0.45s var(--kts-ease), transform 0.45s var(--kts-ease);
+}
+
+.kanbae-timeline__card:hover .kanbae-timeline__thumb-img,
+.kanbae-timeline__card:focus-visible .kanbae-timeline__thumb-img,
+.kanbae-timeline__card.is-active .kanbae-timeline__thumb-img {
+  filter: grayscale(0);
+  transform: scale(1.12);
+}
+
+.kanbae-timeline__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.kanbae-timeline__label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--kts-lime);
+}
+
+.kanbae-timeline__title {
+  font-family: var(--kts-font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--kts-cream);
+}
+
+.kanbae-timeline__desc-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s var(--kts-ease);
+}
+
+.kanbae-timeline__card:hover .kanbae-timeline__desc-wrap,
+.kanbae-timeline__card:focus-visible .kanbae-timeline__desc-wrap,
+.kanbae-timeline__card.is-active .kanbae-timeline__desc-wrap {
+  grid-template-rows: 1fr;
+  margin-top: 4px;
+}
+
+.kanbae-timeline__desc {
+  overflow: hidden;
+  min-height: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--kts-cream);
+  opacity: 0.68;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kanbae-timeline__slide,
+  .kanbae-timeline__thumb-img,
+  .kanbae-timeline__dot,
+  .kanbae-timeline__card,
+  .kanbae-timeline__desc-wrap {
+    transition: none !important;
+  }
+}
