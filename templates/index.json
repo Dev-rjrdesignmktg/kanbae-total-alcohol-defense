@@ -3068,7 +3068,7 @@
               "type": "checklist",
               "name": "Checklist",
               "settings": {
-                "background_color": "#A3FF16",
+                "background_color": "#a3ff16",
                 "text_color": "#082310",
                 "blur_background": false,
                 "padding-block-start": 8,
@@ -3778,6 +3778,56 @@
         "padding-block-start": 53,
         "padding-block-end": 53
       }
+    },
+    "kanbae_testimonials_cards_kpJng7": {
+      "type": "kanbae-testimonials-cards",
+      "blocks": {
+        "testimonial_X78XEn": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "title": "Ya no sufro la resaca",
+            "body": "Kanbae se ha vuelto parte de mi rutina antes de salir. Al día siguiente me siento con energía.",
+            "author": "Camila R.",
+            "date": "Hace 3 semanas",
+            "product": "Kanbae Total Alcohol Defense"
+          }
+        },
+        "testimonial_9pHwnq": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "title": "Mi liver ahora me lo agradece",
+            "body": "Lo tomo antes de la primera copa y la diferencia al día siguiente es enorme. Sin resaca, sin culpa.",
+            "author": "Diego M.",
+            "date": "Hace 1 mes",
+            "product": "Kanbae Total Alcohol Defense"
+          }
+        },
+        "testimonial_VHPzPT": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 4,
+            "title": "Funciona de verdad",
+            "body": "Era escéptica, pero después de un fin de semana de bodas sin resaca me convertí en fan.",
+            "author": "Valentina S.",
+            "date": "Hace 2 meses",
+            "product": "Kanbae Total Alcohol Defense"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_X78XEn",
+        "testimonial_9pHwnq",
+        "testimonial_VHPzPT"
+      ],
+      "name": "Kanbae Testimonials Cards",
+      "settings": {
+        "eyebrow": "Lo que dicen",
+        "headline": "Join 40,000+ Kanbaes Living Their Best Lives",
+        "subheading": "and follow us on our socials @usekanbae!",
+        "enable_animation": true
+      }
     }
   },
   "order": [
@@ -3793,6 +3843,7 @@
     "section_diBL79",
     "featured_product_information_wqCtfc",
     "kanbae_newsletter_rHq76z",
-    "section_9qWLME"
+    "section_9qWLME",
+    "kanbae_testimonials_cards_kpJng7"
   ]
 }
