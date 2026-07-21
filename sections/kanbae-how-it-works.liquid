@@ -1,0 +1,88 @@
+{{ 'kanbae-how-it-works.css' | asset_url | stylesheet_tag }}
+
+<section class="kb-how" aria-label="How Kanbae works">
+  <div class="kb-how__inner">
+    {%- if section.settings.eyebrow != blank or section.settings.headline != blank -%}
+      <div class="kb-how__header">
+        {%- if section.settings.eyebrow != blank -%}
+          <p class="kb-how__eyebrow">{{ section.settings.eyebrow }}</p>
+        {%- endif -%}
+        {%- if section.settings.headline != blank -%}
+          <h2 class="kb-how__headline">{{ section.settings.headline }}</h2>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    <ol class="kb-how__steps" role="list">
+      {%- for block in section.blocks -%}
+        <li class="kb-how__step" {{ block.shopify_attributes }}>
+          <div class="kb-how__icon-wrap">
+            <div class="kb-how__icon">
+              {%- if block.settings.icon != blank -%}
+                {{ block.settings.icon | image_url: width: 340 | image_tag:
+                  loading: 'lazy',
+                  widths: '120, 160, 220, 280, 340',
+                  sizes: '(min-width: 900px) 170px, 120px',
+                  alt: block.settings.icon.alt | default: block.settings.title,
+                  class: 'kb-how__icon-img'
+                }}
+              {%- else -%}
+                {{ 'lifestyle-1' | placeholder_svg_tag: 'kb-how__icon-placeholder' }}
+              {%- endif -%}
+            </div>
+            {%- if block.settings.step_number != blank -%}
+              <span class="kb-how__step-number" aria-hidden="true">{{ block.settings.step_number }}</span>
+            {%- endif -%}
+          </div>
+
+          <div class="kb-how__content">
+            {%- if block.settings.title != blank -%}
+              <h3 class="kb-how__title">{{ block.settings.title }}</h3>
+            {%- endif -%}
+            {%- if block.settings.description != blank -%}
+              <p class="kb-how__description">{{ block.settings.description }}</p>
+            {%- endif -%}
+          </div>
+
+          {%- unless forloop.last -%}
+            <span class="kb-how__connector" aria-hidden="true"></span>
+          {%- endunless -%}
+        </li>
+      {%- endfor -%}
+    </ol>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kanbae How It Works",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "The Process" },
+    { "type": "text", "id": "headline", "label": "Headline", "default": "How Kanbae Works" }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "limit": 6,
+      "settings": [
+        { "type": "image_picker", "id": "icon", "label": "Icon" },
+        { "type": "text", "id": "step_number", "label": "Step label", "info": "e.g. \"01\"" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "description", "label": "Description" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kanbae How It Works",
+      "blocks": [
+        { "type": "step", "settings": { "step_number": "01", "title": "Drink", "description": "Alcohol enters your system and heads straight for the liver." } },
+        { "type": "step", "settings": { "step_number": "02", "title": "Acetaldehyde builds", "description": "A toxic byproduct accumulates faster than your body can clear it." } },
+        { "type": "step", "settings": { "step_number": "03", "title": "Kanbae supports breakdown", "description": "Targeted actives help your liver process it before it takes hold." } },
+        { "type": "step", "settings": { "step_number": "04", "title": "Wake up better", "description": "Less damage, less grogginess — just a clearer next day." } }
+      ]
+    }
+  ]
+}
+{% endschema %}
