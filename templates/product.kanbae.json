@@ -380,7 +380,6 @@
       "blocks": {
         "text_gBmU9W": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "<p><strong>— WHAT PEOPLE THINK ABOUT KANBAE</strong></p>",
             "text_custom": false,
@@ -393,7 +392,7 @@
             "text_mt_mobile": 16,
             "text_max_width": 60,
             "text_max_width_mobile": 100,
-            "text_color": "#121212"
+            "text_color": "{{ settings.color_palette.background }}"
           }
         },
         "heading_YV9Lkw": {
