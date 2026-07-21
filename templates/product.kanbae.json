@@ -3170,6 +3170,59 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
+    },
+    "kanbae_ingredients_accordion_HnGRtd": {
+      "type": "kanbae-ingredients-accordion",
+      "blocks": {
+        "ingredient_K7XVXF": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Japanese Raisin Tree (DHM)",
+            "description": "<p><strong>Speeds toxin breakdown.</strong> Dihydromyricetin (DHM) helps the liver metabolize acetaldehyde faster, the byproduct responsible for next-day fatigue.</p>"
+          }
+        },
+        "ingredient_GFE9D6": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Milk Thistle Extract",
+            "description": "<p><strong>Protects liver cells.</strong> Silymarin supports cellular repair and shields the liver from oxidative stress caused by alcohol.</p>"
+          }
+        },
+        "ingredient_H84Yag": {
+          "type": "ingredient",
+          "settings": {
+            "name": "N-Acetyl Cysteine (NAC)",
+            "description": "<p><strong>Replenishes glutathione.</strong> NAC fuels the body's master antioxidant, helping clear toxins before they cause damage.</p>"
+          }
+        },
+        "ingredient_GANzmN": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Prickly Pear Extract",
+            "description": "<p><strong>Reduces inflammation.</strong> Rich in betalains, it helps lower the inflammatory markers linked to hangover symptoms.</p>"
+          }
+        },
+        "ingredient_GETp6T": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Electrolyte Blend",
+            "description": "<p><strong>Restores hydration.</strong> Sodium and potassium replace what's lost to alcohol's diuretic effect, easing headaches and fatigue.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "ingredient_K7XVXF",
+        "ingredient_GFE9D6",
+        "ingredient_H84Yag",
+        "ingredient_GANzmN",
+        "ingredient_GETp6T"
+      ],
+      "name": "Kanbae Ingredients",
+      "settings": {
+        "eyebrow": "Inside Every Dose",
+        "headline": "Backed by Science, Rooted in Nature",
+        "subheading": "Every ingredient in Kanbae is dosed for a reason. Tap to see how each one works."
+      }
     }
   },
   "order": [
@@ -3184,6 +3237,7 @@
     "main",
     "section_MjxCcE",
     "ss_product_ingredients_3_jxYQCn",
+    "kanbae_ingredients_accordion_HnGRtd",
     "section_gCwKt7",
     "section_JMfd7J",
     "product_recommendations_qggXJq",
