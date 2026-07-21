@@ -384,15 +384,15 @@
             "text": "<p><strong>— WHAT PEOPLE THINK ABOUT KANBAE</strong></p>",
             "text_custom": false,
             "text_font": "josefin_sans_n4",
-            "text_size": 18,
-            "text_size_mobile": 16,
+            "text_size": 14,
+            "text_size_mobile": 14,
             "text_advanced": false,
             "text_height": 150,
             "text_mt": 18,
             "text_mt_mobile": 16,
             "text_max_width": 60,
             "text_max_width_mobile": 100,
-            "text_color": "{{ settings.color_palette.background }}"
+            "text_color": "{{ settings.color_palette.foreground }}"
           }
         },
         "heading_YV9Lkw": {
@@ -405,7 +405,7 @@
             "heading_size_mobile": 40,
             "heading_advanced": true,
             "heading_height": 100,
-            "heading_mt": 0,
+            "heading_mt": 26,
             "heading_mt_mobile": 0,
             "heading_color": "#082310",
             "heading_accent_color": "#afafaf"
