@@ -240,7 +240,7 @@
         "text_i6jDUj": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>10K+ FIVE-STARTS REVIEWS</strong></p>",
+            "text": "<p><strong>10K+ FIVE-STARS REVIEWS</strong></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -506,7 +506,7 @@
               "type": "checklist",
               "name": "Checklist",
               "settings": {
-                "background_color": "#A3FF16",
+                "background_color": "#a3ff16",
                 "text_color": "#082310",
                 "blur_background": true,
                 "padding-block-start": 8,
