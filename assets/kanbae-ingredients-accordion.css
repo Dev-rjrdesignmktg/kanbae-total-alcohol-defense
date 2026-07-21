@@ -216,6 +216,22 @@
 .kanbae-ing__desc p:last-child { margin-bottom: 0; }
 .kanbae-ing__desc strong { color: var(--black-carbon); }
 
+.kanbae-ing__badge {
+  display: inline-block;
+  margin: 0 4px 22px 46px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--green-forest);
+  background: color-mix(in srgb, var(--green-lime) 22%, transparent);
+  border: 1px solid color-mix(in srgb, var(--green-lime) 55%, transparent);
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .kanbae-ing__image,
   .kanbae-ing__toggle::before,

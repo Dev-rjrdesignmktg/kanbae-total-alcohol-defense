@@ -51,6 +51,9 @@
             <div class="kanbae-ing__panel">
               <div class="kanbae-ing__panel-inner">
                 <div class="kanbae-ing__desc">{{ block.settings.description }}</div>
+                {%- if block.settings.badge_text != blank -%}
+                  <span class="kanbae-ing__badge">{{ block.settings.badge_text | escape }}</span>
+                {%- endif -%}
               </div>
             </div>
           </div>
@@ -76,7 +79,8 @@
       "name": "Ingredient",
       "settings": [
         { "type": "text", "id": "name", "label": "Ingredient name", "default": "Japanese Raisin Tree (DHM)" },
-        { "type": "richtext", "id": "description", "label": "Benefit & mechanism" }
+        { "type": "richtext", "id": "description", "label": "Benefit & mechanism" },
+        { "type": "text", "id": "badge_text", "label": "Badge / keyword", "info": "Short keyword shown below the description, e.g. \"Liver Detox\"" }
       ]
     }
   ],
@@ -84,11 +88,11 @@
     {
       "name": "Kanbae Ingredients",
       "blocks": [
-        { "type": "ingredient", "settings": { "name": "Japanese Raisin Tree (DHM)", "description": "<p><strong>Speeds toxin breakdown.</strong> Dihydromyricetin (DHM) helps the liver metabolize acetaldehyde faster, the byproduct responsible for next-day fatigue.</p>" } },
-        { "type": "ingredient", "settings": { "name": "Milk Thistle Extract", "description": "<p><strong>Protects liver cells.</strong> Silymarin supports cellular repair and shields the liver from oxidative stress caused by alcohol.</p>" } },
-        { "type": "ingredient", "settings": { "name": "N-Acetyl Cysteine (NAC)", "description": "<p><strong>Replenishes glutathione.</strong> NAC fuels the body's master antioxidant, helping clear toxins before they cause damage.</p>" } },
-        { "type": "ingredient", "settings": { "name": "Prickly Pear Extract", "description": "<p><strong>Reduces inflammation.</strong> Rich in betalains, it helps lower the inflammatory markers linked to hangover symptoms.</p>" } },
-        { "type": "ingredient", "settings": { "name": "Electrolyte Blend", "description": "<p><strong>Restores hydration.</strong> Sodium and potassium replace what's lost to alcohol's diuretic effect, easing headaches and fatigue.</p>" } }
+        { "type": "ingredient", "settings": { "name": "Japanese Raisin Tree (DHM)", "description": "<p><strong>Speeds toxin breakdown.</strong> Dihydromyricetin (DHM) helps the liver metabolize acetaldehyde faster, the byproduct responsible for next-day fatigue.</p>", "badge_text": "Liver Detox" } },
+        { "type": "ingredient", "settings": { "name": "Milk Thistle Extract", "description": "<p><strong>Protects liver cells.</strong> Silymarin supports cellular repair and shields the liver from oxidative stress caused by alcohol.</p>", "badge_text": "Cell Protection" } },
+        { "type": "ingredient", "settings": { "name": "N-Acetyl Cysteine (NAC)", "description": "<p><strong>Replenishes glutathione.</strong> NAC fuels the body's master antioxidant, helping clear toxins before they cause damage.</p>", "badge_text": "Antioxidant Boost" } },
+        { "type": "ingredient", "settings": { "name": "Prickly Pear Extract", "description": "<p><strong>Reduces inflammation.</strong> Rich in betalains, it helps lower the inflammatory markers linked to hangover symptoms.</p>", "badge_text": "Anti-Inflammatory" } },
+        { "type": "ingredient", "settings": { "name": "Electrolyte Blend", "description": "<p><strong>Restores hydration.</strong> Sodium and potassium replace what's lost to alcohol's diuretic effect, easing headaches and fatigue.</p>", "badge_text": "Hydration" } }
       ]
     }
   ]
