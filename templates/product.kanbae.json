@@ -299,6 +299,7 @@
         "slide_E6HQdP": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/Increase_ALDH_lower_Acetaldehyde.png",
             "title": "Boost Your Alcohol Metabolism",
             "description": "Clinical data shows accelerated breakdown of acetaldehyde, reducing oxidative stress on the liver.",
             "metric": "2x increase"
