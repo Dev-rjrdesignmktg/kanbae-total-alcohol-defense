@@ -308,9 +308,10 @@
         "slide_LBMRqm": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/higher_glutathione_levels.png",
             "title": "Boost Your Alcohol Metabolism",
             "description": "Clinical data shows accelerated breakdown of acetaldehyde, reducing oxidative stress on the liver.",
-            "metric": "2x increase"
+            "metric": "30% Reduction in ALT & AST"
           }
         }
       },
