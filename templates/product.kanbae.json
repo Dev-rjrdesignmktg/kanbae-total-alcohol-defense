@@ -581,6 +581,52 @@
         "lazy": true
       }
     },
+    "kanbae_timeline_showcase_P9K6hh": {
+      "type": "kanbae-timeline-showcase",
+      "blocks": {
+        "moment_3hpdWQ": {
+          "type": "moment",
+          "settings": {
+            "label_text": "STEP 01 · BEFORE DRINKING",
+            "title": "Prime your defenses",
+            "description": "Take Kanbae before your first drink to help your liver stay ahead of the impact.",
+            "image": "shopify://shop_images/Dosage.png",
+            "thumbnail": "shopify://shop_images/Kanbae_promise.png"
+          }
+        },
+        "moment_GmDkNB": {
+          "type": "moment",
+          "settings": {
+            "label_text": "STEP 02 · AFTER HEAVY DRINKING",
+            "title": "Accelerate recovery",
+            "description": "A second dose supports faster breakdown of toxins overnight.",
+            "image": "shopify://shop_images/hero_2.jpg",
+            "thumbnail": "shopify://shop_images/Kanbae_customs_hero.png"
+          }
+        },
+        "moment_3QE43a": {
+          "type": "moment",
+          "settings": {
+            "label_text": "STEP 03 · OPTIONAL EXTRA SUPPORT",
+            "title": "Top up anytime",
+            "description": "Feeling it the next morning? Kanbae can help you bounce back.",
+            "image": "shopify://shop_images/Model_with_Kanbae_sachet_beside_pool.png",
+            "thumbnail": "shopify://shop_images/Kanbae_on_table.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "moment_3hpdWQ",
+        "moment_GmDkNB",
+        "moment_3QE43a"
+      ],
+      "name": "Kanbae Timeline Showcase",
+      "settings": {
+        "eyebrow": "Your Recovery Timeline",
+        "headline": "One formula, every moment.",
+        "subheading": "Hover a moment to see how Kanbae supports it."
+      }
+    },
     "section_F6zx3f": {
       "type": "section",
       "blocks": {
@@ -3133,6 +3179,7 @@
     "kanbae_how_it_works_Mhx9tY",
     "kanbae_proof_784YRw",
     "ss_video_grid_socials_3_mRcfmm",
+    "kanbae_timeline_showcase_P9K6hh",
     "section_F6zx3f",
     "main",
     "section_MjxCcE",
