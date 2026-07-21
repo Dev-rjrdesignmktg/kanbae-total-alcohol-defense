@@ -1,0 +1,226 @@
+.kanbae-ing {
+  --ki-line: color-mix(in srgb, var(--ki-forest) 16%, transparent);
+  background: var(--white-cream);
+  color: var(--black-carbon);
+  padding: 88px 24px;
+}
+
+.kanbae-ing__inner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* ---------- Header ---------- */
+.kanbae-ing__header {
+  max-width: 640px;
+  margin: 0 0 56px;
+}
+
+.kanbae-ing__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green-forest);
+  opacity: 0.7;
+  margin: 0 0 12px;
+}
+
+.kanbae-ing__eyebrow::before{
+  content: '';
+  width: 16px;
+  height: 1px;
+  background: var(--green-forest);
+  opacity: .5;
+}
+
+.kanbae-ing__headline {
+  font-family: var(--font-display);
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.15;
+  font-weight: 900;
+  margin: 0 0 14px;
+  color: var(--black-carbon);
+}
+
+.kanbae-ing__subheading {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--black-carbon);
+  opacity: 0.65;
+  margin: 0;
+  max-width: 52ch;
+}
+
+/* ---------- Layout ---------- */
+.kanbae-ing__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 990px) {
+  .kanbae-ing__grid {
+    grid-template-columns: 1fr 0.92fr;
+    align-items: start;
+    gap: 64px;
+  }
+
+  .kanbae-ing__media { order: 2; }
+  .kanbae-ing__accordion { order: 1; }
+}
+
+/* ---------- Media (right column, fixed image) ---------- */
+.kanbae-ing__media-inner {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  background: var(--green-forest);
+}
+
+@media (min-width: 990px) {
+  .kanbae-ing__media {
+    position: sticky;
+    top: 32px;
+  }
+}
+
+.kanbae-ing__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
+  transition: transform 0.8s var(--ease);
+}
+
+.kanbae-ing__media-inner:hover .kanbae-ing__image {
+  transform: scale(1.05);
+}
+
+/* ---------- Accordion (left column) ---------- */
+.kanbae-ing__accordion {
+  border-top: 1px solid var(--ki-line);
+}
+
+.kanbae-ing__item {
+  border-bottom: 1px solid var(--ki-line);
+}
+
+.kanbae-ing__row {
+  margin: 0;
+}
+
+.kanbae-ing__trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+}
+
+.kanbae-ing__trigger:focus-visible {
+  outline: 2px solid var(--green-forest);
+  outline-offset: 4px;
+}
+
+.kanbae-ing__mark {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  color: var(--green-lime);
+  opacity: 0.9;
+}
+
+.kanbae-ing__mark svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.kanbae-ing__name {
+  flex: 1;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--black-carbon);
+}
+
+.kanbae-ing__toggle {
+  position: relative;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.kanbae-ing__toggle::before,
+.kanbae-ing__toggle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: var(--green-forest);
+  transform: translate(-50%, -50%);
+  transition: transform 0.35s var(--ease), opacity 0.35s var(--ease), background-color 0.35s var(--ease);
+}
+
+.kanbae-ing__toggle::before { width: 14px; height: 2px; }
+.kanbae-ing__toggle::after { width: 2px; height: 14px; }
+
+.kanbae-ing__item.is-open .kanbae-ing__toggle::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+  opacity: 0;
+}
+
+.kanbae-ing__item.is-open .kanbae-ing__toggle::before {
+  background: var(--green-forest);
+}
+
+.kanbae-ing__item.is-open .kanbae-ing__mark {
+  opacity: 1;
+}
+
+.kanbae-ing__panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.45s var(--ease);
+}
+
+.kanbae-ing__item.is-open .kanbae-ing__panel {
+  grid-template-rows: 1fr;
+}
+
+.kanbae-ing__panel-inner {
+  overflow: hidden;
+}
+
+.kanbae-ing__desc {
+  padding: 0 4px 22px 46px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: color-mix(in srgb, var(--black-carbon) 72%, transparent);
+  max-width: 48ch;
+}
+
+.kanbae-ing__desc p { margin: 0 0 10px; }
+.kanbae-ing__desc p:last-child { margin-bottom: 0; }
+.kanbae-ing__desc strong { color: var(--black-carbon); }
+
+@media (prefers-reduced-motion: reduce) {
+  .kanbae-ing__image,
+  .kanbae-ing__toggle::before,
+  .kanbae-ing__toggle::after,
+  .kanbae-ing__panel {
+    transition: none !important;
+  }
+}

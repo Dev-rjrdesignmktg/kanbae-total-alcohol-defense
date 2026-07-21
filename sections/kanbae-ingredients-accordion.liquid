@@ -1,0 +1,96 @@
+{{ 'kanbae-ingredients-accordion.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'kanbae-ingredients-accordion.js' | asset_url }}" defer="defer"></script>
+
+<section class="kanbae-ing" id="kanbae-ing-{{ section.id }}" aria-label="{{ section.settings.headline | escape }}">
+  <div class="kanbae-ing__inner">
+
+    {%- if section.settings.eyebrow != blank or section.settings.headline != blank -%}
+      <div class="kanbae-ing__header">
+        {%- if section.settings.eyebrow != blank -%}
+          <p class="kanbae-ing__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+        {%- endif -%}
+        {%- if section.settings.headline != blank -%}
+          <h2 class="kanbae-ing__headline">{{ section.settings.headline | escape }}</h2>
+        {%- endif -%}
+        {%- if section.settings.subheading != blank -%}
+          <p class="kanbae-ing__subheading">{{ section.settings.subheading }}</p>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    <div class="kanbae-ing__grid">
+
+      <div class="kanbae-ing__media">
+        <div class="kanbae-ing__media-inner">
+          {%- if section.settings.image != blank -%}
+            {{ section.settings.image | image_url: width: 1400 | image_tag:
+              loading: 'lazy',
+              widths: '480, 720, 960, 1200, 1400',
+              sizes: '(min-width: 990px) 46vw, 100vw',
+              class: 'kanbae-ing__image',
+              alt: section.settings.image.alt | default: section.settings.headline
+            }}
+          {%- else -%}
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'kanbae-ing__image' }}
+          {%- endif -%}
+        </div>
+      </div>
+
+      <div class="kanbae-ing__accordion js-ingredients-accordion">
+        {%- for block in section.blocks -%}
+          <div class="kanbae-ing__item {% if forloop.first %}is-open{% endif %}" data-item {{ block.shopify_attributes }}>
+            <h3 class="kanbae-ing__row">
+              <button class="kanbae-ing__trigger" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}">
+                <span class="kanbae-ing__mark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.6l2.85 6.62 7.15.62-5.42 4.72 1.63 6.96L12 16.9l-6.21 3.62 1.63-6.96L2 9.84l7.15-.62L12 1.6z"/></svg>
+                </span>
+                <span class="kanbae-ing__name">{{ block.settings.name }}</span>
+                <span class="kanbae-ing__toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="kanbae-ing__panel">
+              <div class="kanbae-ing__panel-inner">
+                <div class="kanbae-ing__desc">{{ block.settings.description }}</div>
+              </div>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kanbae Ingredients",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Inside Every Dose" },
+    { "type": "text", "id": "headline", "label": "Headline", "default": "Backed by Science, Rooted in Nature" },
+    { "type": "textarea", "id": "subheading", "label": "Subheading", "default": "Every ingredient in Kanbae is dosed for a reason. Tap to see how each one works." },
+    { "type": "image_picker", "id": "image", "label": "Featured image" }
+  ],
+  "blocks": [
+    {
+      "type": "ingredient",
+      "name": "Ingredient",
+      "settings": [
+        { "type": "text", "id": "name", "label": "Ingredient name", "default": "Japanese Raisin Tree (DHM)" },
+        { "type": "richtext", "id": "description", "label": "Benefit & mechanism" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kanbae Ingredients",
+      "blocks": [
+        { "type": "ingredient", "settings": { "name": "Japanese Raisin Tree (DHM)", "description": "<p><strong>Speeds toxin breakdown.</strong> Dihydromyricetin (DHM) helps the liver metabolize acetaldehyde faster, the byproduct responsible for next-day fatigue.</p>" } },
+        { "type": "ingredient", "settings": { "name": "Milk Thistle Extract", "description": "<p><strong>Protects liver cells.</strong> Silymarin supports cellular repair and shields the liver from oxidative stress caused by alcohol.</p>" } },
+        { "type": "ingredient", "settings": { "name": "N-Acetyl Cysteine (NAC)", "description": "<p><strong>Replenishes glutathione.</strong> NAC fuels the body's master antioxidant, helping clear toxins before they cause damage.</p>" } },
+        { "type": "ingredient", "settings": { "name": "Prickly Pear Extract", "description": "<p><strong>Reduces inflammation.</strong> Rich in betalains, it helps lower the inflammatory markers linked to hangover symptoms.</p>" } },
+        { "type": "ingredient", "settings": { "name": "Electrolyte Blend", "description": "<p><strong>Restores hydration.</strong> Sodium and potassium replace what's lost to alcohol's diuretic effect, easing headaches and fatigue.</p>" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
