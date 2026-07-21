@@ -2542,6 +2542,56 @@
         "padding-block-end": 100
       }
     },
+    "kanbae_testimonials_cards_kpJng7": {
+      "type": "kanbae-testimonials-cards",
+      "blocks": {
+        "testimonial_X78XEn": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "title": "Ya no sufro la resaca",
+            "body": "Kanbae se ha vuelto parte de mi rutina antes de salir. Al día siguiente me siento con energía.",
+            "author": "Camila R.",
+            "date": "Hace 3 semanas",
+            "product": "Kanbae Total Alcohol Defense"
+          }
+        },
+        "testimonial_9pHwnq": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "title": "Mi liver ahora me lo agradece",
+            "body": "Lo tomo antes de la primera copa y la diferencia al día siguiente es enorme. Sin resaca, sin culpa.",
+            "author": "Diego M.",
+            "date": "Hace 1 mes",
+            "product": "Kanbae Total Alcohol Defense"
+          }
+        },
+        "testimonial_VHPzPT": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 4,
+            "title": "Funciona de verdad",
+            "body": "Era escéptica, pero después de un fin de semana de bodas sin resaca me convertí en fan.",
+            "author": "Valentina S.",
+            "date": "Hace 2 meses",
+            "product": "Kanbae Total Alcohol Defense"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_X78XEn",
+        "testimonial_9pHwnq",
+        "testimonial_VHPzPT"
+      ],
+      "name": "Kanbae Testimonials Cards",
+      "settings": {
+        "eyebrow": "—  More people trust in kanbae",
+        "headline": "Join 40,000+ Kanbaes Living Their Best Lives",
+        "subheading": "and follow us on our socials @usekanbae!",
+        "enable_animation": true
+      }
+    },
     "ss_video_grid_socials_3_T9gaPA": {
       "type": "ss-video-grid-socials-3",
       "blocks": {
@@ -3778,56 +3828,6 @@
         "padding-block-start": 53,
         "padding-block-end": 53
       }
-    },
-    "kanbae_testimonials_cards_kpJng7": {
-      "type": "kanbae-testimonials-cards",
-      "blocks": {
-        "testimonial_X78XEn": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "title": "Ya no sufro la resaca",
-            "body": "Kanbae se ha vuelto parte de mi rutina antes de salir. Al día siguiente me siento con energía.",
-            "author": "Camila R.",
-            "date": "Hace 3 semanas",
-            "product": "Kanbae Total Alcohol Defense"
-          }
-        },
-        "testimonial_9pHwnq": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "title": "Mi liver ahora me lo agradece",
-            "body": "Lo tomo antes de la primera copa y la diferencia al día siguiente es enorme. Sin resaca, sin culpa.",
-            "author": "Diego M.",
-            "date": "Hace 1 mes",
-            "product": "Kanbae Total Alcohol Defense"
-          }
-        },
-        "testimonial_VHPzPT": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 4,
-            "title": "Funciona de verdad",
-            "body": "Era escéptica, pero después de un fin de semana de bodas sin resaca me convertí en fan.",
-            "author": "Valentina S.",
-            "date": "Hace 2 meses",
-            "product": "Kanbae Total Alcohol Defense"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_X78XEn",
-        "testimonial_9pHwnq",
-        "testimonial_VHPzPT"
-      ],
-      "name": "Kanbae Testimonials Cards",
-      "settings": {
-        "eyebrow": "Lo que dicen",
-        "headline": "Join 40,000+ Kanbaes Living Their Best Lives",
-        "subheading": "and follow us on our socials @usekanbae!",
-        "enable_animation": true
-      }
     }
   },
   "order": [
@@ -3839,11 +3839,11 @@
     "kanbae_belief_eeqJCz",
     "kanbae_table_FECM46",
     "carousel_dGtdba",
+    "kanbae_testimonials_cards_kpJng7",
     "ss_video_grid_socials_3_T9gaPA",
     "section_diBL79",
     "featured_product_information_wqCtfc",
     "kanbae_newsletter_rHq76z",
-    "section_9qWLME",
-    "kanbae_testimonials_cards_kpJng7"
+    "section_9qWLME"
   ]
 }
