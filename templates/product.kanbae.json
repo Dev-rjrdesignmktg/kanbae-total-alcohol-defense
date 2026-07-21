@@ -284,857 +284,44 @@
         "gap_between_elements": 24
       }
     },
-    "main": {
-      "type": "product-information",
+    "kanbae_proof_784YRw": {
+      "type": "kanbae-proof",
       "blocks": {
-        "media-gallery": {
-          "type": "_product-media-gallery",
-          "static": true,
+        "slide_QFCRrm": {
+          "type": "slide",
           "settings": {
-            "media_presentation": "carousel",
-            "media_columns": "two",
-            "image_gap": 4,
-            "large_first_image": false,
-            "icons_style": "chevron",
-            "slideshow_controls_style": "dots",
-            "slideshow_mobile_controls_style": "dots",
-            "thumbnail_position": "right",
-            "thumbnail_width": 44,
-            "thumbnail_radius": 0,
-            "aspect_ratio": "1",
-            "constrain_to_viewport": true,
-            "media_fit": "contain",
-            "media_radius": 0,
-            "extend_media": false,
-            "zoom": true,
-            "video_loop": false,
-            "hide_variants": true,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "image": "shopify://shop_images/Reduce_AST_and_ALT_levels.png",
+            "title": "Protect your Liver",
+            "description": "A 30% reduction in ALT and AST serum levels indicates a significant decrease in acute liver toxicity and membrane damage caused by alcohol. By accelerating toxic acetaldehyde clearance (via ALDH2 activation) and replenishing intracellular glutathione, this formula suppresses oxidative stress and prevents liver enzymes from leaking into the bloodstream.",
+            "metric": "30% Reduction in ALT & AST Levels"
+          }
         },
-        "product-details": {
-          "type": "_product-details",
-          "static": true,
+        "slide_E6HQdP": {
+          "type": "slide",
           "settings": {
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "details_position": "flex-start",
-            "gap": 28,
-            "sticky_details_desktop": true,
-            "background_media": "none",
-            "background_color": "",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "padding-block-start": 24,
-            "padding-block-end": 24,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "judge_me_reviews_preview_badge_b4YKGy": {
-              "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-              "settings": {}
-            },
-            "group_icgrde": {
-              "type": "group",
-              "name": "Header",
-              "settings": {
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "background_media": "none",
-                "background_color": "",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0,
-                "link": "",
-                "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "text_xrnftG": {
-                  "type": "text",
-                  "name": "Product title",
-                  "settings": {
-                    "text": "<p><strong>KANBAE</strong></p><p><em>Complete Alcohol Defense</em></p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "h3",
-                    "font": "var(--font-primary--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "price_tVjtKg": {
-                  "type": "price",
-                  "settings": {
-                    "show_sale_price_first": true,
-                    "show_installments": false,
-                    "show_tax_info": false,
-                    "type_preset": "paragraph",
-                    "width": "100%",
-                    "alignment": "left",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "text_color": "",
-                    "padding-block-start": 4,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_xrnftG",
-                "price_tVjtKg"
-              ]
-            },
-            "text_aEtTtq": {
-              "type": "text",
-              "name": "Product description",
-              "settings": {
-                "text": "{{ closest.product.description }}",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-primary--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "divider_VJhene": {
-              "type": "_divider",
-              "name": "t:names.divider",
-              "settings": {
-                "thickness": 1,
-                "corner_radius": "square",
-                "divider_color": "",
-                "width_percent": 100,
-                "padding-block-start": 0,
-                "padding-block-end": 0
-              },
-              "blocks": {}
-            },
-            "variant_picker_R3rGDr": {
-              "type": "variant-picker",
-              "settings": {
-                "variant_style": "buttons",
-                "show_swatches": false,
-                "option_label_text_color": "",
-                "variant_style_class": "default",
-                "custom_variant_background": "{{ settings.color_palette.background }}",
-                "custom_variant_text": "{{ settings.color_palette.foreground }}",
-                "custom_variant_border": "{{ settings.color_palette.foreground }}",
-                "selected_variant_style_class": "default",
-                "custom_selected_variant_background": "{{ settings.color_palette.foreground }}",
-                "custom_selected_variant_text": "{{ settings.color_palette.background }}",
-                "custom_selected_variant_border": "{{ settings.color_palette.foreground }}",
-                "alignment": "left",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "checklist_7rUbBy": {
-              "type": "checklist",
-              "name": "Checklist",
-              "settings": {
-                "background_color": "#a3ff16",
-                "text_color": "#082310",
-                "blur_background": true,
-                "padding-block-start": 8,
-                "padding-block-end": 8,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "checklist_item_XXiHF7": {
-                  "type": "_checklist-item",
-                  "settings": {
-                    "text": "Better pricing"
-                  },
-                  "blocks": {}
-                },
-                "checklist_item_w9mKzF": {
-                  "type": "_checklist-item",
-                  "settings": {
-                    "text": "Flexible cancel anytime"
-                  },
-                  "blocks": {}
-                },
-                "checklist_item_4WxyDy": {
-                  "type": "_checklist-item",
-                  "settings": {
-                    "text": "Never run out"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "checklist_item_XXiHF7",
-                "checklist_item_w9mKzF",
-                "checklist_item_4WxyDy"
-              ]
-            },
-            "loop_subscriptions_loop_widget_8AyWL8": {
-              "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
-              "settings": {}
-            },
-            "buy_buttons_eYQEYi": {
-              "type": "buy-buttons",
-              "settings": {
-                "stacking": true,
-                "text_color": "",
-                "show_pickup_availability": false,
-                "gift_card_form": true,
-                "recipient_button_style": "default",
-                "recipient_button_background": "{{ settings.color_palette.background }}",
-                "recipient_button_text": "{{ settings.color_palette.foreground }}",
-                "recipient_button_border": "{{ settings.color_palette.foreground }}",
-                "selected_recipient_button_style": "default",
-                "selected_recipient_button_background": "{{ settings.color_palette.foreground }}",
-                "selected_recipient_button_text": "{{ settings.color_palette.background }}",
-                "selected_recipient_button_border": "{{ settings.color_palette.foreground }}",
-                "input_style": "default",
-                "input_background_color": "{{ settings.color_palette.background }}",
-                "input_text_color": "{{ settings.color_palette.foreground }}",
-                "input_border_color": "{{ settings.color_palette.foreground }}",
-                "border_width": 1,
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "quantity": {
-                  "type": "quantity",
-                  "static": true,
-                  "settings": {
-                    "input_style": "default",
-                    "input_background_color": "{{ settings.color_palette.background }}",
-                    "input_text_color": "{{ settings.color_palette.foreground }}",
-                    "input_border_color": "{{ settings.color_palette.foreground }}",
-                    "border_width": 1,
-                    "border_radius": 0
-                  },
-                  "blocks": {}
-                },
-                "add-to-cart": {
-                  "type": "add-to-cart",
-                  "static": true,
-                  "settings": {
-                    "style_class": "button-secondary",
-                    "custom_button_background": "{{ settings.color_palette.foreground }}",
-                    "custom_button_text": "{{ settings.color_palette.background }}",
-                    "custom_button_border": "{{ settings.color_palette.background }}"
-                  },
-                  "blocks": {}
-                },
-                "accelerated-checkout": {
-                  "type": "accelerated-checkout",
-                  "static": true,
-                  "settings": {},
-                  "blocks": {}
-                }
-              },
-              "block_order": []
-            },
-            "checklist_kicDiH": {
-              "type": "checklist",
-              "name": "Checklist",
-              "settings": {
-                "background_color": "{{ settings.color_palette.background }}",
-                "text_color": "#082310",
-                "blur_background": true,
-                "padding-block-start": 8,
-                "padding-block-end": 8,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "checklist_item_4c6GRH": {
-                  "type": "_checklist-item",
-                  "settings": {
-                    "text": "45-day guarantee"
-                  },
-                  "blocks": {}
-                },
-                "checklist_item_aM8UJT": {
-                  "type": "_checklist-item",
-                  "settings": {
-                    "text": "Third-party tested"
-                  },
-                  "blocks": {}
-                },
-                "checklist_item_jHCd4X": {
-                  "type": "_checklist-item",
-                  "settings": {
-                    "text": "Ships in 24h"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "checklist_item_4c6GRH",
-                "checklist_item_aM8UJT",
-                "checklist_item_jHCd4X"
-              ]
-            },
-            "accordion_yPaBCz": {
-              "type": "accordion",
-              "name": "t:names.accordion",
-              "settings": {
-                "icon": "caret",
-                "dividers": true,
-                "divider_color": "",
-                "type_preset": "h5",
-                "background_color": "",
-                "text_color": "",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "accordion_row_dkWQVy": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Key Benefits",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "text_fTwpHY": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p><strong>CLEAR - </strong>Supports your body's natural breakdown of acetaldehyde, the toxic alcohol byproduct that causes rough mornings.</p><p><strong>PROTECT - </strong>Promotes liver health and supports your natural detox pathways during alcohol metabolism.</p><p><strong>RESTORE - </strong>Replenishes the glutathione, B vitamins, and antioxidants that alcohol directly depletes overnight.</p><p><strong>SHOW UP - </strong>So you wake up feeling balanced, clear, and ready for whatever the day holds.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_fTwpHY"
-                  ]
-                },
-                "accordion_row_FCBcPE": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "How it Works",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "text_CThjz6": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>When you drink, your liver converts alcohol into acetaldehyde - a highly toxic compound responsible for nausea, flushing, headaches, and hangovers.</p><p>ALDH2 enzymes further break down acetaldehyde into harmless acetate. But this process takes time - around one drink per hour - and is even slower for those with an ALDH2 deficiency (~50% of East Asians). This allows acetaldehyde to build up to dangerous levels.</p><p>Kanbae supercharges ALDH activity, boosts antioxidants, and replenishes nutrients to help clear acetaldehyde faster while protecting your liver.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_CThjz6"
-                  ]
-                },
-                "accordion_row_QYJKRF": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "When to Take",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "text_xHbFMc": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p><strong>Before: </strong>Take 2 capsules (1 sachet) 15-30 minutes before drinking, as they take time to break down in your stomach.</p><p><strong>After: </strong>If you’ve had a heavy session, you can take up to 2 more capsules after your last drink.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_xHbFMc"
-                  ]
-                },
-                "accordion_row_ekMVqj": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Doses",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "text_QMTtxw": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p><strong>Serving size: </strong>2 capsules</p><p><strong>One box contains:</strong> 6 servings</p><p><strong>How many to order?</strong></p><ul><li>1-2 drinks per month = 1 box / 3 months</li><li>1-2 drinks per week = 3 box / 3 months</li><li>3-4 drinks per week = 6 box / 3 months</li></ul>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_QMTtxw"
-                  ]
-                },
-                "accordion_row_rAPFXd": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Quality Standards",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "text_AzA8yb": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Our products are formulated in-house by Singapore Health Sciences Authority (HSA) accredited experts.</p><p>DrinkAid is the only anti-hangover brand to have been clinically tested for efficacy.</p><p>Our products are made in and shipped from Singapore, third-party tested, and manufactured in a GMP-certified facility.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_AzA8yb"
-                  ]
-                }
-              },
-              "block_order": [
-                "accordion_row_dkWQVy",
-                "accordion_row_FCBcPE",
-                "accordion_row_QYJKRF",
-                "accordion_row_ekMVqj",
-                "accordion_row_rAPFXd"
-              ]
-            }
-          },
-          "block_order": [
-            "judge_me_reviews_preview_badge_b4YKGy",
-            "group_icgrde",
-            "text_aEtTtq",
-            "divider_VJhene",
-            "variant_picker_R3rGDr",
-            "checklist_7rUbBy",
-            "loop_subscriptions_loop_widget_8AyWL8",
-            "buy_buttons_eYQEYi",
-            "checklist_kicDiH",
-            "accordion_yPaBCz"
-          ]
-        }
-      },
-      "settings": {
-        "content_width": "content-center-aligned",
-        "desktop_media_position": "left",
-        "equal_columns": false,
-        "limit_details_width": false,
-        "gap": 48,
-        "enable_sticky_add_to_cart": true,
-        "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 100,
-        "padding-block-end": 100
-      }
-    },
-    "section_dE4DHR": {
-      "type": "section",
-      "blocks": {
-        "text_7Y9ktC": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
-            "text": "<p>We don't just say it works.</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "title": "Boost Your Alcohol Metabolism",
+            "description": "Clinical data shows accelerated breakdown of acetaldehyde, reducing oxidative stress on the liver.",
+            "metric": "2x increase"
+          }
         },
-        "text_a7E8DM": {
-          "type": "text",
-          "name": "t:names.heading",
+        "slide_LBMRqm": {
+          "type": "slide",
           "settings": {
-            "text": "<h2>We've proved it works.</h2>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_JhwpCM": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
-            "text": "<p>Clinical studies by leading Singapore educational institutes show that Kanbae measurably improves ALDH2 enzyme activity, lowers toxic acetaldehyde, raises glutathione levels, and reduces harmful ALT and AST liver enzymes after drinking.</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "group_fbd9cp": {
-          "type": "group",
-          "name": "t:names.group",
-          "settings": {
-            "content_direction": "row",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "center",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "background_color": "",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "image_7CQ8M6": {
-              "type": "image",
-              "name": "t:names.image",
-              "settings": {
-                "image": "shopify://shop_images/Increase_ALDH_lower_Acetaldehyde.png",
-                "link": "",
-                "image_ratio": "adapt",
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "image_RRfiUB": {
-              "type": "image",
-              "name": "t:names.image",
-              "settings": {
-                "image": "shopify://shop_images/higher_glutathione_levels.png",
-                "link": "",
-                "image_ratio": "adapt",
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "image_krhFpx": {
-              "type": "image",
-              "name": "t:names.image",
-              "settings": {
-                "image": "shopify://shop_images/Reduce_AST_and_ALT_levels.png",
-                "link": "",
-                "image_ratio": "adapt",
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "image_7CQ8M6",
-            "image_RRfiUB",
-            "image_krhFpx"
-          ]
+            "title": "Boost Your Alcohol Metabolism",
+            "description": "Clinical data shows accelerated breakdown of acetaldehyde, reducing oxidative stress on the liver.",
+            "metric": "2x increase"
+          }
         }
       },
       "block_order": [
-        "text_7Y9ktC",
-        "text_a7E8DM",
-        "text_JhwpCM",
-        "group_fbd9cp"
+        "slide_QFCRrm",
+        "slide_E6HQdP",
+        "slide_LBMRqm"
       ],
-      "name": "Clinical results",
+      "name": "Scientific Proof Carousel",
       "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "small",
-        "section_height_custom": 50,
-        "background_media": "none",
-        "background_color": "{{ settings.color_palette.background }}",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_color": "",
-        "border_radius": 0,
-        "padding-block-start": 100,
-        "padding-block-end": 100
+        "eyebrow": "Clinical Evidence",
+        "headline": "The Science Behind Kanbae"
       }
     },
     "ss_video_grid_socials_3_mRcfmm": {
@@ -2127,6 +1314,622 @@
         "border_radius": 0,
         "padding-block-start": 10,
         "padding-block-end": 10
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "media-gallery": {
+          "type": "_product-media-gallery",
+          "static": true,
+          "settings": {
+            "media_presentation": "carousel",
+            "media_columns": "two",
+            "image_gap": 4,
+            "large_first_image": false,
+            "icons_style": "chevron",
+            "slideshow_controls_style": "dots",
+            "slideshow_mobile_controls_style": "dots",
+            "thumbnail_position": "right",
+            "thumbnail_width": 44,
+            "thumbnail_radius": 0,
+            "aspect_ratio": "1",
+            "constrain_to_viewport": true,
+            "media_fit": "contain",
+            "media_radius": 0,
+            "extend_media": false,
+            "zoom": true,
+            "video_loop": false,
+            "hide_variants": true,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 28,
+            "sticky_details_desktop": true,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "judge_me_reviews_preview_badge_b4YKGy": {
+              "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+              "settings": {}
+            },
+            "group_icgrde": {
+              "type": "group",
+              "name": "Header",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "background_media": "none",
+                "background_color": "",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_xrnftG": {
+                  "type": "text",
+                  "name": "Product title",
+                  "settings": {
+                    "text": "<p><strong>KANBAE</strong></p><p><em>Complete Alcohol Defense</em></p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h3",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price_tVjtKg": {
+                  "type": "price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "text_color": "",
+                    "padding-block-start": 4,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_xrnftG",
+                "price_tVjtKg"
+              ]
+            },
+            "text_aEtTtq": {
+              "type": "text",
+              "name": "Product description",
+              "settings": {
+                "text": "{{ closest.product.description }}",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "divider_VJhene": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "thickness": 1,
+                "corner_radius": "square",
+                "divider_color": "",
+                "width_percent": 100,
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "variant_picker_R3rGDr": {
+              "type": "variant-picker",
+              "settings": {
+                "variant_style": "buttons",
+                "show_swatches": false,
+                "option_label_text_color": "",
+                "variant_style_class": "default",
+                "custom_variant_background": "{{ settings.color_palette.background }}",
+                "custom_variant_text": "{{ settings.color_palette.foreground }}",
+                "custom_variant_border": "{{ settings.color_palette.foreground }}",
+                "selected_variant_style_class": "default",
+                "custom_selected_variant_background": "{{ settings.color_palette.foreground }}",
+                "custom_selected_variant_text": "{{ settings.color_palette.background }}",
+                "custom_selected_variant_border": "{{ settings.color_palette.foreground }}",
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "checklist_7rUbBy": {
+              "type": "checklist",
+              "name": "Checklist",
+              "settings": {
+                "background_color": "#a3ff16",
+                "text_color": "#082310",
+                "blur_background": true,
+                "padding-block-start": 8,
+                "padding-block-end": 8,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "checklist_item_XXiHF7": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "Better pricing"
+                  },
+                  "blocks": {}
+                },
+                "checklist_item_w9mKzF": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "Flexible cancel anytime"
+                  },
+                  "blocks": {}
+                },
+                "checklist_item_4WxyDy": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "Never run out"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "checklist_item_XXiHF7",
+                "checklist_item_w9mKzF",
+                "checklist_item_4WxyDy"
+              ]
+            },
+            "loop_subscriptions_loop_widget_8AyWL8": {
+              "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
+              "settings": {}
+            },
+            "buy_buttons_eYQEYi": {
+              "type": "buy-buttons",
+              "settings": {
+                "stacking": true,
+                "text_color": "",
+                "show_pickup_availability": false,
+                "gift_card_form": true,
+                "recipient_button_style": "default",
+                "recipient_button_background": "{{ settings.color_palette.background }}",
+                "recipient_button_text": "{{ settings.color_palette.foreground }}",
+                "recipient_button_border": "{{ settings.color_palette.foreground }}",
+                "selected_recipient_button_style": "default",
+                "selected_recipient_button_background": "{{ settings.color_palette.foreground }}",
+                "selected_recipient_button_text": "{{ settings.color_palette.background }}",
+                "selected_recipient_button_border": "{{ settings.color_palette.foreground }}",
+                "input_style": "default",
+                "input_background_color": "{{ settings.color_palette.background }}",
+                "input_text_color": "{{ settings.color_palette.foreground }}",
+                "input_border_color": "{{ settings.color_palette.foreground }}",
+                "border_width": 1,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "quantity": {
+                  "type": "quantity",
+                  "static": true,
+                  "settings": {
+                    "input_style": "default",
+                    "input_background_color": "{{ settings.color_palette.background }}",
+                    "input_text_color": "{{ settings.color_palette.foreground }}",
+                    "input_border_color": "{{ settings.color_palette.foreground }}",
+                    "border_width": 1,
+                    "border_radius": 0
+                  },
+                  "blocks": {}
+                },
+                "add-to-cart": {
+                  "type": "add-to-cart",
+                  "static": true,
+                  "settings": {
+                    "style_class": "button-secondary",
+                    "custom_button_background": "{{ settings.color_palette.foreground }}",
+                    "custom_button_text": "{{ settings.color_palette.background }}",
+                    "custom_button_border": "{{ settings.color_palette.background }}"
+                  },
+                  "blocks": {}
+                },
+                "accelerated-checkout": {
+                  "type": "accelerated-checkout",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            },
+            "checklist_kicDiH": {
+              "type": "checklist",
+              "name": "Checklist",
+              "settings": {
+                "background_color": "{{ settings.color_palette.background }}",
+                "text_color": "#082310",
+                "blur_background": true,
+                "padding-block-start": 8,
+                "padding-block-end": 8,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "checklist_item_4c6GRH": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "45-day guarantee"
+                  },
+                  "blocks": {}
+                },
+                "checklist_item_aM8UJT": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "Third-party tested"
+                  },
+                  "blocks": {}
+                },
+                "checklist_item_jHCd4X": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "Ships in 24h"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "checklist_item_4c6GRH",
+                "checklist_item_aM8UJT",
+                "checklist_item_jHCd4X"
+              ]
+            },
+            "accordion_yPaBCz": {
+              "type": "accordion",
+              "name": "t:names.accordion",
+              "settings": {
+                "icon": "caret",
+                "dividers": true,
+                "divider_color": "",
+                "type_preset": "h5",
+                "background_color": "",
+                "text_color": "",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "accordion_row_dkWQVy": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Key Benefits",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_fTwpHY": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p><strong>CLEAR - </strong>Supports your body's natural breakdown of acetaldehyde, the toxic alcohol byproduct that causes rough mornings.</p><p><strong>PROTECT - </strong>Promotes liver health and supports your natural detox pathways during alcohol metabolism.</p><p><strong>RESTORE - </strong>Replenishes the glutathione, B vitamins, and antioxidants that alcohol directly depletes overnight.</p><p><strong>SHOW UP - </strong>So you wake up feeling balanced, clear, and ready for whatever the day holds.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_fTwpHY"
+                  ]
+                },
+                "accordion_row_FCBcPE": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "How it Works",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_CThjz6": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>When you drink, your liver converts alcohol into acetaldehyde - a highly toxic compound responsible for nausea, flushing, headaches, and hangovers.</p><p>ALDH2 enzymes further break down acetaldehyde into harmless acetate. But this process takes time - around one drink per hour - and is even slower for those with an ALDH2 deficiency (~50% of East Asians). This allows acetaldehyde to build up to dangerous levels.</p><p>Kanbae supercharges ALDH activity, boosts antioxidants, and replenishes nutrients to help clear acetaldehyde faster while protecting your liver.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_CThjz6"
+                  ]
+                },
+                "accordion_row_QYJKRF": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "When to Take",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_xHbFMc": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p><strong>Before: </strong>Take 2 capsules (1 sachet) 15-30 minutes before drinking, as they take time to break down in your stomach.</p><p><strong>After: </strong>If you’ve had a heavy session, you can take up to 2 more capsules after your last drink.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_xHbFMc"
+                  ]
+                },
+                "accordion_row_ekMVqj": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Doses",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_QMTtxw": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p><strong>Serving size: </strong>2 capsules</p><p><strong>One box contains:</strong> 6 servings</p><p><strong>How many to order?</strong></p><ul><li>1-2 drinks per month = 1 box / 3 months</li><li>1-2 drinks per week = 3 box / 3 months</li><li>3-4 drinks per week = 6 box / 3 months</li></ul>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_QMTtxw"
+                  ]
+                },
+                "accordion_row_rAPFXd": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Quality Standards",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_AzA8yb": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Our products are formulated in-house by Singapore Health Sciences Authority (HSA) accredited experts.</p><p>DrinkAid is the only anti-hangover brand to have been clinically tested for efficacy.</p><p>Our products are made in and shipped from Singapore, third-party tested, and manufactured in a GMP-certified facility.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_AzA8yb"
+                  ]
+                }
+              },
+              "block_order": [
+                "accordion_row_dkWQVy",
+                "accordion_row_FCBcPE",
+                "accordion_row_QYJKRF",
+                "accordion_row_ekMVqj",
+                "accordion_row_rAPFXd"
+              ]
+            }
+          },
+          "block_order": [
+            "judge_me_reviews_preview_badge_b4YKGy",
+            "group_icgrde",
+            "text_aEtTtq",
+            "divider_VJhene",
+            "variant_picker_R3rGDr",
+            "checklist_7rUbBy",
+            "loop_subscriptions_loop_widget_8AyWL8",
+            "buy_buttons_eYQEYi",
+            "checklist_kicDiH",
+            "accordion_yPaBCz"
+          ]
+        }
+      },
+      "settings": {
+        "content_width": "content-center-aligned",
+        "desktop_media_position": "left",
+        "equal_columns": false,
+        "limit_details_width": false,
+        "gap": 48,
+        "enable_sticky_add_to_cart": true,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 100,
+        "padding-block-end": 100
       }
     },
     "section_MjxCcE": {
@@ -3224,10 +3027,10 @@
   "order": [
     "kanbae_gallery_qnj4Dk",
     "marquee_7rmRTe",
-    "main",
-    "section_dE4DHR",
+    "kanbae_proof_784YRw",
     "ss_video_grid_socials_3_mRcfmm",
     "section_F6zx3f",
+    "main",
     "section_MjxCcE",
     "ss_product_ingredients_3_jxYQCn",
     "section_gCwKt7",
