@@ -3072,12 +3072,61 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
+    },
+    "kanbae_how_it_works_Mhx9tY": {
+      "type": "kanbae-how-it-works",
+      "blocks": {
+        "step_76t94V": {
+          "type": "step",
+          "settings": {
+            "step_number": "01",
+            "title": "Drink",
+            "description": "Alcohol enters your system and heads straight for the liver."
+          }
+        },
+        "step_fRJFiJ": {
+          "type": "step",
+          "settings": {
+            "step_number": "02",
+            "title": "Acetaldehyde builds",
+            "description": "A toxic byproduct accumulates faster than your body can clear it."
+          }
+        },
+        "step_R9nkpD": {
+          "type": "step",
+          "settings": {
+            "step_number": "03",
+            "title": "Kanbae supports breakdown",
+            "description": "Targeted actives help your liver process it before it takes hold."
+          }
+        },
+        "step_Jyqgrk": {
+          "type": "step",
+          "settings": {
+            "step_number": "04",
+            "title": "Wake up better",
+            "description": "Less damage, less grogginess — just a clearer next day."
+          }
+        }
+      },
+      "block_order": [
+        "step_76t94V",
+        "step_fRJFiJ",
+        "step_R9nkpD",
+        "step_Jyqgrk"
+      ],
+      "name": "Kanbae How It Works",
+      "settings": {
+        "eyebrow": "The Process",
+        "headline": "How Kanbae Works"
+      }
     }
   },
   "order": [
     "kanbae_gallery_qnj4Dk",
     "marquee_7rmRTe",
     "kanbae_key_benefits_9zfcn6",
+    "kanbae_how_it_works_Mhx9tY",
     "kanbae_proof_784YRw",
     "ss_video_grid_socials_3_mRcfmm",
     "section_F6zx3f",
