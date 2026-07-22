@@ -137,6 +137,7 @@
         "narrative_step_eR6iVy": {
           "type": "narrative_step",
           "settings": {
+            "image": "shopify://shop_images/Kanbae_increases_Glutathione_Graph.png",
             "label_text": "Reason 03",
             "title": "Glutathione Depletion",
             "description": "When your liver processes alcohol, it's primary defense is glutathione - your body's master antioxidant.Glutathione rapidly depletes and when it runs low, your liver cells are exposed to damage and inflammation sets in. This manifests as fatigue, brain fog, and generally \"feeling like death\".",
