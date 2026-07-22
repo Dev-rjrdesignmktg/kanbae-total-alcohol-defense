@@ -126,69 +126,10 @@
         "padding-block-start": 15,
         "padding-block-end": 15
       }
-    },
-    "kanbae_ingredients_accordion_7XqyxE": {
-      "type": "kanbae-ingredients-accordion",
-      "blocks": {
-        "ingredient_JpCyAd": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Japanese Raisin Tree (DHM)",
-            "description": "<p><strong>Speeds toxin breakdown.</strong> Dihydromyricetin (DHM) helps the liver metabolize acetaldehyde faster, the byproduct responsible for next-day fatigue.</p>",
-            "badge_text": "Liver Detox, Fast-Acting"
-          }
-        },
-        "ingredient_AQRajc": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Milk Thistle Extract",
-            "description": "<p><strong>Protects liver cells.</strong> Silymarin supports cellular repair and shields the liver from oxidative stress caused by alcohol.</p>",
-            "badge_text": "Cell Protection, Antioxidant"
-          }
-        },
-        "ingredient_HGHkYJ": {
-          "type": "ingredient",
-          "settings": {
-            "name": "N-Acetyl Cysteine (NAC)",
-            "description": "<p><strong>Replenishes glutathione.</strong> NAC fuels the body's master antioxidant, helping clear toxins before they cause damage.</p>",
-            "badge_text": "Antioxidant Boost, Detox"
-          }
-        },
-        "ingredient_kfmFDm": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Prickly Pear Extract",
-            "description": "<p><strong>Reduces inflammation.</strong> Rich in betalains, it helps lower the inflammatory markers linked to hangover symptoms.</p>",
-            "badge_text": "Anti-Inflammatory, Plant-Based"
-          }
-        },
-        "ingredient_PrUfqA": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Electrolyte Blend",
-            "description": "<p><strong>Restores hydration.</strong> Sodium and potassium replace what's lost to alcohol's diuretic effect, easing headaches and fatigue.</p>",
-            "badge_text": "Hydration, Recovery"
-          }
-        }
-      },
-      "block_order": [
-        "ingredient_JpCyAd",
-        "ingredient_AQRajc",
-        "ingredient_HGHkYJ",
-        "ingredient_kfmFDm",
-        "ingredient_PrUfqA"
-      ],
-      "name": "Kanbae Ingredients",
-      "settings": {
-        "eyebrow": "Inside Every Dose",
-        "headline": "Backed by Science, Rooted in Nature",
-        "subheading": "Every ingredient in Kanbae is dosed for a reason. Tap to see how each one works."
-      }
     }
   },
   "order": [
     "header_section",
-    "header_announcements_9jGBFp",
-    "kanbae_ingredients_accordion_7XqyxE"
+    "header_announcements_9jGBFp"
   ]
 }
