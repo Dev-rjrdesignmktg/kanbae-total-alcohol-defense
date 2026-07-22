@@ -11,114 +11,112 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "blocks": {
-        "heading": {
-          "type": "text",
-          "name": "Title",
-          "settings": {
-            "text": "<h1>{{ closest.page.title }}</h1>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-primary--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "page-content": {
-          "type": "page-content",
-          "settings": {
-            "text_color": ""
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "heading",
-        "page-content"
-      ],
       "settings": {
         "content_direction": "column",
         "gap": 32,
         "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 40,
-        "padding-block-end": 80
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
-    "kanbae_ingredients_accordion_J4XYQt": {
+    "kanbae_ingredients_accordion_eRPTY9": {
       "type": "kanbae-ingredients-accordion",
       "blocks": {
-        "ingredient_DLkDEQ": {
+        "ingredient_WtAWzX": {
           "type": "ingredient",
           "settings": {
-            "name": "Japanese Raisin Tree (DHM)",
-            "description": "<p><strong>Speeds toxin breakdown.</strong> Dihydromyricetin (DHM) helps the liver metabolize acetaldehyde faster, the byproduct responsible for next-day fatigue.</p>",
-            "badge_text": "Liver Detox, Fast-Acting"
+            "name": "Japanese Raisin Tree (99% DHM)",
+            "description": "<p>Boosts the liver enzyme that breaks down acetaldehyde, while supporting liver repair and cognitive clarity.</p>",
+            "badge_text": "Clear Acetaldehyde, Protect Liver, Brain & Mood"
           }
         },
-        "ingredient_afQKq7": {
+        "ingredient_H46iFQ": {
           "type": "ingredient",
           "settings": {
-            "name": "Milk Thistle Extract",
-            "description": "<p><strong>Protects liver cells.</strong> Silymarin supports cellular repair and shields the liver from oxidative stress caused by alcohol.</p>",
-            "badge_text": "Cell Protection, Antioxidant"
+            "name": "Pyroglutamic Acid",
+            "description": "<p>Supplies the raw material your liver needs to keep regenerating glutathione throughout the night.</p>",
+            "badge_text": "Protect Liver, Antioxidants & Nutrients"
           }
         },
-        "ingredient_aHaean": {
+        "ingredient_KGUdQg": {
           "type": "ingredient",
           "settings": {
-            "name": "N-Acetyl Cysteine (NAC)",
-            "description": "<p><strong>Replenishes glutathione.</strong> NAC fuels the body's master antioxidant, helping clear toxins before they cause damage.</p>",
-            "badge_text": "Antioxidant Boost, Detox"
+            "name": "S-Acetyl Glutathione",
+            "description": "<p>Highly bioavailable (and expensive) form of your body's master antioxidant, directly neutralizes acetaldehyde via a second pathway.</p>",
+            "badge_text": "Clear Acetaldehyde, Protect Liver, Antioxidants & Nutrients"
           }
         },
-        "ingredient_YbwPdL": {
+        "ingredient_Qw4Uyx": {
           "type": "ingredient",
           "settings": {
-            "name": "Prickly Pear Extract",
-            "description": "<p><strong>Reduces inflammation.</strong> Rich in betalains, it helps lower the inflammatory markers linked to hangover symptoms.</p>",
-            "badge_text": "Anti-Inflammatory, Plant-Based"
+            "name": "Succinic Acid",
+            "description": "<p>Keeps liver cells energized during detox by bypassing the metabolic blockage alcohol creates in mitochondria.</p>",
+            "badge_text": "Clear Acetaldehyde, Protect Liver"
           }
         },
-        "ingredient_DV4wJF": {
+        "ingredient_QXUmwr": {
           "type": "ingredient",
           "settings": {
-            "name": "Electrolyte Blend",
-            "description": "<p><strong>Restores hydration.</strong> Sodium and potassium replace what's lost to alcohol's diuretic effect, easing headaches and fatigue.</p>",
-            "badge_text": "Hydration, Recovery"
+            "name": "Ginger Extract",
+            "description": "<p>Minimizes nausea while reducing neuroinflammation for faster cognitive recovery.</p>",
+            "badge_text": "Digestive Support, Brain & Mood"
+          }
+        },
+        "ingredient_EFWkif": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Vitamin B1 (Thiamine)",
+            "description": "<p>Restores the mitochondrial cofactor alcohol depletes - critical for your liver's ability to fully process its byproducts.</p>",
+            "badge_text": "Clear Acetaldehyde, Protect Liver, Antioxidants & Nutrients"
+          }
+        },
+        "ingredient_khhFAP": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Vitamin B6 (Pyridoxal-5'-Phospate)",
+            "description": "<p>Replenishes B6, which is degraded by acetaldehyde. Responsible for serotonin, GABA, and dopamine production - the biochemical drivers of sleep and next-day mood.</p>",
+            "badge_text": "Antioxidants & Nutrients, Brain & Mood, Digestive Support"
+          }
+        },
+        "ingredient_ndEGki": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Vitamin C (Ascorbic Acid)",
+            "description": "<p>Directly reacts with acetaldehyde and regenerates spent glutathione - replenishing what alcohol burns through fastest.</p>",
+            "badge_text": "Clear Acetaldehyde, Protect Liver, Antioxidants & Nutrients"
+          }
+        },
+        "ingredient_9qCpq6": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Black Pepper Extract (Piperine)",
+            "description": "<p>Blocks gut enzymes that degrade other ingredients before they absorb - amplifying the whole formula's bioavailability.</p>",
+            "badge_text": "Absorption Enabler"
           }
         }
       },
       "block_order": [
-        "ingredient_DLkDEQ",
-        "ingredient_afQKq7",
-        "ingredient_aHaean",
-        "ingredient_YbwPdL",
-        "ingredient_DV4wJF"
+        "ingredient_WtAWzX",
+        "ingredient_H46iFQ",
+        "ingredient_KGUdQg",
+        "ingredient_Qw4Uyx",
+        "ingredient_QXUmwr",
+        "ingredient_EFWkif",
+        "ingredient_khhFAP",
+        "ingredient_ndEGki",
+        "ingredient_9qCpq6"
       ],
       "name": "Kanbae Ingredients",
       "settings": {
         "eyebrow": "Inside Every Dose",
         "headline": "Backed by Science, Rooted in Nature",
-        "subheading": "Every ingredient in Kanbae is dosed for a reason. Tap to see how each one works."
+        "subheading": "Every ingredient in Kanbae is dosed for a reason. Tap to see how each one works.",
+        "image": "shopify://shop_images/2.png"
       }
     }
   },
   "order": [
     "main",
-    "kanbae_ingredients_accordion_J4XYQt"
+    "kanbae_ingredients_accordion_eRPTY9"
   ]
 }
