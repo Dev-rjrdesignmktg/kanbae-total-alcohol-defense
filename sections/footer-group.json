@@ -11,6 +11,116 @@
   "type": "footer",
   "name": "Footer",
   "sections": {
+    "kanbae_custom_footer_ezykeG": {
+      "type": "kanbae-custom-footer",
+      "blocks": {
+        "social_icon_pycfbD": {
+          "type": "social_icon",
+          "settings": {
+            "icon": "instagram",
+            "label": "Instagram",
+            "url": ""
+          }
+        },
+        "social_icon_nbhh4H": {
+          "type": "social_icon",
+          "settings": {
+            "icon": "tiktok",
+            "label": "TikTok",
+            "url": ""
+          }
+        },
+        "learn_link_qbj3Ug": {
+          "type": "learn_link",
+          "settings": {
+            "label": "Ingredients",
+            "url": ""
+          }
+        },
+        "learn_link_qjtqhR": {
+          "type": "learn_link",
+          "settings": {
+            "label": "How it Works",
+            "url": ""
+          }
+        },
+        "learn_link_GrEyeQ": {
+          "type": "learn_link",
+          "settings": {
+            "label": "FAQ",
+            "url": ""
+          }
+        },
+        "learn_link_QVqcbw": {
+          "type": "learn_link",
+          "settings": {
+            "label": "Reviews",
+            "url": ""
+          }
+        },
+        "support_link_iXLApf": {
+          "type": "support_link",
+          "settings": {
+            "label": "Contact",
+            "url": ""
+          }
+        },
+        "support_link_CyQiwB": {
+          "type": "support_link",
+          "settings": {
+            "label": "Returns",
+            "url": ""
+          }
+        },
+        "support_link_wRPa43": {
+          "type": "support_link",
+          "settings": {
+            "label": "Shipping",
+            "url": ""
+          }
+        },
+        "support_link_Aaehgt": {
+          "type": "support_link",
+          "settings": {
+            "label": "Privacy Policy",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "social_icon_pycfbD",
+        "social_icon_nbhh4H",
+        "learn_link_qbj3Ug",
+        "learn_link_qjtqhR",
+        "learn_link_GrEyeQ",
+        "learn_link_QVqcbw",
+        "support_link_iXLApf",
+        "support_link_CyQiwB",
+        "support_link_wRPa43",
+        "support_link_Aaehgt"
+      ],
+      "name": "Kanbae Custom Footer",
+      "settings": {
+        "logo_width": 140,
+        "brand_promise": "<p>Become a Kanbae today.<br>Recovery built for the nights.</p>",
+        "newsletter_heading": "Stay in the loop",
+        "newsletter_subtext": "Recovery tips, drops, and offers — straight to your inbox.",
+        "input_label": "Email address",
+        "input_placeholder": "Your email address",
+        "button_label": "Sign up",
+        "success_message": "You're in. Welcome to the ritual.",
+        "learn_title": "Learn",
+        "support_title": "Support",
+        "show_payment_icons": true,
+        "copyright_text": "© 2026 KANBAE. All rights reserved.",
+        "background_color": "#F7F6F2",
+        "text_color": "#0A1915",
+        "accent_color": "#A3FF16",
+        "border_color": "#0A191533",
+        "padding_top": 80,
+        "padding_bottom": 32
+      }
+    },
     "footer_m9NzUG": {
       "type": "footer",
       "blocks": {
@@ -452,6 +562,7 @@
     }
   },
   "order": [
+    "kanbae_custom_footer_ezykeG",
     "footer_m9NzUG"
   ]
 }
