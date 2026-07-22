@@ -1,0 +1,216 @@
+ .kanbae-final-cta {
+    background: var(--green-forest);
+    color: var(--white-cream);
+    padding: clamp(3.5rem, 7vw, 7rem) clamp(1.5rem, 5vw, 4rem);
+  }
+
+  .kanbae-final-cta__inner {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: clamp(2.5rem, 5vw, 5rem);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .kanbae-final-cta__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: kanbae-final-cta-rise 0.9s var(--ease) both;
+  }
+
+  .kanbae-final-cta__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--green-lime);
+  }
+
+.kanbae-final-cta__eyebrow::before{
+  content: '';
+  width: 16px;
+  height: 1px;
+  background: var(--green-lime);
+  opacity: .5;
+}
+
+  .kanbae-final-cta__title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3.4vw, 3.4rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 1.2rem;
+    max-width: 26rem;
+  }
+
+  .kanbae-final-cta__subtitle {
+    font-size: clamp(1rem, 1.6vw, 1.15rem);
+    line-height: 1.6;
+    color: color-mix(in srgb, var(--white-cream) 80%, transparent);
+    max-width: 26rem;
+    margin: 0 0 2rem;
+  }
+
+  .kanbae-final-cta__button {
+    margin-top: 0;
+  }
+
+  .kanbae-final-cta__guarantee {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 1.4rem 0 0;
+    font-size: 0.85rem;
+    color: color-mix(in srgb, var(--white-cream) 75%, transparent);
+  }
+
+  .kanbae-final-cta__guarantee-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    flex: none;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--white-cream) 10%, transparent);
+    color: var(--green-lime);
+  }
+
+  .kanbae-final-cta__card {
+    position: relative;
+    border: 1px solid color-mix(in srgb, var(--white-cream) 14%, transparent);
+    border-radius: 1.6rem;
+    background: color-mix(in srgb, var(--black-carbon) 60%, var(--green-forest));
+    padding: clamp(1.75rem, 3vw, 2.5rem);
+    box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.5);
+    animation: kanbae-final-cta-rise 0.9s var(--ease) 0.15s both;
+    transition: transform 0.45s var(--ease), box-shadow 0.45s var(--ease);
+  }
+
+  .kanbae-final-cta__card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 40px 70px -18px rgba(0, 0, 0, 0.6);
+  }
+
+  .kanbae-final-cta__card-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .kanbae-final-cta__values {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .kanbae-final-cta__value {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding-bottom: 1.1rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--white-cream) 10%, transparent);
+  }
+
+  .kanbae-final-cta__value:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .kanbae-final-cta__value-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex: none;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--green-lime) 16%, transparent);
+    color: var(--green-lime);
+    transition: transform 0.35s var(--ease);
+  }
+
+  .kanbae-final-cta__value:hover .kanbae-final-cta__value-icon {
+    transform: scale(1.1);
+  }
+
+  .kanbae-final-cta__value-label {
+    font-size: 0.98rem;
+    font-weight: 500;
+    color: var(--white-cream);
+  }
+
+  .kanbae-final-cta__badge {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid color-mix(in srgb, var(--white-cream) 10%, transparent);
+  }
+
+  .kanbae-final-cta__badge-image {
+    width: 84px;
+    height: auto;
+    flex: none;
+    border-radius: 50%;
+  }
+
+  .kanbae-final-cta__badge-value {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--green-lime);
+    flex: none;
+  }
+
+  .kanbae-final-cta__badge-caption {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: color-mix(in srgb, var(--white-cream) 75%, transparent);
+  }
+
+  @keyframes kanbae-final-cta-rise {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 989px) {
+    .kanbae-final-cta__inner {
+      grid-template-columns: 1fr;
+    }
+
+    .kanbae-final-cta__content {
+      align-items: flex-start;
+    }
+
+    .kanbae-final-cta__title,
+    .kanbae-final-cta__subtitle {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .kanbae-final-cta__button {
+      width: 100%;
+      text-align: center;
+    }
+
+    .kanbae-final-cta__badge {
+      flex-wrap: wrap;
+    }
+  }

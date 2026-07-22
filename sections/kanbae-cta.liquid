@@ -1,0 +1,134 @@
+{{ "kanbae-cta.css" | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign badge_alt = section.settings.badge_image.alt | default: section.settings.badge_value | default: 'Kanbae efficacy badge'
+-%}
+
+<section class="kanbae-final-cta" aria-label="{{ section.settings.title | default: 'Try Kanbae today' | escape }}">
+  <div class="kanbae-final-cta__inner">
+
+    <div class="kanbae-final-cta__content">
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="kanbae-final-cta__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.title != blank -%}
+        <h2 class="kanbae-final-cta__title">{{ section.settings.title | escape }}</h2>
+      {%- endif -%}
+
+      {%- if section.settings.subtitle != blank -%}
+        <p class="kanbae-final-cta__subtitle">{{ section.settings.subtitle }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.button_text != blank -%}
+        <a
+          href="{{ section.settings.button_url | default: '#' }}"
+          class="button-cta button-cta--primary kanbae-final-cta__button"
+        >
+          {{ section.settings.button_text | escape }}
+        </a>
+      {%- endif -%}
+
+      {%- if section.settings.guarantee_text != blank -%}
+        <p class="kanbae-final-cta__guarantee">
+          <span class="kanbae-final-cta__guarantee-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">{%- render 'icon', icon: 'return' -%}</svg>
+          </span>
+          {{ section.settings.guarantee_text | escape }}
+        </p>
+      {%- endif -%}
+    </div>
+
+    <div class="kanbae-final-cta__card">
+      <div class="kanbae-final-cta__card-inner">
+        {%- if section.blocks.size > 0 -%}
+          <ul class="kanbae-final-cta__values" role="list">
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'value' -%}
+                <li class="kanbae-final-cta__value" {{ block.shopify_attributes }}>
+                  <span class="kanbae-final-cta__value-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">{%- render 'icon', icon: block.settings.icon -%}</svg>
+                  </span>
+                  <span class="kanbae-final-cta__value-label">{{ block.settings.label | escape }}</span>
+                </li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+
+        {%- if section.settings.badge_image != blank or section.settings.badge_value != blank -%}
+          <div class="kanbae-final-cta__badge">
+            {%- if section.settings.badge_image != blank -%}
+              {{ section.settings.badge_image | image_url: width: 300 | image_tag:
+                loading: 'lazy',
+                sizes: '(min-width: 990px) 140px, 110px',
+                widths: '110, 140, 220, 300',
+                class: 'kanbae-final-cta__badge-image',
+                alt: badge_alt
+              }}
+            {%- else -%}
+              <span class="kanbae-final-cta__badge-value">{{ section.settings.badge_value | escape }}</span>
+            {%- endif -%}
+            {%- if section.settings.badge_caption != blank -%}
+              <span class="kanbae-final-cta__badge-caption">{{ section.settings.badge_caption | escape }}</span>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kanbae Final CTA",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Ready When You Are" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Celebrate Tonight. Perform Tomorrow." },
+    { "type": "textarea", "id": "subtitle", "label": "Subtitle", "default": "The science-backed formula that helps your body bounce back, so nothing holds you back." },
+    { "type": "text", "id": "button_text", "label": "Button text", "default": "Try Today" },
+    { "type": "url", "id": "button_url", "label": "Button link" },
+    { "type": "text", "id": "guarantee_text", "label": "Guarantee text", "default": "45-Day Money Back Guarantee" },
+    { "type": "header", "content": "Product card" },
+    { "type": "image_picker", "id": "badge_image", "label": "Badge image" },
+    { "type": "text", "id": "badge_value", "label": "Badge value", "info": "Shown only if no badge image is set", "default": "94%" },
+    { "type": "text", "id": "badge_caption", "label": "Badge caption", "default": "Reported feeling better the next day" }
+  ],
+  "blocks": [
+    {
+      "type": "value",
+      "name": "Value item",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            { "value": "heart", "label": "Heart" },
+            { "value": "leaf", "label": "Leaf" },
+            { "value": "plant", "label": "Plant" },
+            { "value": "check_box", "label": "Checkmark" },
+            { "value": "lock", "label": "Lock" },
+            { "value": "star", "label": "Star" },
+            { "value": "stopwatch", "label": "Stopwatch" },
+            { "value": "recycle", "label": "Recycle" }
+          ],
+          "default": "leaf"
+        },
+        { "type": "text", "id": "label", "label": "Label", "default": "Value point" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kanbae Final CTA",
+      "blocks": [
+        { "type": "value", "settings": { "icon": "heart", "label": "Liver support" } },
+        { "type": "value", "settings": { "icon": "check_box", "label": "Clinically proven" } },
+        { "type": "value", "settings": { "icon": "leaf", "label": "100% vegan" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
