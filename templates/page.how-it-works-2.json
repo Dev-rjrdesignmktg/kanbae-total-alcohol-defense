@@ -1,0 +1,114 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "Title",
+          "settings": {
+            "text": "<h1>{{ closest.page.title }}</h1>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "page-content": {
+          "type": "page-content",
+          "settings": {
+            "text_color": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "page-content"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 40,
+        "padding-block-end": 80
+      }
+    },
+    "kanbae_how_it_works_MEmj44": {
+      "type": "kanbae-how-it-works",
+      "blocks": {
+        "step_mNqhB3": {
+          "type": "step",
+          "settings": {
+            "step_number": "01",
+            "title": "Drink",
+            "description": "Alcohol enters your system and heads straight for the liver."
+          }
+        },
+        "step_pwy4Qm": {
+          "type": "step",
+          "settings": {
+            "step_number": "02",
+            "title": "Acetaldehyde builds",
+            "description": "A toxic byproduct accumulates faster than your body can clear it."
+          }
+        },
+        "step_xJxwtY": {
+          "type": "step",
+          "settings": {
+            "step_number": "03",
+            "title": "Kanbae supports breakdown",
+            "description": "Targeted actives help your liver process it before it takes hold."
+          }
+        },
+        "step_A3LgeM": {
+          "type": "step",
+          "settings": {
+            "step_number": "04",
+            "title": "Wake up better",
+            "description": "Less damage, less grogginess — just a clearer next day."
+          }
+        }
+      },
+      "block_order": [
+        "step_mNqhB3",
+        "step_pwy4Qm",
+        "step_xJxwtY",
+        "step_A3LgeM"
+      ],
+      "name": "Kanbae How It Works",
+      "settings": {
+        "eyebrow": "The Process",
+        "headline": "How Kanbae Works"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "kanbae_how_it_works_MEmj44"
+  ]
+}
