@@ -83,8 +83,10 @@
 
                 {%- assign has_metrics = false -%}
                 {%- for m in (1..3) -%}
-                  {%- assign metric_value = block.settings[ 'metric_' | append: m | append: '_value' ] -%}
-                  {%- assign metric_label = block.settings[ 'metric_' | append: m | append: '_label' ] -%}
+                  {%- assign metric_value_key = 'metric_' | append: m | append: '_value' -%}
+                  {%- assign metric_label_key = 'metric_' | append: m | append: '_label' -%}
+                  {%- assign metric_value = block.settings[metric_value_key] -%}
+                  {%- assign metric_label = block.settings[metric_label_key] -%}
                   {%- if metric_value != blank or metric_label != blank -%}
                     {%- assign has_metrics = true -%}
                   {%- endif -%}
@@ -93,8 +95,10 @@
                 {%- if has_metrics -%}
                   <div class="kanbae-sticky-scroll__metrics">
                     {%- for m in (1..3) -%}
-                      {%- assign metric_value = block.settings[ 'metric_' | append: m | append: '_value' ] -%}
-                      {%- assign metric_label = block.settings[ 'metric_' | append: m | append: '_label' ] -%}
+                      {%- assign metric_value_key = 'metric_' | append: m | append: '_value' -%}
+                      {%- assign metric_label_key = 'metric_' | append: m | append: '_label' -%}
+                      {%- assign metric_value = block.settings[metric_value_key] -%}
+                      {%- assign metric_label = block.settings[metric_label_key] -%}
                       {%- if metric_value != blank or metric_label != blank -%}
                         <span class="kanbae-sticky-scroll__metric">
                           {%- if metric_value != blank -%}
