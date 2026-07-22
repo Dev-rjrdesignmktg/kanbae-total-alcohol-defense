@@ -111,8 +111,8 @@
             "label_text": "Reason #1",
             "title": "Acetaldehyde exposure",
             "description": "Clinical studies by leading Singapore educational institutes show that Kanbae measurably improves ALDH2 enzyme activity, lowers toxic acetaldehyde, raises glutathione levels, and reduces harmful ALT and AST liver enzymes after drinking.",
-            "metric_1_value": "",
-            "metric_1_label": "DHM, S-Acetyl Glutathione, Succinic Acid"
+            "metric_value": "",
+            "metric_label": "DHM, S-Acetyl Glutathione, Succinic Acid"
           }
         },
         "narrative_step_kFai6m": {
@@ -121,8 +121,8 @@
             "label_text": "STEP 02",
             "title": "N-Acetyl Cysteine",
             "description": "NAC replenishes glutathione, your body's master antioxidant, to help neutralize acetaldehyde byproducts.",
-            "metric_1_value": "92%",
-            "metric_1_label": "Bioavailability"
+            "metric_value": "",
+            "metric_label": ""
           }
         },
         "narrative_step_6Ey67M": {
@@ -131,8 +131,8 @@
             "label_text": "STEP 03",
             "title": "Electrolyte Blend",
             "description": "A fast-absorbing mix of electrolytes restores fluid balance lost to alcohol's dehydrating effect.",
-            "metric_1_value": "4x",
-            "metric_1_label": "Faster hydration"
+            "metric_value": "",
+            "metric_label": ""
           }
         }
       },
