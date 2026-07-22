@@ -1,0 +1,166 @@
+{{ 'kanbae-sticky-scroll-narrative.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'kanbae-sticky-scroll-narrative.js' | asset_url }}" defer="defer"></script>
+
+<section
+  class="kanbae-sticky-scroll"
+  id="kanbae-sticky-scroll-{{ section.id }}"
+  data-kanbae-ssn
+  aria-label="{{ section.settings.headline | default: 'Kanbae Sticky Scroll Narrative' | escape }}"
+>
+  <div class="kanbae-sticky-scroll__inner">
+
+    {%- if section.settings.eyebrow != blank or section.settings.headline != blank or section.settings.subheading != blank -%}
+      <div class="kanbae-sticky-scroll__header">
+        {%- if section.settings.eyebrow != blank -%}
+          <p class="kanbae-sticky-scroll__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+        {%- endif -%}
+        {%- if section.settings.headline != blank -%}
+          <h2 class="kanbae-sticky-scroll__headline">{{ section.settings.headline | escape }}</h2>
+        {%- endif -%}
+        {%- if section.settings.subheading != blank -%}
+          <p class="kanbae-sticky-scroll__subheading">{{ section.settings.subheading }}</p>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="kanbae-sticky-scroll__grid">
+
+        <div class="kanbae-sticky-scroll__stage">
+          {%- for block in section.blocks -%}
+            {%- assign stage_alt = block.settings.image.alt | default: block.settings.title -%}
+            <div class="kanbae-sticky-scroll__stage-image {% if forloop.first %}is-active{% endif %}" data-ssn-stage data-index="{{ forloop.index0 }}">
+              {%- if block.settings.image != blank -%}
+                {{ block.settings.image | image_url: width: 1400 | image_tag:
+                  loading: 'lazy',
+                  widths: '480, 720, 960, 1200, 1400',
+                  sizes: '(min-width: 990px) 44vw, 100vw',
+                  class: 'kanbae-sticky-scroll__stage-img',
+                  alt: stage_alt
+                }}
+              {%- else -%}
+                {{ 'lifestyle-1' | placeholder_svg_tag: 'kanbae-sticky-scroll__stage-img' }}
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
+        </div>
+
+        <div class="kanbae-sticky-scroll__list">
+          {%- for block in section.blocks -%}
+            {%- assign card_alt = block.settings.image.alt | default: block.settings.title -%}
+            <div
+              class="kanbae-sticky-scroll__item {% if forloop.first %}is-active{% endif %}"
+              data-ssn-item
+              data-index="{{ forloop.index0 }}"
+              {{ block.shopify_attributes }}
+            >
+              <div class="kanbae-sticky-scroll__card">
+                <div class="kanbae-sticky-scroll__card-image">
+                  {%- if block.settings.image != blank -%}
+                    {{ block.settings.image | image_url: width: 900 | image_tag:
+                      loading: 'lazy',
+                      widths: '360, 540, 720, 900',
+                      sizes: '(min-width: 480px) 480px, 90vw',
+                      class: 'kanbae-sticky-scroll__card-img',
+                      alt: card_alt
+                    }}
+                  {%- else -%}
+                    {{ 'lifestyle-1' | placeholder_svg_tag: 'kanbae-sticky-scroll__card-img' }}
+                  {%- endif -%}
+                </div>
+
+                {%- if block.settings.label_text != blank -%}
+                  <p class="kanbae-sticky-scroll__label">{{ block.settings.label_text | escape }}</p>
+                {%- endif -%}
+
+                {%- if block.settings.title != blank -%}
+                  <h3 class="kanbae-sticky-scroll__title">{{ block.settings.title | escape }}</h3>
+                {%- endif -%}
+
+                {%- if block.settings.description != blank -%}
+                  <p class="kanbae-sticky-scroll__description">{{ block.settings.description }}</p>
+                {%- endif -%}
+
+                {%- if block.settings.metric_value != blank or block.settings.metric_label != blank -%}
+                  <span class="kanbae-sticky-scroll__metric">
+                    {%- if block.settings.metric_value != blank -%}
+                      <span class="kanbae-sticky-scroll__metric-value">{{ block.settings.metric_value | escape }}</span>
+                    {%- endif -%}
+                    {%- if block.settings.metric_label != blank -%}
+                      <span class="kanbae-sticky-scroll__metric-label">{{ block.settings.metric_label | escape }}</span>
+                    {%- endif -%}
+                  </span>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kanbae Sticky Scroll",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "How It Works" },
+    { "type": "text", "id": "headline", "label": "Headline", "default": "Every ingredient, doing its job." },
+    { "type": "textarea", "id": "subheading", "label": "Subheading", "default": "Scroll to see how each active ingredient in Kanbae supports your recovery." }
+  ],
+  "blocks": [
+    {
+      "type": "narrative_step",
+      "name": "Narrative Block",
+      "limit": 8,
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "label_text", "label": "Label (optional)", "info": "e.g. \"STEP 01\"" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "description", "label": "Description" },
+        { "type": "text", "id": "metric_value", "label": "Metric value", "info": "e.g. \"240mg\" or \"92%\"" },
+        { "type": "text", "id": "metric_label", "label": "Metric label", "info": "e.g. \"Silymarin per dose\"" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kanbae Sticky Scroll Narrative",
+      "blocks": [
+        {
+          "type": "narrative_step",
+          "settings": {
+            "label_text": "STEP 01",
+            "title": "Milk Thistle Extract",
+            "description": "Silymarin supports healthy liver enzyme activity, helping your body process alcohol more efficiently.",
+            "metric_value": "240mg",
+            "metric_label": "Silymarin per dose"
+          }
+        },
+        {
+          "type": "narrative_step",
+          "settings": {
+            "label_text": "STEP 02",
+            "title": "N-Acetyl Cysteine",
+            "description": "NAC replenishes glutathione, your body's master antioxidant, to help neutralize acetaldehyde byproducts.",
+            "metric_value": "92%",
+            "metric_label": "Bioavailability"
+          }
+        },
+        {
+          "type": "narrative_step",
+          "settings": {
+            "label_text": "STEP 03",
+            "title": "Electrolyte Blend",
+            "description": "A fast-absorbing mix of electrolytes restores fluid balance lost to alcohol's dehydrating effect.",
+            "metric_value": "4x",
+            "metric_label": "Faster hydration"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
