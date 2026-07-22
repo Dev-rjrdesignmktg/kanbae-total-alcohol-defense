@@ -1,0 +1,60 @@
+{{ 'kanbae-how-it-works-hero.css' | asset_url | stylesheet_tag }}
+
+<section id="kanbae-hiw-hero-{{ section.id }}" class="kanbae-hiw-hero">
+  <div class="kanbae-hiw-hero__inner">
+    <div class="kanbae-hiw-hero__content">
+      {%- if section.settings.eyebrow_text != blank -%}
+        <p class="kanbae-hiw-hero__eyebrow">{{ section.settings.eyebrow_text | escape }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.hero_title != blank -%}
+        <h1 class="kanbae-hiw-hero__title">{{ section.settings.hero_title | escape }}</h1>
+      {%- endif -%}
+
+      {%- if section.settings.hero_subtitle != blank -%}
+        <p class="kanbae-hiw-hero__subtitle">{{ section.settings.hero_subtitle }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
+        <a href="{{ section.settings.button_link }}" class="button-cta button-cta--primary">
+          {{ section.settings.button_text | escape }}
+        </a>
+      {%- endif -%}
+    </div>
+
+    <div class="kanbae-hiw-hero__visual">
+      <div class="kanbae-hiw-hero__glow" aria-hidden="true"></div>
+      <div class="kanbae-hiw-hero__frame">
+        {%- if section.settings.main_image != blank -%}
+          {%- assign image_alt = section.settings.main_image.alt | default: section.settings.hero_title -%}
+          {{ section.settings.main_image | image_url: width: 1400 | image_tag:
+            loading: 'lazy',
+            sizes: '(min-width: 990px) 55vw, 90vw',
+            widths: '375, 600, 900, 1200, 1400',
+            alt: image_alt,
+            class: 'kanbae-hiw-hero__image'
+          }}
+        {%- else -%}
+          {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg kanbae-hiw-hero__image' }}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kanbae How It Works Hero",
+  "settings": [
+    { "type": "text", "id": "eyebrow_text", "label": "Eyebrow text", "default": "The Science" },
+    { "type": "text", "id": "hero_title", "label": "Title", "default": "The science behind a better morning." },
+    { "type": "textarea", "id": "hero_subtitle", "label": "Subtitle", "default": "Kanbae combines clinically-studied actives that support your liver before, during and after alcohol — so you wake up clear, not wrecked." },
+    { "type": "text", "id": "button_text", "label": "Button text", "default": "See how it works" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "image_picker", "id": "main_image", "label": "Visual image" }
+  ],
+  "presets": [
+    { "name": "Kanbae How It Works Hero" }
+  ]
+}
+{% endschema %}

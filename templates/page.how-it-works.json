@@ -1,0 +1,39 @@
+{
+  "sections": {
+    "kanbae_hiw_hero_1": {
+      "type": "kanbae-how-it-works-hero",
+      "settings": {
+        "eyebrow_text": "The Science",
+        "hero_title": "The science behind a better morning.",
+        "hero_subtitle": "Kanbae combines clinically-studied actives that support your liver before, during and after alcohol — so you wake up clear, not wrecked.",
+        "button_text": "See how it works",
+        "button_link": "#",
+        "main_image": "shopify://shop_images/Kanbae_on_table.jpg"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "page-content": {
+          "type": "page-content",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "page-content"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 40,
+        "padding-block-end": 80
+      }
+    }
+  },
+  "order": [
+    "kanbae_hiw_hero_1",
+    "main"
+  ]
+}
