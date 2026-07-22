@@ -1906,7 +1906,7 @@
               "settings": {
                 "background_color": "#a3ff16",
                 "text_color": "#082310",
-                "blur_background": false,
+                "blur_background": true,
                 "padding-block-start": 8,
                 "padding-block-end": 8,
                 "padding-inline-start": 0,
@@ -2006,9 +2006,9 @@
               "type": "checklist",
               "name": "Checklist",
               "settings": {
-                "background_color": "#A3FF16",
+                "background_color": "#F7F6F2",
                 "text_color": "#082310",
-                "blur_background": false,
+                "blur_background": true,
                 "padding-block-start": 8,
                 "padding-block-end": 8,
                 "padding-inline-start": 0,
@@ -2018,21 +2018,21 @@
                 "checklist_item_EjeTTQ": {
                   "type": "_checklist-item",
                   "settings": {
-                    "text": "Benefit one"
+                    "text": "45-day guarantee"
                   },
                   "blocks": {}
                 },
                 "checklist_item_Gj3ciQ": {
                   "type": "_checklist-item",
                   "settings": {
-                    "text": "Benefit two"
+                    "text": "Third-party tested"
                   },
                   "blocks": {}
                 },
                 "checklist_item_jaKhFy": {
                   "type": "_checklist-item",
                   "settings": {
-                    "text": "Benefit three"
+                    "text": "Ships in 24hK"
                   },
                   "blocks": {}
                 }
