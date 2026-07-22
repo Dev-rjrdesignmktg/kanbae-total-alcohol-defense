@@ -2225,7 +2225,7 @@
         "input_placeholder": "Your email address",
         "button_label": "Join Us",
         "success_message": "You're in. Welcome to the ritual.",
-        "background_color": "#f7f4ee",
+        "background_color": "#F7F6F2",
         "text_color": "#23291f",
         "accent_color": "#2f4a3d",
         "padding_top": 96,
