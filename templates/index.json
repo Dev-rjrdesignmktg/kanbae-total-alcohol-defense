@@ -2231,6 +2231,48 @@
         "padding_top": 96,
         "padding_bottom": 96
       }
+    },
+    "kanbae_cta_i8gNYq": {
+      "type": "kanbae-cta",
+      "blocks": {
+        "value_bffEXB": {
+          "type": "value",
+          "settings": {
+            "icon": "heart",
+            "label": "Liver support"
+          }
+        },
+        "value_AmqYyy": {
+          "type": "value",
+          "settings": {
+            "icon": "check_box",
+            "label": "Clinically proven"
+          }
+        },
+        "value_Bq69We": {
+          "type": "value",
+          "settings": {
+            "icon": "leaf",
+            "label": "100% vegan"
+          }
+        }
+      },
+      "block_order": [
+        "value_bffEXB",
+        "value_AmqYyy",
+        "value_Bq69We"
+      ],
+      "name": "Kanbae Final CTA",
+      "settings": {
+        "eyebrow": "Ready When You Are",
+        "title": "Celebrate Tonight. Perform Tomorrow.",
+        "subtitle": "The science-backed formula that helps your body bounce back, so nothing holds you back.",
+        "button_text": "Try Today",
+        "button_url": "",
+        "guarantee_text": "45-Day Money Back Guarantee",
+        "badge_value": "94%",
+        "badge_caption": "Reported feeling better the next day"
+      }
     }
   },
   "order": [
@@ -2245,6 +2287,7 @@
     "ss_video_grid_socials_3_T9gaPA",
     "section_diBL79",
     "featured_product_information_wqCtfc",
-    "kanbae_newsletter_rHq76z"
+    "kanbae_newsletter_rHq76z",
+    "kanbae_cta_i8gNYq"
   ]
 }
