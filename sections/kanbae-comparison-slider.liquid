@@ -1,0 +1,152 @@
+{{ 'kanbae-comparison-slider.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'kanbae-comparison-slider.js' | asset_url }}" defer="defer"></script>
+
+{%- liquid
+  assign before_alt = section.settings.image_before.alt | default: section.settings.before_label
+  assign after_alt = section.settings.image_after.alt | default: section.settings.after_label
+-%}
+
+<section
+  id="kanbae-comparison-slider-{{ section.id }}"
+  class="kanbae-comparison-slider"
+  data-section-id="{{ section.id }}"
+>
+  <div class="kanbae-comparison-slider__wrapper">
+
+    <div class="kanbae-comparison-slider__content">
+      {%- if section.settings.eyebrow_text != blank -%}
+        <p class="kanbae-comparison-slider__eyebrow">{{ section.settings.eyebrow_text | escape }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.title != blank -%}
+        <h2 class="kanbae-comparison-slider__title">{{ section.settings.title | escape }}</h2>
+      {%- endif -%}
+
+      {%- if section.settings.subtitle != blank -%}
+        <p class="kanbae-comparison-slider__subtitle">{{ section.settings.subtitle | escape }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.button_primary_text != blank or section.settings.button_secondary_text != blank -%}
+        <div class="kanbae-comparison-slider__buttons">
+          {%- if section.settings.button_primary_text != blank -%}
+            <a
+              href="{{ section.settings.button_primary_url | default: '#' }}"
+              class="button-cta button-cta--primary"
+            >
+              {{ section.settings.button_primary_text | escape }}
+            </a>
+          {%- endif -%}
+          {%- if section.settings.button_secondary_text != blank -%}
+            <a
+              href="{{ section.settings.button_secondary_url | default: '#' }}"
+              class="button-cta button-cta--secondary"
+            >
+              {{ section.settings.button_secondary_text | escape }}
+            </a>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+
+    <div class="kanbae-comparison-slider__visual">
+      <div
+        class="kanbae-comparison-slider__compare"
+        data-comparison-root
+        role="slider"
+        tabindex="0"
+        aria-label="{{ section.settings.slider_aria_label | default: 'Visual comparation before and after with Kanbae' | escape }}"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="50"
+        aria-valuetext="50%"
+      >
+        <div class="kanbae-comparison-slider__figure kanbae-comparison-slider__figure--before">
+          {%- if section.settings.image_before != blank -%}
+            {{
+              section.settings.image_before
+              | image_url: width: 1600
+              | image_tag:
+                loading: 'lazy',
+                sizes: '(min-width: 990px) 44vw, 92vw',
+                widths: '480, 750, 1100, 1400, 1600',
+                class: 'kanbae-comparison-slider__image',
+                alt: before_alt
+            }}
+          {%- else -%}
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+          {%- if section.settings.before_label != blank -%}
+            <span class="kanbae-comparison-slider__badge kanbae-comparison-slider__badge--before">{{ section.settings.before_label | escape }}</span>
+          {%- endif -%}
+        </div>
+
+        <div class="kanbae-comparison-slider__figure kanbae-comparison-slider__figure--after" data-comparison-after>
+          {%- if section.settings.image_after != blank -%}
+            {{
+              section.settings.image_after
+              | image_url: width: 1600
+              | image_tag:
+                loading: 'lazy',
+                sizes: '(min-width: 990px) 44vw, 92vw',
+                widths: '480, 750, 1100, 1400, 1600',
+                class: 'kanbae-comparison-slider__image',
+                alt: after_alt
+            }}
+          {%- else -%}
+            {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+          {%- if section.settings.after_label != blank -%}
+            <span class="kanbae-comparison-slider__badge kanbae-comparison-slider__badge--after">{{ section.settings.after_label | escape }}</span>
+          {%- endif -%}
+        </div>
+
+        <div class="kanbae-comparison-slider__divider" data-comparison-divider aria-hidden="true">
+          <span class="kanbae-comparison-slider__handle">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M9 6L3 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15 6L21 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kanbae Comparison Slider",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Contenido"
+    },
+    { "type": "text", "id": "eyebrow_text", "label": "Eyebrow", "default":"Before / After" },
+    { "type": "text", "id": "title", "label": "Títle", "default": "Look the real difference" },
+    { "type": "textarea", "id": "subtitle", "label": "Subtítle", "default": "Swipe to compare a morning without Kanbae to an optimized morning with Kanbae." },
+    {
+      "type": "header",
+      "content": "Botones"
+    },
+    { "type": "text", "id": "button_primary_text", "label": "Button text primary", "default": "Shop Now" },
+    { "type": "url", "id": "button_primary_url", "label": "URL primary button" },
+    { "type": "text", "id": "button_secondary_text", "label": "Buttpon text secondary", "default": "Learn More" },
+    { "type": "url", "id": "button_secondary_url", "label": "URL seconday button" },
+    {
+      "type": "header",
+      "content": "Comparador visual"
+    },
+    { "type": "image_picker", "id": "image_before", "label": "Before image" },
+    { "type": "text", "id": "before_label", "label": "Tag before", "default": "Without Kanbae" },
+    { "type": "image_picker", "id": "image_after", "label": "After image" },
+    { "type": "text", "id": "after_label", "label": "Tag after", "default": "With Kanbae" },
+    { "type": "text", "id": "slider_aria_label", "label": "Accessible label for the slider", "info": "Used by screen readers", "default": "Visual Before-and-After Comparison of Kanbae" }
+  ],
+  "presets": [
+    {
+      "name": "Kanbae Comparison Slider"
+    }
+  ]
+}
+{% endschema %}
