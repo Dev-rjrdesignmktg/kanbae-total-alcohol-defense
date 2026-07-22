@@ -27,6 +27,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "text_color": "",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -39,7 +40,9 @@
         },
         "page-content": {
           "type": "page-content",
-          "settings": {},
+          "settings": {
+            "text_color": ""
+          },
           "blocks": {}
         }
       },
@@ -54,9 +57,58 @@
         "padding-block-start": 40,
         "padding-block-end": 80
       }
+    },
+    "kanbae_how_it_works_a6yWTH": {
+      "type": "kanbae-how-it-works",
+      "blocks": {
+        "step_MLDXAN": {
+          "type": "step",
+          "settings": {
+            "step_number": "01",
+            "title": "Drink",
+            "description": "Alcohol enters your system and heads straight for the liver."
+          }
+        },
+        "step_T7dXE6": {
+          "type": "step",
+          "settings": {
+            "step_number": "02",
+            "title": "Acetaldehyde builds",
+            "description": "A toxic byproduct accumulates faster than your body can clear it."
+          }
+        },
+        "step_ULE6pC": {
+          "type": "step",
+          "settings": {
+            "step_number": "03",
+            "title": "Kanbae supports breakdown",
+            "description": "Targeted actives help your liver process it before it takes hold."
+          }
+        },
+        "step_WtxF4F": {
+          "type": "step",
+          "settings": {
+            "step_number": "04",
+            "title": "Wake up better",
+            "description": "Less damage, less grogginess — just a clearer next day."
+          }
+        }
+      },
+      "block_order": [
+        "step_MLDXAN",
+        "step_T7dXE6",
+        "step_ULE6pC",
+        "step_WtxF4F"
+      ],
+      "name": "Kanbae How It Works",
+      "settings": {
+        "eyebrow": "The Process",
+        "headline": "How Kanbae Works"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "kanbae_how_it_works_a6yWTH"
   ]
 }
