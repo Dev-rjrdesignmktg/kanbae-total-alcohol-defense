@@ -1,59 +1,3 @@
-<<<<<<< HEAD
-{
-  "sections": {
-    "kanbae_hiw_hero_1": {
-      "type": "kanbae-how-it-works-hero",
-      "settings": {
-        "eyebrow_text": "The Science",
-        "hero_title": "The science behind a better morning.",
-        "hero_subtitle": "Kanbae combines clinically-studied actives that support your liver before, during and after alcohol — so you wake up clear, not wrecked.",
-        "button_text": "See how it works",
-        "button_link": "#",
-        "main_image": "shopify://shop_images/Kanbae_on_table.jpg"
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "blocks": {
-        "heading": {
-          "type": "text",
-          "name": "Title",
-          "settings": {
-            "text": "<h1>{{ closest.page.title }}</h1>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-primary--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "page-content": {
-          "type": "page-content",
-          "settings": {
-            "text_color": ""
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "heading",
-        "page-content"
-      ],
-=======
 /*
  * ------------------------------------------------------------
  * IMPORTANT: The contents of this file are auto-generated.
@@ -67,7 +11,6 @@
   "sections": {
     "main": {
       "type": "main-page",
->>>>>>> a6dde8f08efe48a236eb80347fa3536f67b8b95e
       "settings": {
         "content_direction": "column",
         "gap": 32,
@@ -139,12 +82,30 @@
         "eyebrow": "The Process",
         "headline": "How Kanbae Works"
       }
+    },
+    "kanbae_comparison_slider_aae4g3": {
+      "type": "kanbae-comparison-slider",
+      "name": "Kanbae Comparison Slider",
+      "settings": {
+        "eyebrow_text": "Before / After",
+        "title": "Look the real difference",
+        "subtitle": "Swipe to compare a morning without Kanbae to an optimized morning with Kanbae.",
+        "button_primary_text": "Shop Now",
+        "button_primary_url": "",
+        "button_secondary_text": "",
+        "button_secondary_url": "",
+        "image_before": "shopify://shop_images/Asian_woman_wipes_sweat_from_brow_small_4a5b45c5-0d31-46a8-9571-435c735af1e1.png",
+        "before_label": "Without Kanbae",
+        "image_after": "shopify://shop_images/Model_holding_kanbae_in_hand.png",
+        "after_label": "With Kanbae",
+        "slider_aria_label": "Visual Before-and-After Comparison of Kanbae"
+      }
     }
   },
   "order": [
-    "kanbae_hiw_hero_1",
     "main",
     "kanbae_how_it_works_hero_FHmfRb",
-    "kanbae_how_it_works_MEmj44"
+    "kanbae_how_it_works_MEmj44",
+    "kanbae_comparison_slider_aae4g3"
   ]
 }
