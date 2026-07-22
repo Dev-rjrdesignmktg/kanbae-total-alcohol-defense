@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-{
-  "sections": {
-    "kanbae_hiw_hero_1": {
-      "type": "kanbae-how-it-works-hero",
-      "settings": {
-        "eyebrow_text": "The Science",
-        "hero_title": "The science behind a better morning.",
-        "hero_subtitle": "Kanbae combines clinically-studied actives that support your liver before, during and after alcohol — so you wake up clear, not wrecked.",
-        "button_text": "See how it works",
-        "button_link": "#",
-        "main_image": "shopify://shop_images/Kanbae_on_table.jpg"
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "blocks": {
-        "page-content": {
-          "type": "page-content",
-          "settings": {},
-=======
 /*
  * ------------------------------------------------------------
  * IMPORTANT: The contents of this file are auto-generated.
@@ -32,49 +11,6 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "blocks": {
-        "heading": {
-          "type": "text",
-          "name": "Title",
-          "settings": {
-            "text": "<h1>{{ closest.page.title }}</h1>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-primary--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "page-content": {
-          "type": "page-content",
-          "settings": {
-            "text_color": ""
-          },
->>>>>>> 613a36ed281eb8828bbd3002574c279989bacacb
-          "blocks": {}
-        }
-      },
-      "block_order": [
-<<<<<<< HEAD
-=======
-        "heading",
->>>>>>> 613a36ed281eb8828bbd3002574c279989bacacb
-        "page-content"
-      ],
       "settings": {
         "content_direction": "column",
         "gap": 32,
@@ -82,13 +18,6 @@
         "padding-block-start": 40,
         "padding-block-end": 80
       }
-<<<<<<< HEAD
-    }
-  },
-  "order": [
-    "kanbae_hiw_hero_1",
-    "main"
-=======
     },
     "kanbae_how_it_works_MEmj44": {
       "type": "kanbae-how-it-works",
@@ -142,6 +71,5 @@
   "order": [
     "main",
     "kanbae_how_it_works_MEmj44"
->>>>>>> 613a36ed281eb8828bbd3002574c279989bacacb
   ]
 }
