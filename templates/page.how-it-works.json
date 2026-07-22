@@ -108,11 +108,11 @@
           "type": "narrative_step",
           "settings": {
             "image": "shopify://shop_images/Kanbae_helps_GABA_rebound.png",
-            "label_text": "Re",
-            "title": "Milk Thistle Extract",
+            "label_text": "Reason #1",
+            "title": "Acetaldehyde exposure",
             "description": "Clinical studies by leading Singapore educational institutes show that Kanbae measurably improves ALDH2 enzyme activity, lowers toxic acetaldehyde, raises glutathione levels, and reduces harmful ALT and AST liver enzymes after drinking.",
             "metric_value": "",
-            "metric_label": "Acetaldehyde exposure"
+            "metric_label": "DHM, S-Acetyl Glutathione, Succinic Acid"
           }
         },
         "narrative_step_kFai6m": {
