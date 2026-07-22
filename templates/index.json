@@ -1916,21 +1916,21 @@
                 "checklist_item_jwjzVV": {
                   "type": "_checklist-item",
                   "settings": {
-                    "text": "Benefit one"
+                    "text": "Better pricing"
                   },
                   "blocks": {}
                 },
                 "checklist_item_L8Xwti": {
                   "type": "_checklist-item",
                   "settings": {
-                    "text": "Benefit two"
+                    "text": "Flexible cancel anytime"
                   },
                   "blocks": {}
                 },
                 "checklist_item_D6Rd9t": {
                   "type": "_checklist-item",
                   "settings": {
-                    "text": "Benefit three"
+                    "text": "Never run out"
                   },
                   "blocks": {}
                 }
@@ -2001,6 +2001,47 @@
                 }
               },
               "block_order": []
+            },
+            "checklist_yibXUh": {
+              "type": "checklist",
+              "name": "Checklist",
+              "settings": {
+                "background_color": "#A3FF16",
+                "text_color": "#082310",
+                "blur_background": false,
+                "padding-block-start": 8,
+                "padding-block-end": 8,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "checklist_item_EjeTTQ": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "Benefit one"
+                  },
+                  "blocks": {}
+                },
+                "checklist_item_Gj3ciQ": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "Benefit two"
+                  },
+                  "blocks": {}
+                },
+                "checklist_item_jaKhFy": {
+                  "type": "_checklist-item",
+                  "settings": {
+                    "text": "Benefit three"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "checklist_item_EjeTTQ",
+                "checklist_item_Gj3ciQ",
+                "checklist_item_jaKhFy"
+              ]
             },
             "accordion_MrVgc4": {
               "type": "accordion",
@@ -2196,6 +2237,7 @@
             "variant_picker_QiqzxH",
             "checklist_tKMarb",
             "buy_buttons_Fkd8Lx",
+            "checklist_yibXUh",
             "accordion_MrVgc4"
           ]
         }
