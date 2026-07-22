@@ -54,8 +54,8 @@
         "learn_link_QVqcbw": {
           "type": "learn_link",
           "settings": {
-            "label": "Reviews",
-            "url": ""
+            "label": "Contact",
+            "url": "shopify://pages/contact"
           }
         },
         "support_link_iXLApf": {
@@ -114,10 +114,10 @@
         "support_title": "Support",
         "show_payment_icons": true,
         "copyright_text": "© 2026 KANBAE. All rights reserved.",
-        "background_color": "#F7F6F2",
-        "text_color": "#0A1915",
-        "accent_color": "#A3FF16",
-        "border_color": "#0A191533",
+        "background_color": "#f7f6f2",
+        "text_color": "#0a1915",
+        "accent_color": "#a3ff16",
+        "border_color": "#0a191533",
         "padding_top": 80,
         "padding_bottom": 32
       }
