@@ -218,6 +218,13 @@ color: var(--black-carbon);
   max-width: 46ch;
 }
 
+.kanbae-sticky-scroll__metrics {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+}
+
 .kanbae-sticky-scroll__metric {
   display: inline-flex;
   align-items: baseline;

@@ -81,15 +81,32 @@
                   <p class="kanbae-sticky-scroll__description">{{ block.settings.description }}</p>
                 {%- endif -%}
 
-                {%- if block.settings.metric_value != blank or block.settings.metric_label != blank -%}
-                  <span class="kanbae-sticky-scroll__metric">
-                    {%- if block.settings.metric_value != blank -%}
-                      <span class="kanbae-sticky-scroll__metric-value">{{ block.settings.metric_value | escape }}</span>
-                    {%- endif -%}
-                    {%- if block.settings.metric_label != blank -%}
-                      <span class="kanbae-sticky-scroll__metric-label">{{ block.settings.metric_label | escape }}</span>
-                    {%- endif -%}
-                  </span>
+                {%- assign has_metrics = false -%}
+                {%- for m in (1..3) -%}
+                  {%- assign metric_value = block.settings[ 'metric_' | append: m | append: '_value' ] -%}
+                  {%- assign metric_label = block.settings[ 'metric_' | append: m | append: '_label' ] -%}
+                  {%- if metric_value != blank or metric_label != blank -%}
+                    {%- assign has_metrics = true -%}
+                  {%- endif -%}
+                {%- endfor -%}
+
+                {%- if has_metrics -%}
+                  <div class="kanbae-sticky-scroll__metrics">
+                    {%- for m in (1..3) -%}
+                      {%- assign metric_value = block.settings[ 'metric_' | append: m | append: '_value' ] -%}
+                      {%- assign metric_label = block.settings[ 'metric_' | append: m | append: '_label' ] -%}
+                      {%- if metric_value != blank or metric_label != blank -%}
+                        <span class="kanbae-sticky-scroll__metric">
+                          {%- if metric_value != blank -%}
+                            <span class="kanbae-sticky-scroll__metric-value">{{ metric_value | escape }}</span>
+                          {%- endif -%}
+                          {%- if metric_label != blank -%}
+                            <span class="kanbae-sticky-scroll__metric-label">{{ metric_label | escape }}</span>
+                          {%- endif -%}
+                        </span>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </div>
                 {%- endif -%}
               </div>
             </div>
@@ -120,8 +137,13 @@
         { "type": "text", "id": "label_text", "label": "Label (optional)", "info": "e.g. \"STEP 01\"" },
         { "type": "text", "id": "title", "label": "Title" },
         { "type": "textarea", "id": "description", "label": "Description" },
-        { "type": "text", "id": "metric_value", "label": "Metric value", "info": "e.g. \"240mg\" or \"92%\"" },
-        { "type": "text", "id": "metric_label", "label": "Metric label", "info": "e.g. \"Silymarin per dose\"" }
+        { "type": "header", "content": "Badges (up to 3)" },
+        { "type": "text", "id": "metric_1_value", "label": "Badge 1 value", "info": "e.g. \"240mg\" or \"92%\"" },
+        { "type": "text", "id": "metric_1_label", "label": "Badge 1 label", "info": "e.g. \"Silymarin per dose\"" },
+        { "type": "text", "id": "metric_2_value", "label": "Badge 2 value (optional)" },
+        { "type": "text", "id": "metric_2_label", "label": "Badge 2 label (optional)" },
+        { "type": "text", "id": "metric_3_value", "label": "Badge 3 value (optional)" },
+        { "type": "text", "id": "metric_3_label", "label": "Badge 3 label (optional)" }
       ]
     }
   ],
@@ -135,8 +157,10 @@
             "label_text": "STEP 01",
             "title": "Milk Thistle Extract",
             "description": "Silymarin supports healthy liver enzyme activity, helping your body process alcohol more efficiently.",
-            "metric_value": "240mg",
-            "metric_label": "Silymarin per dose"
+            "metric_1_value": "240mg",
+            "metric_1_label": "Silymarin per dose",
+            "metric_2_value": "3x",
+            "metric_2_label": "Daily liver support"
           }
         },
         {
@@ -145,8 +169,8 @@
             "label_text": "STEP 02",
             "title": "N-Acetyl Cysteine",
             "description": "NAC replenishes glutathione, your body's master antioxidant, to help neutralize acetaldehyde byproducts.",
-            "metric_value": "92%",
-            "metric_label": "Bioavailability"
+            "metric_1_value": "92%",
+            "metric_1_label": "Bioavailability"
           }
         },
         {
@@ -155,8 +179,8 @@
             "label_text": "STEP 03",
             "title": "Electrolyte Blend",
             "description": "A fast-absorbing mix of electrolytes restores fluid balance lost to alcohol's dehydrating effect.",
-            "metric_value": "4x",
-            "metric_label": "Faster hydration"
+            "metric_1_value": "4x",
+            "metric_1_label": "Faster hydration"
           }
         }
       ]
