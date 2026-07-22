@@ -11,447 +11,119 @@
   "type": "footer",
   "name": "Footer",
   "sections": {
-    "footer_m9NzUG": {
-      "type": "footer",
+    "kanbae_custom_footer_ezykeG": {
+      "type": "kanbae-custom-footer",
       "blocks": {
-        "group_NUhe3X": {
-          "type": "group",
-          "name": "t:names.group",
+        "social_icon_pycfbD": {
+          "type": "social_icon",
           "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 17,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "background_color": "",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 17,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "logo_KwpTHP": {
-              "type": "logo",
-              "name": "t:names.logo",
-              "settings": {
-                "inverse": false,
-                "font": "heading",
-                "text_color": "",
-                "unit": "pixel",
-                "percent_width": 100,
-                "pixel_height": 32,
-                "custom_mobile_size": false,
-                "unit_mobile": "percent",
-                "percent_width_mobile": 100,
-                "pixel_height_mobile": 120,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_46HLTb": {
-              "type": "text",
-              "settings": {
-                "text": "<h2>Become a Kanbae today</h2>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_Rty4WH": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Recovery built for the nights </p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "social_links_rPJk4F": {
-              "type": "social-links",
-              "name": "t:names.social_media_links",
-              "settings": {
-                "icon_color": "",
-                "facebook_url": "",
-                "instagram_url": "https://www.instagram.com/usekanbae/",
-                "youtube_url": "",
-                "tiktok_url": "",
-                "twitter_url": "",
-                "threads_url": "",
-                "linkedin_url": "",
-                "bluesky_url": "",
-                "snapchat_url": "",
-                "pinterest_url": "",
-                "tumblr_url": "",
-                "vimeo_url": "",
-                "custom_url": ""
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "logo_KwpTHP",
-            "text_46HLTb",
-            "text_Rty4WH",
-            "social_links_rPJk4F"
-          ]
+            "icon": "instagram",
+            "label": "Instagram",
+            "url": ""
+          }
         },
-        "group_H6VpwJ": {
-          "type": "group",
+        "social_icon_nbhh4H": {
+          "type": "social_icon",
           "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 6,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "background_color": "",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "email_signup_DKa6ry": {
-              "type": "email-signup",
-              "name": "t:names.email_signup",
-              "settings": {
-                "width": "custom",
-                "custom_width": 100,
-                "heading": "",
-                "heading_text_color": "",
-                "heading_preset": "h3",
-                "border_style": "all",
-                "input_style": "default",
-                "border_width": 1,
-                "border_radius": 100,
-                "input_background_color": "",
-                "input_text_color": "",
-                "input_border_color": "",
-                "input_type_preset": "paragraph",
-                "style_class": "button",
-                "custom_button_background": "{{ settings.color_palette.foreground }}",
-                "custom_button_text": "{{ settings.color_palette.background }}",
-                "custom_button_border": "{{ settings.color_palette.background }}",
-                "link_text_color": "",
-                "display_type": "text",
-                "label": "Sign up",
-                "integrated_button": false,
-                "button_type_preset": "paragraph",
-                "padding-block-start": 17,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "email_signup_DKa6ry"
-          ]
+            "icon": "tiktok",
+            "label": "TikTok",
+            "url": ""
+          }
         },
-        "group_UbKgra": {
-          "type": "group",
-          "name": "t:names.group",
+        "learn_link_qbj3Ug": {
+          "type": "learn_link",
           "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "background_color": "",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "menu_rj4yGf": {
-              "type": "menu",
-              "name": "t:names.menu",
-              "settings": {
-                "menu": "main-menu-footer",
-                "heading": "Learn",
-                "menu_spacing": 12,
-                "show_as_accordion": false,
-                "accordion_icon": "caret",
-                "accordion_dividers": false,
-                "background_color": "",
-                "text_color": "",
-                "heading_preset": "h3",
-                "link_preset": "paragraph",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "menu_rj4yGf"
-          ]
+            "label": "Ingredients",
+            "url": ""
+          }
         },
-        "group_JwiGzB": {
-          "type": "group",
-          "name": "t:names.group",
+        "learn_link_qjtqhR": {
+          "type": "learn_link",
           "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "background_color": "",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "menu_M94VDe": {
-              "type": "menu",
-              "name": "t:names.menu",
-              "settings": {
-                "menu": "main-menu",
-                "heading": "Support",
-                "menu_spacing": 12,
-                "show_as_accordion": false,
-                "accordion_icon": "caret",
-                "accordion_dividers": false,
-                "background_color": "",
-                "text_color": "",
-                "heading_preset": "h3",
-                "link_preset": "paragraph",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "menu_M94VDe"
-          ]
+            "label": "How it Works",
+            "url": ""
+          }
         },
-        "group_Vn6LpX": {
-          "type": "group",
-          "name": "t:names.group",
+        "learn_link_GrEyeQ": {
+          "type": "learn_link",
           "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "flex-start",
-            "gap": 21,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "custom",
-            "custom_width_mobile": 100,
-            "height": "custom",
-            "custom_height": 100,
-            "background_media": "none",
-            "background_color": "",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 21,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "payment_icons_G4KtKz": {
-              "type": "payment-icons",
-              "name": "t:names.payment_icons",
-              "settings": {
-                "horizontal_alignment": "center",
-                "gap": 12,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "footer_copyright_zWnU7P": {
-              "type": "footer-copyright",
-              "name": "t:names.copyright",
-              "settings": {
-                "show_powered_by": true,
-                "text_color": "",
-                "font_size": "0.75rem",
-                "case": "none"
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "payment_icons_G4KtKz",
-            "footer_copyright_zWnU7P"
-          ]
+            "label": "FAQ",
+            "url": ""
+          }
+        },
+        "learn_link_QVqcbw": {
+          "type": "learn_link",
+          "settings": {
+            "label": "Contact",
+            "url": "shopify://pages/contact"
+          }
+        },
+        "support_link_iXLApf": {
+          "type": "support_link",
+          "settings": {
+            "label": "Contact",
+            "url": ""
+          }
+        },
+        "support_link_CyQiwB": {
+          "type": "support_link",
+          "settings": {
+            "label": "Returns",
+            "url": ""
+          }
+        },
+        "support_link_wRPa43": {
+          "type": "support_link",
+          "settings": {
+            "label": "Shipping",
+            "url": ""
+          }
+        },
+        "support_link_Aaehgt": {
+          "type": "support_link",
+          "settings": {
+            "label": "Privacy Policy",
+            "url": ""
+          }
         }
       },
       "block_order": [
-        "group_NUhe3X",
-        "group_H6VpwJ",
-        "group_UbKgra",
-        "group_JwiGzB",
-        "group_Vn6LpX"
+        "social_icon_pycfbD",
+        "social_icon_nbhh4H",
+        "learn_link_qbj3Ug",
+        "learn_link_qjtqhR",
+        "learn_link_GrEyeQ",
+        "learn_link_QVqcbw",
+        "support_link_iXLApf",
+        "support_link_CyQiwB",
+        "support_link_wRPa43",
+        "support_link_Aaehgt"
       ],
-      "name": "t:names.footer",
+      "name": "Kanbae Custom Footer",
       "settings": {
-        "section_width": "page-width",
-        "gap": 30,
-        "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 30,
-        "padding-block-end": 30
+        "logo_image": "shopify://shop_images/KANBAE-DarkGreen_Highlight_f562790c-bab8-4ffb-800d-8d9f4230aaa3.png",
+        "logo_width": 172,
+        "brand_promise": "<p><strong>Become a Kanbae today.</strong><br/>Recovery built for the nights.</p>",
+        "newsletter_heading": "Stay in the loop",
+        "newsletter_subtext": "Recovery tips, drops, and offers — straight to your inbox.",
+        "input_label": "Email address",
+        "input_placeholder": "Your email address",
+        "button_label": "Sign up",
+        "success_message": "You're in. Welcome to the ritual.",
+        "learn_title": "Learn",
+        "support_title": "Support",
+        "show_payment_icons": true,
+        "copyright_text": "© 2026 KANBAE. All rights reserved.",
+        "background_color": "#f7f6f2",
+        "text_color": "#0a1915",
+        "accent_color": "#a3ff16",
+        "border_color": "#0a191533",
+        "padding_top": 80,
+        "padding_bottom": 32
       }
     }
   },
   "order": [
-    "footer_m9NzUG"
+    "kanbae_custom_footer_ezykeG"
   ]
 }
