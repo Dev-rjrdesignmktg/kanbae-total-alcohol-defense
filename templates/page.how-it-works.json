@@ -107,11 +107,12 @@
         "narrative_step_ddmx8p": {
           "type": "narrative_step",
           "settings": {
-            "label_text": "STEP 01",
+            "image": "shopify://shop_images/Kanbae_helps_GABA_rebound.png",
+            "label_text": "Re",
             "title": "Milk Thistle Extract",
-            "description": "Silymarin supports healthy liver enzyme activity, helping your body process alcohol more efficiently.",
-            "metric_value": "240mg",
-            "metric_label": "Silymarin per dose"
+            "description": "Clinical studies by leading Singapore educational institutes show that Kanbae measurably improves ALDH2 enzyme activity, lowers toxic acetaldehyde, raises glutathione levels, and reduces harmful ALT and AST liver enzymes after drinking.",
+            "metric_value": "",
+            "metric_label": "Acetaldehyde exposure"
           }
         },
         "narrative_step_kFai6m": {
@@ -144,7 +145,7 @@
       "settings": {
         "eyebrow": "How It Works",
         "headline": "Every ingredient, doing its job.",
-        "subheading": "Scroll to see how each active ingredient in Kanbae supports your recovery."
+        "subheading": "Clinical studies by leading Singapore educational institutes show that Kanbae measurably improves ALDH2 enzyme activity, lowers toxic acetaldehyde, raises glutathione levels, and reduces harmful ALT and AST liver enzymes after drinking."
       }
     }
   },
