@@ -100,12 +100,59 @@
         "after_label": "With Kanbae",
         "slider_aria_label": "Visual Before-and-After Comparison of Kanbae"
       }
+    },
+    "kanbae_sticky_scroll_narrative_7yCqdp": {
+      "type": "kanbae-sticky-scroll-narrative",
+      "blocks": {
+        "narrative_step_ddmx8p": {
+          "type": "narrative_step",
+          "settings": {
+            "label_text": "STEP 01",
+            "title": "Milk Thistle Extract",
+            "description": "Silymarin supports healthy liver enzyme activity, helping your body process alcohol more efficiently.",
+            "metric_value": "240mg",
+            "metric_label": "Silymarin per dose"
+          }
+        },
+        "narrative_step_kFai6m": {
+          "type": "narrative_step",
+          "settings": {
+            "label_text": "STEP 02",
+            "title": "N-Acetyl Cysteine",
+            "description": "NAC replenishes glutathione, your body's master antioxidant, to help neutralize acetaldehyde byproducts.",
+            "metric_value": "92%",
+            "metric_label": "Bioavailability"
+          }
+        },
+        "narrative_step_6Ey67M": {
+          "type": "narrative_step",
+          "settings": {
+            "label_text": "STEP 03",
+            "title": "Electrolyte Blend",
+            "description": "A fast-absorbing mix of electrolytes restores fluid balance lost to alcohol's dehydrating effect.",
+            "metric_value": "4x",
+            "metric_label": "Faster hydration"
+          }
+        }
+      },
+      "block_order": [
+        "narrative_step_ddmx8p",
+        "narrative_step_kFai6m",
+        "narrative_step_6Ey67M"
+      ],
+      "name": "Kanbae Sticky Scroll Narrative",
+      "settings": {
+        "eyebrow": "How It Works",
+        "headline": "Every ingredient, doing its job.",
+        "subheading": "Scroll to see how each active ingredient in Kanbae supports your recovery."
+      }
     }
   },
   "order": [
     "main",
     "kanbae_how_it_works_hero_FHmfRb",
     "kanbae_how_it_works_MEmj44",
-    "kanbae_comparison_slider_aae4g3"
+    "kanbae_comparison_slider_aae4g3",
+    "kanbae_sticky_scroll_narrative_7yCqdp"
   ]
 }
