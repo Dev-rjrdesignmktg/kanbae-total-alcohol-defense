@@ -1372,7 +1372,7 @@
       ],
       "name": "Kanbae Testimonials Cards",
       "settings": {
-        "eyebrow": "—  More people trust in kanbae",
+        "eyebrow": "More people trust in kanbae",
         "headline": "Join 40,000+ Kanbaes Living Their Best Lives",
         "subheading": "and follow us on our socials @usekanbae!",
         "enable_animation": true
@@ -2006,7 +2006,7 @@
               "type": "checklist",
               "name": "Checklist",
               "settings": {
-                "background_color": "#F7F6F2",
+                "background_color": "#f7f6f2",
                 "text_color": "#082310",
                 "blur_background": true,
                 "padding-block-start": 8,
@@ -2267,7 +2267,7 @@
         "input_placeholder": "Your email address",
         "button_label": "Join Us",
         "success_message": "You're in. Welcome to the ritual.",
-        "background_color": "#F7F6F2",
+        "background_color": "#f7f6f2",
         "text_color": "#23291f",
         "accent_color": "#2f4a3d",
         "padding_top": 96,
