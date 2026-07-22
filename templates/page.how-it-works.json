@@ -107,31 +107,45 @@
         "narrative_step_TiDQBY": {
           "type": "narrative_step",
           "settings": {
-            "label_text": "STEP 01",
-            "title": "Milk Thistle Extract",
-            "description": "Silymarin supports healthy liver enzyme activity, helping your body process alcohol more efficiently.",
-            "metric_value": "240mg",
-            "metric_label": "Silymarin per dose"
+            "image": "shopify://shop_images/Kanbae_lowers_Acetaldehyde_Graph.png",
+            "label_text": "Reason #1",
+            "title": "Acetaldehyde exposure",
+            "description": "When you drink, your liver breaks alcohol down into a toxic byproduct called acetaldehyde, which is 10-30x more toxic than alcohol itself. Your body clears it at a fixed rate - slower for those with an ALDH2 deficiency. Drink faster than that and it builds up in your system, causing symptoms like nausea, Asian flush, and \"feeling like death\".",
+            "metric_1_value": "",
+            "metric_1_label": "DHM (from Japanese Raisin Tree)",
+            "metric_2_value": "",
+            "metric_2_label": "S-Acetyl Glutathione ",
+            "metric_3_value": "",
+            "metric_3_label": "Succinic Acid "
           }
         },
         "narrative_step_eMqkUX": {
           "type": "narrative_step",
           "settings": {
-            "label_text": "STEP 02",
-            "title": "N-Acetyl Cysteine",
-            "description": "NAC replenishes glutathione, your body's master antioxidant, to help neutralize acetaldehyde byproducts.",
-            "metric_value": "92%",
-            "metric_label": "Bioavailability"
+            "image": "shopify://shop_images/Kanbae_helps_GABA_rebound.png",
+            "label_text": "Reason 2",
+            "title": "Gaba Rebound",
+            "description": "Alcohol relaxes you by amplifying GABA (calming) and suppressing glutamate (invigorating). Your brain compensates by dialling back GABA sensitivity, and increasing glutamate activity.\n\nWhen the alcohol clears, those adjustments are still in place and your brain overshoots into an overstimulated state, showing up as brain fog and fatigue. That's why drinking more alcohol the next morning might ironically help you feel better (but just delays the crash).",
+            "metric_1_value": "",
+            "metric_1_label": "DHM",
+            "metric_2_value": "",
+            "metric_2_label": "Vitamin B6 (in its active PLP form)",
+            "metric_3_value": "",
+            "metric_3_label": ""
           }
         },
         "narrative_step_eR6iVy": {
           "type": "narrative_step",
           "settings": {
-            "label_text": "STEP 03",
-            "title": "Electrolyte Blend",
-            "description": "A fast-absorbing mix of electrolytes restores fluid balance lost to alcohol's dehydrating effect.",
-            "metric_value": "4x",
-            "metric_label": "Faster hydration"
+            "label_text": "Reason 03",
+            "title": "Glutathione Depletion",
+            "description": "When your liver processes alcohol, it's primary defense is glutathione - your body's master antioxidant.Glutathione rapidly depletes and when it runs low, your liver cells are exposed to damage and inflammation sets in. This manifests as fatigue, brain fog, and generally \"feeling like death\".",
+            "metric_1_value": "",
+            "metric_1_label": "S-Acetyl Glutathione (SAG)",
+            "metric_2_value": "",
+            "metric_2_label": "Pyroglutamic Acid",
+            "metric_3_value": "",
+            "metric_3_label": "Vitamin C"
           }
         }
       },
@@ -144,7 +158,7 @@
       "settings": {
         "eyebrow": "How It Works",
         "headline": "Every ingredient, doing its job.",
-        "subheading": "Scroll to see how each active ingredient in Kanbae supports your recovery."
+        "subheading": "Clinical studies by leading Singapore educational institutes show that Kanbae measurably improves ALDH2 enzyme activity, lowers toxic acetaldehyde, raises glutathione levels, and reduces harmful ALT and AST liver enzymes after drinking."
       }
     }
   },
