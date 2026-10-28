@@ -53,7 +53,7 @@
         "logo_position": "left",
         "menu_position": "center",
         "menu_row": "top",
-        "customer_account_menu": "customer-account-main-menu",
+        "customer_account_menu": "menu-header",
         "show_search": false,
         "search_position": "right",
         "search_row": "top",
