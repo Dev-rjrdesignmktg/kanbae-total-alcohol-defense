@@ -2255,25 +2255,6 @@
         "padding-block-end": 100
       }
     },
-    "kanbae_newsletter_rHq76z": {
-      "type": "kanbae-newsletter",
-      "name": "Kanbae Newsletter",
-      "settings": {
-        "eyebrow": "— Join the Ritual",
-        "headline": "Better nights start here.",
-        "subheadline": "Get recovery tips, exclusive drops, and subscriber-only offers.",
-        "social_proof": "Join 40,000+ people building better mornings.",
-        "input_label": "Email address",
-        "input_placeholder": "Your email address",
-        "button_label": "Join Us",
-        "success_message": "You're in. Welcome to the ritual.",
-        "background_color": "#f7f6f2",
-        "text_color": "#23291f",
-        "accent_color": "#2f4a3d",
-        "padding_top": 96,
-        "padding_bottom": 96
-      }
-    },
     "kanbae_cta_i8gNYq": {
       "type": "kanbae-cta",
       "blocks": {
@@ -2315,6 +2296,25 @@
         "badge_value": "94%",
         "badge_caption": "Reported feeling better the next day"
       }
+    },
+    "kanbae_newsletter_rHq76z": {
+      "type": "kanbae-newsletter",
+      "name": "Kanbae Newsletter",
+      "settings": {
+        "eyebrow": "— Join the Ritual",
+        "headline": "Better nights start here.",
+        "subheadline": "Get recovery tips, exclusive drops, and subscriber-only offers.",
+        "social_proof": "Join 40,000+ people building better mornings.",
+        "input_label": "Email address",
+        "input_placeholder": "Your email address",
+        "button_label": "Join Us",
+        "success_message": "You're in. Welcome to the ritual.",
+        "background_color": "#f7f6f2",
+        "text_color": "#23291f",
+        "accent_color": "#2f4a3d",
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
     }
   },
   "order": [
@@ -2329,7 +2329,7 @@
     "ss_video_grid_socials_3_T9gaPA",
     "section_diBL79",
     "featured_product_information_wqCtfc",
-    "kanbae_newsletter_rHq76z",
-    "kanbae_cta_i8gNYq"
+    "kanbae_cta_i8gNYq",
+    "kanbae_newsletter_rHq76z"
   ]
 }
