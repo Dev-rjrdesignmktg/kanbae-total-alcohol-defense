@@ -166,6 +166,19 @@
                 "price_tVjtKg"
               ]
             },
+            "review_Ldrn4B": {
+              "type": "review",
+              "name": "t:names.product_review_stars",
+              "settings": {
+                "stars_style": "shaded",
+                "show_number": true,
+                "text_color": "",
+                "type_preset": "paragraph",
+                "width": "100%",
+                "alignment": "left"
+              },
+              "blocks": {}
+            },
             "divider_VJhene": {
               "type": "_divider",
               "name": "t:names.divider",
@@ -290,6 +303,7 @@
           },
           "block_order": [
             "group_icgrde",
+            "review_Ldrn4B",
             "divider_VJhene",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
@@ -453,10 +467,65 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "kanbae_gallery_YxaUDr": {
+      "type": "kanbae-gallery",
+      "blocks": {
+        "media_6X9Qah": {
+          "type": "media",
+          "settings": {
+            "media_type": "product"
+          }
+        },
+        "media_ADDqLE": {
+          "type": "media",
+          "settings": {
+            "media_type": "lifestyle"
+          }
+        },
+        "media_NxigJd": {
+          "type": "media",
+          "settings": {
+            "media_type": "ingredients"
+          }
+        },
+        "media_LHAeTB": {
+          "type": "media",
+          "settings": {
+            "media_type": "how_to"
+          }
+        },
+        "media_AtUmgU": {
+          "type": "media",
+          "settings": {
+            "media_type": "ugc"
+          }
+        },
+        "media_mXbUJD": {
+          "type": "media",
+          "settings": {
+            "media_type": "review"
+          }
+        }
+      },
+      "block_order": [
+        "media_6X9Qah",
+        "media_ADDqLE",
+        "media_NxigJd",
+        "media_LHAeTB",
+        "media_AtUmgU",
+        "media_mXbUJD"
+      ],
+      "name": "Gallery Carousel",
+      "settings": {
+        "eyebrow": "",
+        "headline": "See Kanbae in Action"
+      }
     }
   },
   "order": [
     "main",
-    "product_recommendations_qggXJq"
+    "product_recommendations_qggXJq",
+    "kanbae_gallery_YxaUDr"
   ]
 }
